@@ -1,0 +1,29 @@
+<!-- Debug: Check what's visible in the chart area -->
+<script>
+window.addEventListener('load', () => {
+  const chartContainer = document.querySelector('[id="primary"]');
+  const overlayDiv = document.querySelector('[ref="overlayRef"]');
+  const canvasDiv = document.querySelector('.flex-1.w-full');
+  
+  console.log('Chart Container:', chartContainer);
+  console.log('Overlay Ref:', overlayDiv);
+  
+  // Check for any animations or opacity issues
+  const chartArea = document.getElementById('dashboard-chart-view');
+  if (chartArea) {
+    const style = window.getComputedStyle(chartArea);
+    console.log('Dashboard chart view opacity:', style.opacity);
+    console.log('Dashboard chart view visibility:', style.visibility);
+    console.log('Dashboard chart view display:', style.display);
+  }
+  
+  // Find the chart canvas
+  const canvas = document.querySelector('canvas');
+  if (canvas) {
+    console.log('Canvas found:', canvas);
+    console.log('Canvas dimensions:', canvas.width, 'x', canvas.height);
+  } else {
+    console.log('NO CANVAS FOUND');
+  }
+});
+</script>

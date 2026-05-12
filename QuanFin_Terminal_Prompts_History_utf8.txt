@@ -1,0 +1,93 @@
+﻿QUANFIN CAPITAL TERMINAL - DEVELOPMENT PROMPTS HISTORY
+Total Conversation Sessions: 90
+Major Milestone Prompts Extracted: 74
+--------------------------------------------------------
+2026-01-31 09:44:18: Plan  o in egra e Ko ak Securi ies API for real- ime  rading and da a.
+2026-01-31 19:52:38: Plan  o debug  he Ko ak login error by improving backend excep ion repor ing and fron end error display.
+2026-02-01 16:18:34: Plan  o debug and fix backend error rela ed  o Ko ak in egra ion. Will involve inves iga ion of call si es and error handling enhancemen .
+2026-02-01 20:11:44: Upda ed plan  o include fixing impor  order and pa h se up.
+2026-02-01 20:22:37: Upgrade Ko ak Au hen ica ion  o ma ch  he provided blueprin  using direc  H  P reques s.
+2026-02-02 07:02:01: Enforce Broker API (Ko ak) for all live da a. Remove Yahoo Finance fallbacks.
+- **Scope**: Char s, Wa chlis  Quo es, Indices.
+- **Changes**:
+    - `main.py`: Remove `marke _da a_service` fallbacks in `analyze_ icker` and `ge _quo es`.
+    - `main.py`: Refac or `ge _indices`  o use Ko ak Quo es (requires mapping Index symbols  o Ko ak  okens).
+    - `ko ak_service.py`: Ensure `search_scrip` works for Indices or add a s a ic map for Nif y/BankNif y.
+- **Risk**: User *mus * be logged in  o Ko ak  o see any da a. Fea ures will break if no  logged in.  his ma ches  he user's "accuracy is mos  impor an " requiremen .
+2026-02-02 10:34:09: Comprehensive plan  o align QuanFin  erminal wi h s ric  backend/broker rules. Includes removing run ime gi  deps, implemen ing persis en  backend WebSocke  for Ko ak da a, crea ing a Candle Builder sys em, and refac oring  he fron end char   o consume  his live s ream.
+2026-02-03 15:45:52: De ailed plan  o fix char  error by ensuring ' ime' proper y exis s, remove par i ion UI, and implemen  live wa chlis  da a wi h fallback.
+2026-02-04 14:39:53: Refining His ory Fe ch Plan
+2026-02-05 06:24:39: Plan  o enable real- ime char  and wa chlis  upda es using WebSocke s, replacing  he slow polling mechanism.  his aims  o ma ch broker  erminal performance.
+2026-02-05 13:05:30: I will modify `Char Componen . sx`  o add a unique ID  o  he char  con ainer.  hen, I will upda e `index.css`  o hide any anchor  ags (links) wi hin  ha  con ainer, effec ively hiding  he  radingView a  ribu ion link. I will also verify  he removal of  he link.
+2026-02-06 09:59:28: Implemen a ion plan for  he Commodi ies Dashboard, covering backend API enhancemen s for con rac  de ails and news, and fron end componen  developmen  for  he dashboard layou  and individual modules.
+2026-02-07 12:28:39: Fix blank screen in Commodi ies sec ion by configuring Vi e proxy.
+Missing proxy causes fron end  o receive H ML ins ead of JSON for API calls, leading  o componen  crash.
+Will upda e `vi e.config. s`  o forward `/api` reques s  o backend a  `h  p://127.0.0.1:8000`.
+2026-02-07 14:13:35: Implemen a ion plan for Ins rumen  Mas er Service and Symbol Resolver. Defines da abase schema, service logic, and in egra ion poin s.
+2026-02-08 07:26:45: Upda ed implemen a ion plan for Pos greSQL in egra ion.
+2026-02-10 10:16:56: De ailed plan for Ins rumen  Mas er wi h enhanced valida ion and caching.
+2026-02-11 13:33:19: Plan  o res ore  he missing fron end source code using `FRON END_IMPLEMEN A ION.md` and inferred s ruc ure.
+2026-02-12 07:25:52: De ailed plan for implemen ing  he backend sys em: Ins rumen  Mas er, Marke  Da a, and Op ion Chain.
+2026-02-15 07:09:32: Plan  o fix 3 backend issues: hear bea  moni or spam (guard un il WS connec ed), sync engine bug in ins rumen _mas er.py (use sync_engine), and par ial cache load (load all 80k+ ins rumen s). Also ac iva es Marke Da aService WebSocke  af er login.
+2026-02-15 12:33:39: Comple e implemen a ion plan for  he Quan i a ive Marke  In elligence Engine. Covers all 8 fea ures (lead-lag, regime de ec ion, sec or ro a ion, correla ion breakdown, bread h s reng h, shock propaga ion, even  de ec ion, vola ili y halo), 4 view modes, sidebar de ail panel, and in egra ion in o App rou ing and Header naviga ion. Fron end-firs  approach wi h sample da a, backend services deferred  o fu ure phase.
+2026-02-16 11:16:13: Replacing Force Graph wi h Plo ly Sunburs .
+2026-02-17 08:15:17: Implemen a ion plan for 3 new IndexMap fea ures: Hea map Color Mode (gradien  colors by change%), Compara ive Overlay (2-3 s ock char  comparison), and Breadcrumb Naviga ion (clickable pa h showing Marke  â†’ Sec or â†’ Index â†’ S ock).
+2026-02-17 12:03:44: Add  ickerSearch  o CompareModal panels  o allow changing s ocks.
+2026-02-18 12:51:11: De ailed plan for implemen ing  he Sankey Diagram in IndexMap sec ion.
+Includes Backend upda es for Marke  Cap fe ching and Fron end componen  crea ion.
+2026-02-18 13:59:45: - **Refac or Marke  Cons an s**: Move `SEC OR_DA A` and mappings  o `backend/app/da a/cons an s.py`  o share be ween `main.py` and services.
+- **Enhance Ne workMapService**: Upda e `ge _cons i uen s` in `app/services/ne work_map_service.py`  o suppor  all sec ors defined in `SEC OR_DA A`, ensuring `sec or` field is popula ed.
+- **Upda e Fron end**: Modify `Marke Map. sx`, `IndicesScanner. sx`, `IndexDe ailPanel. sx`, and `Hea Map. sx`  o use  he correc  endpoin  `/api/v1/ne work-map/cons i uen s/{symbol}`.
+- **Clean Backend**: Remove  he duplica e/ad-hoc `ge _index_cons i uen s` endpoin  in `main.py`.
+2026-02-19 06:24:34: Implemen a ion plan  o fix  he missing SENSEX cons i uen s in  he Ne work Map.
+2026-02-19 10:37:44: Refac oring Sankey Diagram  o uses circular nodes.
+2026-02-20 06:22:43: Added Sankey Upgrade proposals.
+2026-02-21 11:21:50: Implemen a ion plan for Phase 7: Live Da a Pricing. Focuses on robus  WebSocke  connec ivi y, real- ime  ick s reaming, and in egra ing live prices in o  he Sunburs /Hea map views.
+2026-02-22 11:37:26: Implemen a ion plan  o in egra e real- ime price fluc ua ions in o  he Char Componen  using WebSocke s.  his will allow  he char s  o upda e dynamically as mock or live  icks arrive.
+2026-02-23 11:30:31: Refinemen  plan for  he "Life a  QuanFin" sec ion  o improve i s appearance and accessibili y in ligh  mode.
+2026-02-24 11:47:23: Implemen a ion plan for adding commodi ies suppor   o  he Op ions  erminal.
+2026-02-25 10:54:26: Implemen a ion plan  o fix ins rumen  da a sync and verify commodi y op ions in egra ion.
+2026-02-26 10:07:24: Implemen a ion plan for Op ion Chain Quick Access Fea ure
+2026-02-28 11:01:35: Ou lines  he approach  o swap  he grid for reac -grid-layou  and manage  he new modular s ruc ure.
+2026-03-01 08:09:05: Implemen a ion plan for professional-level upgrade of  he S abili y Analyzer.
+2026-03-01 11:36:47: Implemen a ion plan for in egra ing Real Da a, Advanced Dashboard Char ing, and polished UI header mechanics in o  he Premium  erminal Dashboard.
+2026-03-01 13:34:58: Implemen a ion plan for S abili y Dashboard Enhancemen s.
+2026-03-03 11:53:26: Phase 16: Professional Mul i-Pane UI. Adds suppor  for ver ically s acked synchronized char  panes, Buy/Sell bu  ons, and a unified  radingView-s yle header for each pane.
+2026-03-03 16:32:10: De ailed implemen a ion plan for 9 UI/UX improvemen s  o  he S abili y Analyzer: buy/sell overlay fix, session break line con ex  menu, fullscreen  oggle for char , s a s inline wi h  icker search, fundamen als collapse  oggle, MajorIndicesPanel moved  o righ  sidebar, new 10-day volume+delivery panel in lef  sidebar, no full-page re-render on  icker change (s ale-while-revalida e pa  ern), and  wo donu  char s (shareholding + index changes) replacing  he  echnicals s rip in Bo  omAnaly icsPanel.
+2026-03-04 06:17:38: Implemen a ion plan for wiring Ko ak broker WebSocke  live price feed  o  he fron end. Iden ifies roo  causes: broker clien  no  injec ed in o Marke Da aService af er login, no au o-subscribe  o defaul  symbols, Redis dependency causing failures. Plan adds a Redis-free in-memory  ickBroadcas er, wires broker clien  on login, enriches  ick payload wi h symbol names, and fixes fron end consumers  o ma ch new  ick forma .
+2026-03-04 19:28:17: Full audi  of  oolbar fea ure breakages across Char  oolbar â†’ Char Componen  â†’ Char Pane, wi h roo  cause analysis and fixes for: char  ype swi ching (race condi ion), crosshair mode, onChar Ready callback clobbering primarySeries, indica ors no  added  o char , se  ings panel, and crosshairMode no  wired  o char  API.
+2026-03-05 06:29:05: Comprehensive plan  o fix all non-working char   oolbar  ools. Iden ifies 7 issues: missing indica or compu a ion for 10 of 15 indica ors, wrong  imezone in Jump  o Da e, grid no  syncing on ini ial moun , and o hers. Plan covers modifying Char Componen . sx and indica ors. s wi h specific fixes.
+2026-03-06 05:23:18: Implemen a ion plan  o enable real- ime candle upda es on  he char .
+2026-03-06 10:45:58: Implemen a ion plan for  he Quan Fin professional  erminal redesign, covering  he 3-layer archi ec ure, enhanced sidebar con rols, ver ical drawing  ools, and keyboard commands.
+2026-03-08 11:59:15: Refined plan  o fix axis in erac ion issues and ensure scroll persis ence during live da a upda es.
+2026-03-09 12:04:33: Refine char  UI overlays and in erac ions based on user feedback and an uploaded image.
+- Redesign  icker overlay  o include a descrip ive badge and OHLC/Volume da a inline.
+- Move  he fullscreen bu  on  o  he bo  om-middle of  he char .
+- Adjus   he session break con ex  menu posi ioning  o preven  i  from being hidden.
+2026-03-10 09:25:20: Implemen a ion plan  o fix unused declara ion warnings in `Char  oolbar. sx` by implemen ing  he in ended fea ures (Da a Source Badge, Snapsho  bu  on, Maximize  oggle,  ool label) and removing dead code (`QUICK_ F`).
+2026-03-10 17:46:29: Plan  o fix ligh  mode color overlap in  he major indices panel and replace  he 10-day volume bar char  wi h a 3D price-volume visualiza ion using Plo ly.
+2026-03-11 07:42:33: Plan  o add BSE/NSE  oggle bu  ons wi h separa e in erac ive pie char s showing  heir indices, and make every index clickable  o naviga e  o  he char  screen wi h live char .
+2026-03-12 11:44:05: Implemen a ion plan for adding indices logos  o  he dashboard panel.
+2026-03-14 12:13:54: I'm removing  he pa  ern de ec ion engine from  he `Bo  omAnaly icsPanel`  o maximize  he ver ical space available for 3D char ing.  his involves dele ing  he `de ec Pa  erns` logic and  he corresponding UI componen s in  he fullscreen dashboard view.
+2026-03-15 07:33:34: Implemen a ion plan for  he Bo  omAnaly icalPanel redesign.
+2026-03-20 12:12:23: Implemen a ion plan for fixing backend parse errors and  ype-safe y warnings in `main.py`.  his involves wrapping a missing ` ry:` block in `ge _news`, resolving `round()`  ype-checker errors, and hardening  he mock da a and quo e fe ching codes.
+2026-03-23 11:37:53: Implemen a ion plan  o resolve  he indices char  view bug and backend code errors.
+2026-03-24 14:21:54: Plan  o s abilize  he Bo  omAnaly icsPanel and S abili yAnalyzer by fixing crash risks, adding null safe y, memoizing compu ed values, and wrapping wi h an error boundary.
+2026-03-25 06:17:17: Implemen a ion plan for Dual-Mode Bo  omAnaly icsPanel including UI changes and mocked correla ion da a for dual-axis char .
+2026-03-25 11:52:33: Implemen a ion plan  o fix broken logos and char  da a drops in  he Analy ics Panel. Includes  ransi ioning  o Google Favicon service and implemen ing da a sani iza ion logic.
+2026-03-26 06:59:54: Ins i u ional-grade Marke  Sen imen  Hub plan using Power 10 proxies and live bread h gauges.
+2026-03-26 10:05:14: Plan  o enhance Marke  Bread h UI wi h more sec ors, lis  forma , live  icks, and defaul  Nif y I  fil er.
+2026-03-26 13:46:32: Implemen a ion plan for in egra ing real marke  da a in o Bread hS ockLis Modal.
+2026-03-27 12:05:08: Scaling  he QuanMap HQ in elligence  o 500+ NSE/BSE companies wi h logo suppor , caching, and expanded geographic coverage across 40+ Indian indus rial hubs. High-performance design  o ensure responsive UI while handling complex corpora e da a.
+2026-03-27 13:53:11: Upgrade FlowMap (IndicesExchangeView) wi h single exchange view, side-by-side layou , and new 3D-inspired view modes (Helix, Sphere).
+2026-03-28 06:02:16: De ailed  echnical plan for migra ing  he ins i u ional-grade QuanMap from s a ic SVG rendering (reac -simple-maps)  o dynamic  ile-based rendering (Leafle  + Car oDB Dark Ma  er) wi hou  requiring a credi  card or API key.
+2026-03-28 10:54:37: Implemen a ion plan  o resolve  he '0 Cr' issue in  he Ins i u ional Pulse by fe ching  he las  available  rading session da a when  he marke  is closed or real- ime da a is unavailable.
+2026-03-30 14:31:14: Redesigning  he Indice Info Pane (HUD) wi h a dedica ed  abbed in erface.  his separa es Marke  Indices from  he Energy  rade Ma rix (Oil Dependency da a) for be  er focus and less scrolling.
+2026-03-31 08:06:03: QuanRadar Asse  in elligence & UI Densi y Plan: Hardcoding precise plan  loca ions and building a high-densi y in elligence sidebar.
+2026-03-31 12:54:53: Implemen a ion plan  o secure  he AIS API key by moving i   o  he backend and implemen ing a WebSocke  proxy.  his ensures  he key is hidden from  he browser and follows ins i u ional securi y bes  prac ices.
+2026-04-01 10:59:50: Implemen a ion plan  o replace syn he ic movers da a wi h real- ime  op 5 gainers and losers in  he QuanMap In elligence Hub.  he plan includes fe ching live cons i uen  da a from  he backend, sor ing by performance, and upda ing  he UI  o display  wo dis inc  gainer/loser sec ions for ins i u ional-grade marke  analysis.
+2026-04-02 09:24:28: Plan  o modernize  he Flee  Naviga or UI in o an ins i u ional-grade, high-densi y  erminal in erface wi h rich AIS da a poin s and dual- heme op imiza ion.
+2026-04-03 13:48:58: Comprehensive debugging and resolu ion plan for  he Mari ime Sa elli e In elligence  erminal.  his plan addresses  he issue of vessels no  appearing on  he map by enhancing backend logging, fixing a Py hon A  ribu eError in  he da a enrichmen  logic, and refining  he fron end parsing of AISS ream me ada a.
+2026-04-04 15:01:16: Implemen a ion plan  o add a dual-view  oggle  o  he Ins i u ional Explorer, allowing users  o swi ch be ween  he exis ing Card View and a new professional Lis  View ( able).
+2026-04-05 11:01:25: Refac or  he codebase  o rename 'nif y500'  o 's ockUniverse' across fron end and backend.  his reflec s  he expanded da a range (2132+ s ocks) and removes  he percep ion  ha   he  erminal is limi ed  o  he  op 500 s ocks.
+2026-04-05 13:34:30: Implemen a ion plan for  he PULSE (Marke  Sen imen  Hub) sec ion, connec ing real- ime bread h and ins i u ional da a  o  he fron end.

@@ -1,0 +1,3788 @@
+[
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "count": 158,
+    "companies": [
+      {
+        "symbol": "RELIANCE.NS",
+        "name": "Reliance Industries Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "website": "https://www.ril.com",
+        "logo_url": "https://logo.clearbit.com/ril.com",
+        "employees": 403303,
+        "marketCap": 18528660881408
+      },
+      {
+        "symbol": "HDFCBANK.NS",
+        "name": "HDFC Bank Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.hdfc.bank.in",
+        "logo_url": "https://logo.clearbit.com/hdfc.bank.in",
+        "employees": 215739,
+        "marketCap": 11425676263424
+      },
+      {
+        "symbol": "SBIN.NS",
+        "name": "State Bank of India",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://sbi.bank.in",
+        "logo_url": "https://logo.clearbit.com/sbi.bank.in",
+        "employees": 236226,
+        "marketCap": 9394922192896
+      },
+      {
+        "symbol": "TCS.NS",
+        "name": "Tata Consultancy Services Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.tcs.com",
+        "logo_url": "https://logo.clearbit.com/tcs.com",
+        "employees": 607979,
+        "marketCap": 8713077784576
+      },
+      {
+        "symbol": "ICICIBANK.NS",
+        "name": "ICICI Bank Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.icici.bank.in",
+        "logo_url": "https://logo.clearbit.com/icici.bank.in",
+        "employees": 182665,
+        "marketCap": 8682733568000
+      },
+      {
+        "symbol": "LT.NS",
+        "name": "Larsen & Toubro Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "website": "https://www.larsentoubro.com",
+        "logo_url": "https://logo.clearbit.com/larsentoubro.com",
+        "employees": 54596,
+        "marketCap": 4962593013760
+      },
+      {
+        "symbol": "HINDUNILVR.NS",
+        "name": "Hindustan Unilever Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "website": "https://www.hul.co.in",
+        "logo_url": "https://logo.clearbit.com/hul.co.in",
+        "employees": 18802,
+        "marketCap": 4851905855488
+      },
+      {
+        "symbol": "LICI.NS",
+        "name": "Life Insurance Corporation of India",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "website": "https://www.licindia.in",
+        "logo_url": "https://logo.clearbit.com/licindia.in",
+        "employees": 91606,
+        "marketCap": 4718448345088
+      },
+      {
+        "symbol": "SUNPHARMA.NS",
+        "name": "Sun Pharmaceutical Industries Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://sunpharma.com",
+        "logo_url": "https://logo.clearbit.com/sunpharma.com",
+        "employees": 43000,
+        "marketCap": 4147250462720
+      },
+      {
+        "symbol": "AXISBANK.NS",
+        "name": "Axis Bank Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.axis.bank.in",
+        "logo_url": "https://logo.clearbit.com/axis.bank.in",
+        "employees": 104453,
+        "marketCap": 3710436245504
+      },
+      {
+        "symbol": "M&M.NS",
+        "name": "Mahindra & Mahindra Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.mahindra.com",
+        "logo_url": "https://logo.clearbit.com/mahindra.com",
+        "employees": 324000,
+        "marketCap": 3639233478656
+      },
+      {
+        "symbol": "KOTAKBANK.NS",
+        "name": "Kotak Mahindra Bank Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.kotak.bank.in",
+        "logo_url": "https://logo.clearbit.com/kotak.bank.in",
+        "employees": 114000,
+        "marketCap": 3541092532224
+      },
+      {
+        "symbol": "ULTRACEMCO.NS",
+        "name": "UltraTech Cement Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.ultratechcement.com",
+        "logo_url": "https://logo.clearbit.com/ultratechcement.com",
+        "employees": 0,
+        "marketCap": 3151779069952
+      },
+      {
+        "symbol": "DMART.NS",
+        "name": "Avenue Supermarts Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "website": "https://www.dmartindia.com",
+        "logo_url": "https://logo.clearbit.com/dmartindia.com",
+        "employees": 16959,
+        "marketCap": 2788649336832
+      },
+      {
+        "symbol": "JSWSTEEL.NS",
+        "name": "JSW Steel Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.jswsteel.in",
+        "logo_url": "https://logo.clearbit.com/jswsteel.in",
+        "employees": 15793,
+        "marketCap": 2785839677440
+      },
+      {
+        "symbol": "VEDL.NS",
+        "name": "Vedanta Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "website": "https://www.vedantalimited.com",
+        "logo_url": "https://logo.clearbit.com/vedantalimited.com",
+        "employees": 17332,
+        "marketCap": 2646613164032
+      },
+      {
+        "symbol": "TATASTEEL.NS",
+        "name": "Tata Steel Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.tatasteel.com",
+        "logo_url": "https://logo.clearbit.com/tatasteel.com",
+        "employees": 115788,
+        "marketCap": 2427021688832
+      },
+      {
+        "symbol": "ASIANPAINT.NS",
+        "name": "Asian Paints Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.asianpaints.com",
+        "logo_url": "https://logo.clearbit.com/asianpaints.com",
+        "employees": 11111,
+        "marketCap": 2133639299072
+      },
+      {
+        "symbol": "HINDALCO.NS",
+        "name": "Hindalco Industries Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "website": "https://www.hindalco.com",
+        "logo_url": "https://logo.clearbit.com/hindalco.com",
+        "employees": 78999,
+        "marketCap": 2022572818432
+      },
+      {
+        "symbol": "SBILIFE.NS",
+        "name": "SBI Life Insurance Company Limited",
+        "city": "Mumbai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "website": "https://www.sbilife.co.in",
+        "logo_url": "https://logo.clearbit.com/sbilife.co.in",
+        "employees": 25672,
+        "marketCap": 1796036362240
+      }
+    ]
+  },
+  {
+    "city": "New Delhi",
+    "country": "India",
+    "count": 48,
+    "companies": [
+      {
+        "symbol": "BHARTIARTL.NS",
+        "name": "Bharti Airtel Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "website": "https://www.airtel.in",
+        "logo_url": "https://logo.clearbit.com/airtel.in",
+        "employees": 28567,
+        "marketCap": 10854394232832
+      },
+      {
+        "symbol": "MARUTI.NS",
+        "name": "Maruti Suzuki India Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.marutisuzuki.com",
+        "logo_url": "https://logo.clearbit.com/marutisuzuki.com",
+        "employees": 19966,
+        "marketCap": 3932861497344
+      },
+      {
+        "symbol": "ONGC.NS",
+        "name": "Oil and Natural Gas Corporation Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "website": "https://www.ongcindia.com",
+        "logo_url": "https://logo.clearbit.com/ongcindia.com",
+        "employees": 24378,
+        "marketCap": 3623749419008
+      },
+      {
+        "symbol": "NTPC.NS",
+        "name": "NTPC Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "website": "https://www.ntpc.co.in",
+        "logo_url": "https://logo.clearbit.com/ntpc.co.in",
+        "employees": 16646,
+        "marketCap": 3535889498112
+      },
+      {
+        "symbol": "IOC.NS",
+        "name": "Indian Oil Corporation Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "website": "https://www.iocl.com",
+        "logo_url": "https://logo.clearbit.com/iocl.com",
+        "employees": 29941,
+        "marketCap": 1916534521856
+      },
+      {
+        "symbol": "PFC.NS",
+        "name": "Power Finance Corporation Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.pfcindia.com",
+        "logo_url": "https://logo.clearbit.com/pfcindia.com",
+        "employees": 540,
+        "marketCap": 1312450412544
+      },
+      {
+        "symbol": "IRFC.NS",
+        "name": "Indian Railway Finance Corporation Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://irfc.co.in",
+        "logo_url": "https://logo.clearbit.com/irfc.co.in",
+        "employees": 45,
+        "marketCap": 1202404720640
+      },
+      {
+        "symbol": "PNB.NS",
+        "name": "Punjab National Bank",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://pnb.bank.in",
+        "logo_url": "https://logo.clearbit.com/pnb.bank.in",
+        "employees": 102746,
+        "marketCap": 1195459608576
+      },
+      {
+        "symbol": "JINDALSTEL.NS",
+        "name": "Jindal Steel Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.jindalsteel.in",
+        "logo_url": "https://logo.clearbit.com/jindalsteel.in",
+        "employees": 5918,
+        "marketCap": 1157291048960
+      },
+      {
+        "symbol": "HEROMOTOCO.NS",
+        "name": "Hero MotoCorp Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.heromotocorp.com",
+        "logo_url": "https://logo.clearbit.com/heromotocorp.com",
+        "employees": 9527,
+        "marketCap": 1024859832320
+      },
+      {
+        "symbol": "GMRAIRPORT.NS",
+        "name": "GMR Airports Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Airports & Air Services",
+        "website": "https://www.gmraero.com",
+        "logo_url": "https://logo.clearbit.com/gmraero.com",
+        "employees": 8629,
+        "marketCap": 942810988544
+      },
+      {
+        "symbol": "GAIL.NS",
+        "name": "GAIL (India) Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "website": "https://www.gailonline.com",
+        "logo_url": "https://logo.clearbit.com/gailonline.com",
+        "employees": 5010,
+        "marketCap": 924916383744
+      },
+      {
+        "symbol": "BHEL.NS",
+        "name": "Bharat Heavy Electricals Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.bhel.com",
+        "logo_url": "https://logo.clearbit.com/bhel.com",
+        "employees": 41132,
+        "marketCap": 876922798080
+      },
+      {
+        "symbol": "NTPCGREEN.NS",
+        "name": "NTPCGREEN.NS",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "website": "https://www.ngel.in",
+        "logo_url": "https://logo.clearbit.com/ngel.in",
+        "employees": 229,
+        "marketCap": 827549810688
+      },
+      {
+        "symbol": "MANKIND.NS",
+        "name": "Mankind Pharma Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.mankindpharma.com",
+        "logo_url": "https://logo.clearbit.com/mankindpharma.com",
+        "employees": 19620,
+        "marketCap": 826193346560
+      },
+      {
+        "symbol": "BHARTIHEXA.NS",
+        "name": "BHARTIHEXA.NS",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "website": "https://www.bhartihexacom.in",
+        "logo_url": "https://logo.clearbit.com/bhartihexacom.in",
+        "employees": 569,
+        "marketCap": 732799959040
+      },
+      {
+        "symbol": "SAIL.NS",
+        "name": "Steel Authority of India Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.sail.co.in",
+        "logo_url": "https://logo.clearbit.com/sail.co.in",
+        "employees": 53159,
+        "marketCap": 643618439168
+      },
+      {
+        "symbol": "JSL.NS",
+        "name": "Jindal Stainless Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.jindalstainless.com",
+        "logo_url": "https://logo.clearbit.com/jindalstainless.com",
+        "employees": 5728,
+        "marketCap": 580962418688
+      },
+      {
+        "symbol": "RVNL.NS",
+        "name": "Rail Vikas Nigam Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "website": "https://rvnl.org",
+        "logo_url": "https://logo.clearbit.com/rvnl.org",
+        "employees": 329,
+        "marketCap": 547700375552
+      },
+      {
+        "symbol": "IRCTC.NS",
+        "name": "Indian Railway Catering & Tourism Corporation Limited",
+        "city": "New Delhi",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Travel Services",
+        "website": "https://www.irctc.com",
+        "logo_url": "https://logo.clearbit.com/irctc.com",
+        "employees": 1393,
+        "marketCap": 408960008192
+      }
+    ]
+  },
+  {
+    "city": "Gurugram",
+    "country": "India",
+    "count": 44,
+    "companies": [
+      {
+        "symbol": "POWERGRID.NS",
+        "name": "Power Grid Corporation of India Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "website": "https://www.powergrid.in",
+        "logo_url": "https://logo.clearbit.com/powergrid.in",
+        "employees": 9048,
+        "marketCap": 2723216621568
+      },
+      {
+        "symbol": "NESTLEIND.NS",
+        "name": "Nestl\u00e9 India Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://www.nestle.in",
+        "logo_url": "https://logo.clearbit.com/nestle.in",
+        "employees": 8419,
+        "marketCap": 2276953686016
+      },
+      {
+        "symbol": "ETERNAL.NS",
+        "name": "Eternal Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "website": "https://www.eternal.com",
+        "logo_url": "https://logo.clearbit.com/eternal.com",
+        "employees": 16375,
+        "marketCap": 2155204837376
+      },
+      {
+        "symbol": "INDIGO.NS",
+        "name": "InterGlobe Aviation Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "website": "https://www.goindigo.in",
+        "logo_url": "https://logo.clearbit.com/goindigo.in",
+        "employees": 41049,
+        "marketCap": 1616351461376
+      },
+      {
+        "symbol": "HYUNDAI.NS",
+        "name": "HYUNDAI.NS",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.hyundai.com/in",
+        "logo_url": "https://logo.clearbit.com/hyundai.com",
+        "employees": 6081,
+        "marketCap": 1394483003392
+      },
+      {
+        "symbol": "VBL.NS",
+        "name": "Varun Beverages Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Non-Alcoholic",
+        "website": "https://www.varunbeverages.com",
+        "logo_url": "https://logo.clearbit.com/varunbeverages.com",
+        "employees": 10654,
+        "marketCap": 1358925398016
+      },
+      {
+        "symbol": "DLF.NS",
+        "name": "DLF Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "website": "https://www.dlf.in",
+        "logo_url": "https://logo.clearbit.com/dlf.in",
+        "employees": 3103,
+        "marketCap": 1262249050112
+      },
+      {
+        "symbol": "INDUSTOWER.NS",
+        "name": "Indus Towers Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "website": "https://www.industowers.com",
+        "logo_url": "https://logo.clearbit.com/industowers.com",
+        "employees": 3644,
+        "marketCap": 1116175073280
+      },
+      {
+        "symbol": "MAXHEALTH.NS",
+        "name": "Max Healthcare Institute Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.maxhealthcare.in",
+        "logo_url": "https://logo.clearbit.com/maxhealthcare.in",
+        "employees": 15114,
+        "marketCap": 933139185664
+      },
+      {
+        "symbol": "RECLTD.NS",
+        "name": "REC Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.recindia.nic.in",
+        "logo_url": "https://logo.clearbit.com/recindia.nic.in",
+        "employees": 0,
+        "marketCap": 848280354816
+      },
+      {
+        "symbol": "SRF.NS",
+        "name": "SRF Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "website": "https://www.srf.com",
+        "logo_url": "https://logo.clearbit.com/srf.com",
+        "employees": 7625,
+        "marketCap": 757424717824
+      },
+      {
+        "symbol": "POLICYBZR.NS",
+        "name": "PB Fintech Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Insurance Brokers",
+        "website": "https://www.pbfintech.in",
+        "logo_url": "https://logo.clearbit.com/pbfintech.in",
+        "employees": 22329,
+        "marketCap": 663805427712
+      },
+      {
+        "symbol": "SBICARD.NS",
+        "name": "SBI Cards and Payment Services Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.sbicard.com",
+        "logo_url": "https://logo.clearbit.com/sbicard.com",
+        "employees": 4098,
+        "marketCap": 606312136704
+      },
+      {
+        "symbol": "UNOMINDA.NS",
+        "name": "Uno Minda Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.unominda.com",
+        "logo_url": "https://logo.clearbit.com/unominda.com",
+        "employees": 19141,
+        "marketCap": 603351351296
+      },
+      {
+        "symbol": "FORTIS.NS",
+        "name": "Fortis Healthcare Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.fortishealthcare.com",
+        "logo_url": "https://logo.clearbit.com/fortishealthcare.com",
+        "employees": 12237,
+        "marketCap": 600191729664
+      },
+      {
+        "symbol": "VMM.NS",
+        "name": "VMM.NS",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Department Stores",
+        "website": "https://www.aboutvishal.com",
+        "logo_url": "https://logo.clearbit.com/aboutvishal.com",
+        "employees": 18029,
+        "marketCap": 491191402496
+      },
+      {
+        "symbol": "PIIND.NS",
+        "name": "PI Industries Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "website": "https://www.piindustries.com",
+        "logo_url": "https://logo.clearbit.com/piindustries.com",
+        "employees": 3566,
+        "marketCap": 431580512256
+      },
+      {
+        "symbol": "DELHIVERY.NS",
+        "name": "Delhivery Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Integrated Freight & Logistics",
+        "website": "https://www.delhivery.com",
+        "logo_url": "https://logo.clearbit.com/delhivery.com",
+        "employees": 24336,
+        "marketCap": 323992322048
+      },
+      {
+        "symbol": "SONACOMS.NS",
+        "name": "Sona BLW Precision Forgings Limited",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.sonacomstar.com",
+        "logo_url": "https://logo.clearbit.com/sonacomstar.com",
+        "employees": 1813,
+        "marketCap": 309213364224
+      },
+      {
+        "symbol": "ITCHOTELS.NS",
+        "name": "ITCHOTELS.NS",
+        "city": "Gurugram",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Resorts & Casinos",
+        "website": "https://www.itchotels.com",
+        "logo_url": "https://logo.clearbit.com/itchotels.com",
+        "employees": 3177,
+        "marketCap": 307009880064
+      }
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "country": "India",
+    "count": 42,
+    "companies": [
+      {
+        "symbol": "INFY.NS",
+        "name": "Infosys Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.infosys.com",
+        "logo_url": "https://logo.clearbit.com/infosys.com",
+        "employees": 337034,
+        "marketCap": 5162256564224
+      },
+      {
+        "symbol": "TITAN.NS",
+        "name": "Titan Company Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Luxury Goods",
+        "website": "https://www.titancompany.in",
+        "logo_url": "https://logo.clearbit.com/titancompany.in",
+        "employees": 9191,
+        "marketCap": 3606282502144
+      },
+      {
+        "symbol": "BEL.NS",
+        "name": "Bharat Electronics Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://www.bel-india.in",
+        "logo_url": "https://logo.clearbit.com/bel-india.in",
+        "employees": 11199,
+        "marketCap": 3060604600320
+      },
+      {
+        "symbol": "HAL.NS",
+        "name": "Hindustan Aeronautics Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://hal-india.co.in",
+        "logo_url": "https://logo.clearbit.com/hal-india.co.in",
+        "employees": 22033,
+        "marketCap": 2454939238400
+      },
+      {
+        "symbol": "WIPRO.NS",
+        "name": "Wipro Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.wipro.com",
+        "logo_url": "https://logo.clearbit.com/wipro.com",
+        "employees": 230000,
+        "marketCap": 2004550811648
+      },
+      {
+        "symbol": "BRITANNIA.NS",
+        "name": "Britannia Industries Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://britannia.co.in",
+        "logo_url": "https://logo.clearbit.com/britannia.co.in",
+        "employees": 5792,
+        "marketCap": 1318513016832
+      },
+      {
+        "symbol": "ABB.NS",
+        "name": "ABB India Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://new.abb.com/indian-subcontinent",
+        "logo_url": "https://logo.clearbit.com/new.abb.com",
+        "employees": 0,
+        "marketCap": 1284875091968
+      },
+      {
+        "symbol": "CANBK.NS",
+        "name": "Canara Bank",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.canarabank.bank.in",
+        "logo_url": "https://logo.clearbit.com/canarabank.bank.in",
+        "employees": 81260,
+        "marketCap": 1154693988352
+      },
+      {
+        "symbol": "POWERINDIA.NS",
+        "name": "Hitachi Energy India Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.hitachienergy.com/in/en",
+        "logo_url": "https://logo.clearbit.com/hitachienergy.com",
+        "employees": 2481,
+        "marketCap": 1118033018880
+      },
+      {
+        "symbol": "UNITDSPR.NS",
+        "name": "UNITDSPR.NS",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Wineries & Distilleries",
+        "website": "https://www.diageoindia.com",
+        "logo_url": "https://logo.clearbit.com/diageoindia.com",
+        "employees": 2420,
+        "marketCap": 908742361088
+      },
+      {
+        "symbol": "BOSCHLTD.NS",
+        "name": "Bosch Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.bosch.in",
+        "logo_url": "https://logo.clearbit.com/bosch.in",
+        "employees": 38655,
+        "marketCap": 903797211136
+      },
+      {
+        "symbol": "SWIGGY.NS",
+        "name": "SWIGGY.NS",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "website": "https://www.swiggy.com",
+        "logo_url": "https://logo.clearbit.com/swiggy.com",
+        "employees": 4488,
+        "marketCap": 688847585280
+      },
+      {
+        "symbol": "BIOCON.NS",
+        "name": "Biocon Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "website": "https://www.biocon.com",
+        "logo_url": "https://logo.clearbit.com/biocon.com",
+        "employees": 0,
+        "marketCap": 591379824640
+      },
+      {
+        "symbol": "PRESTIGE.NS",
+        "name": "Prestige Estates Projects Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Diversified",
+        "website": "https://www.prestigeconstructions.com",
+        "logo_url": "https://logo.clearbit.com/prestigeconstructions.com",
+        "employees": 9014,
+        "marketCap": 493143064576
+      },
+      {
+        "symbol": "UBL.NS",
+        "name": "United Breweries Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Brewers",
+        "website": "https://www.unitedbreweries.com",
+        "logo_url": "https://logo.clearbit.com/unitedbreweries.com",
+        "employees": 2888,
+        "marketCap": 418870624256
+      },
+      {
+        "symbol": "MPHASIS.NS",
+        "name": "Mphasis Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.mphasis.com",
+        "logo_url": "https://logo.clearbit.com/mphasis.com",
+        "employees": 30157,
+        "marketCap": 407377149952
+      },
+      {
+        "symbol": "PAGEIND.NS",
+        "name": "Page Industries Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "website": "https://www.jockey.in",
+        "logo_url": "https://logo.clearbit.com/jockey.in",
+        "employees": 20658,
+        "marketCap": 364059983872
+      },
+      {
+        "symbol": "ASTERDM.NS",
+        "name": "Aster DM Healthcare Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.asterdmhealthcare.in",
+        "logo_url": "https://logo.clearbit.com/asterdmhealthcare.in",
+        "employees": 15334,
+        "marketCap": 355685433344
+      },
+      {
+        "symbol": "NH.NS",
+        "name": "Narayana Hrudayalaya Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.narayanahealth.org",
+        "logo_url": "https://logo.clearbit.com/narayanahealth.org",
+        "employees": 11411,
+        "marketCap": 332108857344
+      },
+      {
+        "symbol": "3MINDIA.NS",
+        "name": "3M India Limited",
+        "city": "Bengaluru",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "website": "https://www.3mindia.in",
+        "logo_url": "https://logo.clearbit.com/3mindia.in",
+        "employees": 1213,
+        "marketCap": 331136729088
+      }
+    ]
+  },
+  {
+    "city": "Chennai",
+    "country": "India",
+    "count": 31,
+    "companies": [
+      {
+        "symbol": "EICHERMOT.NS",
+        "name": "Eicher Motors Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://eicher.in",
+        "logo_url": "https://logo.clearbit.com/eicher.in",
+        "employees": 5178,
+        "marketCap": 1872331669504
+      },
+      {
+        "symbol": "TVSMOTOR.NS",
+        "name": "TVS Motor Company Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.tvsmotor.com",
+        "logo_url": "https://logo.clearbit.com/tvsmotor.com",
+        "employees": 6522,
+        "marketCap": 1628030107648
+      },
+      {
+        "symbol": "INDIANB.NS",
+        "name": "Indian Bank",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://indianbank.bank.in",
+        "logo_url": "https://logo.clearbit.com/indianbank.bank.in",
+        "employees": 40071,
+        "marketCap": 1196532695040
+      },
+      {
+        "symbol": "CHOLAFIN.NS",
+        "name": "Cholamandalam Investment and Finance Company Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.cholamandalam.com",
+        "logo_url": "https://logo.clearbit.com/cholamandalam.com",
+        "employees": 45194,
+        "marketCap": 1170358272000
+      },
+      {
+        "symbol": "APOLLOHOSP.NS",
+        "name": "Apollo Hospitals Enterprise Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.apollohospitals.com",
+        "logo_url": "https://logo.clearbit.com/apollohospitals.com",
+        "employees": 42497,
+        "marketCap": 1050418806784
+      },
+      {
+        "symbol": "ASHOKLEY.NS",
+        "name": "Ashok Leyland Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery",
+        "website": "https://www.ashokleyland.com",
+        "logo_url": "https://logo.clearbit.com/ashokleyland.com",
+        "employees": 9695,
+        "marketCap": 875850432512
+      },
+      {
+        "symbol": "IOB.NS",
+        "name": "Indian Overseas Bank",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.iob.bank.in",
+        "logo_url": "https://logo.clearbit.com/iob.bank.in",
+        "employees": 20966,
+        "marketCap": 624451584000
+      },
+      {
+        "symbol": "COROMANDEL.NS",
+        "name": "Coromandel International Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "website": "https://www.coromandel.biz",
+        "logo_url": "https://logo.clearbit.com/coromandel.biz",
+        "employees": 5540,
+        "marketCap": 565476065280
+      },
+      {
+        "symbol": "MRF.NS",
+        "name": "MRF Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.mrftyres.com",
+        "logo_url": "https://logo.clearbit.com/mrftyres.com",
+        "employees": 17850,
+        "marketCap": 547510353920
+      },
+      {
+        "symbol": "SUNDARMFIN.NS",
+        "name": "Sundaram Finance Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.sundaramfinance.in",
+        "logo_url": "https://logo.clearbit.com/sundaramfinance.in",
+        "employees": 5132,
+        "marketCap": 506252525568
+      },
+      {
+        "symbol": "TIINDIA.NS",
+        "name": "Tube Investments of India Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "website": "https://www.tiindia.com",
+        "logo_url": "https://logo.clearbit.com/tiindia.com",
+        "employees": 3219,
+        "marketCap": 497933025280
+      },
+      {
+        "symbol": "STARHEALTH.NS",
+        "name": "Star Health and Allied Insurance Company Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "website": "https://www.starhealth.in",
+        "logo_url": "https://logo.clearbit.com/starhealth.in",
+        "employees": 15816,
+        "marketCap": 276519288832
+      },
+      {
+        "symbol": "ZFCVINDIA.NS",
+        "name": "ZF Commercial Vehicle Control Systems India Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.zf.com/india/en/home/home.html",
+        "logo_url": "https://logo.clearbit.com/zf.com",
+        "employees": 2488,
+        "marketCap": 272659021824
+      },
+      {
+        "symbol": "CHOLAHLDNG.NS",
+        "name": "Cholamandalam Financial Holdings Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://cholafhl.com",
+        "logo_url": "https://logo.clearbit.com/cholafhl.com",
+        "employees": 48434,
+        "marketCap": 260735713280
+      },
+      {
+        "symbol": "SUNTV.NS",
+        "name": "Sun TV Network Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Broadcasting",
+        "website": "https://www.suntv.in",
+        "logo_url": "https://logo.clearbit.com/suntv.in",
+        "employees": 932,
+        "marketCap": 229514887168
+      },
+      {
+        "symbol": "RAMCOCEM.NS",
+        "name": "The Ramco Cements Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.ramcocements.in",
+        "logo_url": "https://logo.clearbit.com/ramcocements.in",
+        "employees": 3767,
+        "marketCap": 222941872128
+      },
+      {
+        "symbol": "DATAPATTNS.NS",
+        "name": "Data Patterns (India) Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://www.datapatternsindia.com",
+        "logo_url": "https://logo.clearbit.com/datapatternsindia.com",
+        "employees": 1313,
+        "marketCap": 173975781376
+      },
+      {
+        "symbol": "INDIACEM.NS",
+        "name": "The India Cements Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.indiacements.co.in",
+        "logo_url": "https://logo.clearbit.com/indiacements.co.in",
+        "employees": 1719,
+        "marketCap": 166042714112
+      },
+      {
+        "symbol": "CAMS.NS",
+        "name": "Computer Age Management Services Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.camsonline.com",
+        "logo_url": "https://logo.clearbit.com/camsonline.com",
+        "employees": 7932,
+        "marketCap": 162516631552
+      },
+      {
+        "symbol": "REDINGTON.NS",
+        "name": "Redington Limited",
+        "city": "Chennai",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.redingtongroup.com",
+        "logo_url": "https://logo.clearbit.com/redingtongroup.com",
+        "employees": 12062,
+        "marketCap": 158270226432
+      }
+    ]
+  },
+  {
+    "city": "Pune",
+    "country": "India",
+    "count": 31,
+    "companies": [
+      {
+        "symbol": "BAJFINANCE.NS",
+        "name": "Bajaj Finance Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.aboutbajajfinserv.com/finance-about-us",
+        "logo_url": "https://logo.clearbit.com/aboutbajajfinserv.com",
+        "employees": 64092,
+        "marketCap": 5080619155456
+      },
+      {
+        "symbol": "BAJAJFINSV.NS",
+        "name": "Bajaj Finserv Ltd.",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "website": "https://www.bajajfinserv.in",
+        "logo_url": "https://logo.clearbit.com/bajajfinserv.in",
+        "employees": 104668,
+        "marketCap": 2631077986304
+      },
+      {
+        "symbol": "BAJAJ-AUTO.NS",
+        "name": "Bajaj Auto Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.bajajauto.com",
+        "logo_url": "https://logo.clearbit.com/bajajauto.com",
+        "employees": 5598,
+        "marketCap": 2484090961920
+      },
+      {
+        "symbol": "CUMMINSIND.NS",
+        "name": "Cummins India Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.cumminsindia.com",
+        "logo_url": "https://logo.clearbit.com/cumminsindia.com",
+        "employees": 3025,
+        "marketCap": 1277642539008
+      },
+      {
+        "symbol": "TECHM.NS",
+        "name": "Tech Mahindra Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.techmahindra.com",
+        "logo_url": "https://logo.clearbit.com/techmahindra.com",
+        "employees": 149616,
+        "marketCap": 1244481978368
+      },
+      {
+        "symbol": "BAJAJHLDNG.NS",
+        "name": "Bajaj Holdings & Investment Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "website": "https://www.bhil.in",
+        "logo_url": "https://logo.clearbit.com/bhil.in",
+        "employees": 19,
+        "marketCap": 991291310080
+      },
+      {
+        "symbol": "BHARATFORG.NS",
+        "name": "Bharat Forge Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.bharatforge.com",
+        "logo_url": "https://logo.clearbit.com/bharatforge.com",
+        "employees": 3972,
+        "marketCap": 797643112448
+      },
+      {
+        "symbol": "PERSISTENT.NS",
+        "name": "Persistent Systems Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.persistent.com",
+        "logo_url": "https://logo.clearbit.com/persistent.com",
+        "employees": 22205,
+        "marketCap": 789507211264
+      },
+      {
+        "symbol": "BAJAJHFL.NS",
+        "name": "BAJAJHFL.NS",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "website": "https://www.bajajhousingfinance.in",
+        "logo_url": "https://logo.clearbit.com/bajajhousingfinance.in",
+        "employees": 1977,
+        "marketCap": 643139305472
+      },
+      {
+        "symbol": "SCHAEFFLER.NS",
+        "name": "Schaeffler India Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.schaeffler.co.in",
+        "logo_url": "https://logo.clearbit.com/schaeffler.co.in",
+        "employees": 0,
+        "marketCap": 604988964864
+      },
+      {
+        "symbol": "SUZLON.NS",
+        "name": "Suzlon Energy Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.suzlon.com",
+        "logo_url": "https://logo.clearbit.com/suzlon.com",
+        "employees": 8500,
+        "marketCap": 563953729536
+      },
+      {
+        "symbol": "MAHABANK.NS",
+        "name": "Bank of Maharashtra",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://bankofmaharashtra.bank.in",
+        "logo_url": "https://logo.clearbit.com/bankofmaharashtra.bank.in",
+        "employees": 14591,
+        "marketCap": 499028066304
+      },
+      {
+        "symbol": "THERMAX.NS",
+        "name": "Thermax Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "website": "https://www.thermaxglobal.com",
+        "logo_url": "https://logo.clearbit.com/thermaxglobal.com",
+        "employees": 5601,
+        "marketCap": 376854085632
+      },
+      {
+        "symbol": "EMCURE.NS",
+        "name": "EMCURE.NS",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.emcure.com",
+        "logo_url": "https://logo.clearbit.com/emcure.com",
+        "employees": 6731,
+        "marketCap": 301466353664
+      },
+      {
+        "symbol": "FORCEMOT.NS",
+        "name": "Force Motors Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.forcemotors.com",
+        "logo_url": "https://logo.clearbit.com/forcemotors.com",
+        "employees": 4640,
+        "marketCap": 273183440896
+      },
+      {
+        "symbol": "HONAUT.NS",
+        "name": "Honeywell Automation India Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.honeywell.com/in/en/hail",
+        "logo_url": "https://logo.clearbit.com/honeywell.com",
+        "employees": 3140,
+        "marketCap": 241444421632
+      },
+      {
+        "symbol": "TATATECH.NS",
+        "name": "Tata Technologies Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.tatatechnologies.com",
+        "logo_url": "https://logo.clearbit.com/tatatechnologies.com",
+        "employees": 11921,
+        "marketCap": 215595319296
+      },
+      {
+        "symbol": "KIRLOSENG.NS",
+        "name": "Kirloskar Oil Engines Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://kirloskaroilengines.com",
+        "logo_url": "https://logo.clearbit.com/kirloskaroilengines.com",
+        "employees": 2469,
+        "marketCap": 198706675712
+      },
+      {
+        "symbol": "KPITTECH.NS",
+        "name": "KPIT Technologies Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "website": "https://www.kpit.com",
+        "logo_url": "https://logo.clearbit.com/kpit.com",
+        "employees": 12873,
+        "marketCap": 183815831552
+      },
+      {
+        "symbol": "KSB.NS",
+        "name": "KSB Limited",
+        "city": "Pune",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.ksb.com/en-in",
+        "logo_url": "https://logo.clearbit.com/ksb.com",
+        "employees": 0,
+        "marketCap": 144139288576
+      }
+    ]
+  },
+  {
+    "city": "Hyderabad",
+    "country": "India",
+    "count": 25,
+    "companies": [
+      {
+        "symbol": "DIVISLAB.NS",
+        "name": "Divi's Laboratories Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.divislabs.com",
+        "logo_url": "https://logo.clearbit.com/divislabs.com",
+        "employees": 10542,
+        "marketCap": 1567990087680
+      },
+      {
+        "symbol": "DRREDDY.NS",
+        "name": "Dr. Reddy's Laboratories Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.drreddys.com",
+        "logo_url": "https://logo.clearbit.com/drreddys.com",
+        "employees": 27811,
+        "marketCap": 1007106654208
+      },
+      {
+        "symbol": "AUROPHARMA.NS",
+        "name": "Aurobindo Pharma Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.aurobindo.com",
+        "logo_url": "https://logo.clearbit.com/aurobindo.com",
+        "employees": 27707,
+        "marketCap": 779493834752
+      },
+      {
+        "symbol": "NMDC.NS",
+        "name": "NMDC Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.nmdc.co.in",
+        "logo_url": "https://logo.clearbit.com/nmdc.co.in",
+        "employees": 5677,
+        "marketCap": 687256305664
+      },
+      {
+        "symbol": "LAURUSLABS.NS",
+        "name": "Laurus Labs Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.lauruslabs.com",
+        "logo_url": "https://logo.clearbit.com/lauruslabs.com",
+        "employees": 6167,
+        "marketCap": 560938221568
+      },
+      {
+        "symbol": "BDL.NS",
+        "name": "Bharat Dynamics Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://bdl-india.in",
+        "logo_url": "https://logo.clearbit.com/bdl-india.in",
+        "employees": 2269,
+        "marketCap": 441304612864
+      },
+      {
+        "symbol": "PREMIERENE.NS",
+        "name": "PREMIERENE.NS",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Solar",
+        "website": "https://www.premierenergies.com",
+        "logo_url": "https://logo.clearbit.com/premierenergies.com",
+        "employees": 1560,
+        "marketCap": 421132763136
+      },
+      {
+        "symbol": "GLAND.NS",
+        "name": "Gland Pharma Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.glandpharma.com",
+        "logo_url": "https://logo.clearbit.com/glandpharma.com",
+        "employees": 4351,
+        "marketCap": 281074434048
+      },
+      {
+        "symbol": "SAILIFE.NS",
+        "name": "SAILIFE.NS",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "website": "https://www.sailife.com",
+        "logo_url": "https://logo.clearbit.com/sailife.com",
+        "employees": 3401,
+        "marketCap": 206876540928
+      },
+      {
+        "symbol": "HBLENGINE.NS",
+        "name": "HBLENGINE.NS",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.hbl.in",
+        "logo_url": "https://logo.clearbit.com/hbl.in",
+        "employees": 2152,
+        "marketCap": 183031824384
+      },
+      {
+        "symbol": "NATCOPHARM.NS",
+        "name": "NATCO Pharma Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.natcopharma.co.in",
+        "logo_url": "https://logo.clearbit.com/natcopharma.co.in",
+        "employees": 4199,
+        "marketCap": 179493355520
+      },
+      {
+        "symbol": "NEULANDLAB.NS",
+        "name": "Neuland Laboratories Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.neulandlabs.com",
+        "logo_url": "https://logo.clearbit.com/neulandlabs.com",
+        "employees": 1794,
+        "marketCap": 161986019328
+      },
+      {
+        "symbol": "NAVA.NS",
+        "name": "Nava Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "website": "https://www.navalimited.com",
+        "logo_url": "https://logo.clearbit.com/navalimited.com",
+        "employees": 1126,
+        "marketCap": 159471222784
+      },
+      {
+        "symbol": "KFINTECH.NS",
+        "name": "KFin Technologies Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "website": "https://www.kfintech.com",
+        "logo_url": "https://logo.clearbit.com/kfintech.com",
+        "employees": 5936,
+        "marketCap": 155789213696
+      },
+      {
+        "symbol": "GRANULES.NS",
+        "name": "Granules India Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.granulesindia.com",
+        "logo_url": "https://logo.clearbit.com/granulesindia.com",
+        "employees": 4066,
+        "marketCap": 155641249792
+      },
+      {
+        "symbol": "CCL.NS",
+        "name": "CCL Products (India) Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://www.cclproducts.com",
+        "logo_url": "https://logo.clearbit.com/cclproducts.com",
+        "employees": 1358,
+        "marketCap": 144408657920
+      },
+      {
+        "symbol": "ARE&M.NS",
+        "name": "Amara Raja Energy & Mobility Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.amararajaeandm.com",
+        "logo_url": "https://logo.clearbit.com/amararajaeandm.com",
+        "employees": 10196,
+        "marketCap": 130676178944
+      },
+      {
+        "symbol": "ZENTEC.NS",
+        "name": "Zen Technologies Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://www.zentechnologies.com",
+        "logo_url": "https://logo.clearbit.com/zentechnologies.com",
+        "employees": 395,
+        "marketCap": 121025601536
+      },
+      {
+        "symbol": "RAINBOW.NS",
+        "name": "Rainbow Children's Medicare Limited",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.rainbowhospitals.in",
+        "logo_url": "https://logo.clearbit.com/rainbowhospitals.in",
+        "employees": 3972,
+        "marketCap": 119549665280
+      },
+      {
+        "symbol": "COHANCE.NS",
+        "name": "COHANCE.NS",
+        "city": "Hyderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.cohance.com",
+        "logo_url": "https://logo.clearbit.com/cohance.com",
+        "employees": 1212,
+        "marketCap": 119455809536
+      }
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "country": "India",
+    "count": 24,
+    "companies": [
+      {
+        "symbol": "ITC.NS",
+        "name": "ITC Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Tobacco",
+        "website": "https://www.itcportal.com",
+        "logo_url": "https://logo.clearbit.com/itcportal.com",
+        "employees": 22041,
+        "marketCap": 3654845988864
+      },
+      {
+        "symbol": "COALINDIA.NS",
+        "name": "Coal India Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Thermal Coal",
+        "website": "https://www.coalindia.in",
+        "logo_url": "https://logo.clearbit.com/coalindia.in",
+        "employees": 220272,
+        "marketCap": 2769530126336
+      },
+      {
+        "symbol": "SHREECEM.NS",
+        "name": "Shree Cement Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.shreecement.com",
+        "logo_url": "https://logo.clearbit.com/shreecement.com",
+        "employees": 7022,
+        "marketCap": 839418576896
+      },
+      {
+        "symbol": "LINDEINDIA.NS",
+        "name": "Linde India Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.linde.in",
+        "logo_url": "https://logo.clearbit.com/linde.in",
+        "employees": 256,
+        "marketCap": 597160165376
+      },
+      {
+        "symbol": "BERGEPAINT.NS",
+        "name": "Berger Paints India Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.bergerpaints.com",
+        "logo_url": "https://logo.clearbit.com/bergerpaints.com",
+        "employees": 4760,
+        "marketCap": 488336457728
+      },
+      {
+        "symbol": "HINDCOPPER.NS",
+        "name": "Hindustan Copper Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Copper",
+        "website": "https://www.hindustancopper.com",
+        "logo_url": "https://logo.clearbit.com/hindustancopper.com",
+        "employees": 1274,
+        "marketCap": 479829000192
+      },
+      {
+        "symbol": "UCOBANK.NS",
+        "name": "UCO Bank",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.uco.bank.in",
+        "logo_url": "https://logo.clearbit.com/uco.bank.in",
+        "employees": 21049,
+        "marketCap": 297138421760
+      },
+      {
+        "symbol": "GRSE.NS",
+        "name": "Garden Reach Shipbuilders & Engineers Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://www.grse.in",
+        "logo_url": "https://logo.clearbit.com/grse.in",
+        "employees": 1523,
+        "marketCap": 270306787328
+      },
+      {
+        "symbol": "EXIDEIND.NS",
+        "name": "Exide Industries Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.exideindustries.com",
+        "logo_url": "https://logo.clearbit.com/exideindustries.com",
+        "employees": 5133,
+        "marketCap": 254942871552
+      },
+      {
+        "symbol": "BANDHANBNK.NS",
+        "name": "Bandhan Bank Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://bandhan.bank.in",
+        "logo_url": "https://logo.clearbit.com/bandhan.bank.in",
+        "employees": 74500,
+        "marketCap": 237892272128
+      },
+      {
+        "symbol": "HSCL.NS",
+        "name": "Himadri Speciality Chemical Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.himadri.com",
+        "logo_url": "https://logo.clearbit.com/himadri.com",
+        "employees": 970,
+        "marketCap": 227031531520
+      },
+      {
+        "symbol": "SHYAMMETL.NS",
+        "name": "Shyam Metalics and Energy Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.shyammetalics.com",
+        "logo_url": "https://logo.clearbit.com/shyammetalics.com",
+        "employees": 10138,
+        "marketCap": 221748051968
+      },
+      {
+        "symbol": "CESC.NS",
+        "name": "CESC Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "website": "https://www.cesc.co.in",
+        "logo_url": "https://logo.clearbit.com/cesc.co.in",
+        "employees": 5688,
+        "marketCap": 202971332608
+      },
+      {
+        "symbol": "EMAMILTD.NS",
+        "name": "Emami Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "website": "https://www.emamiltd.in",
+        "logo_url": "https://logo.clearbit.com/emamiltd.in",
+        "employees": 3217,
+        "marketCap": 171757174784
+      },
+      {
+        "symbol": "CENTURYPLY.NS",
+        "name": "Century Plyboards (India) Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Lumber & Wood Production",
+        "website": "https://www.centuryply.com",
+        "logo_url": "https://logo.clearbit.com/centuryply.com",
+        "employees": 7396,
+        "marketCap": 158842585088
+      },
+      {
+        "symbol": "GRAPHITE.NS",
+        "name": "Graphite India Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.graphiteindia.com",
+        "logo_url": "https://logo.clearbit.com/graphiteindia.com",
+        "employees": 1678,
+        "marketCap": 125743915008
+      },
+      {
+        "symbol": "USHAMART.NS",
+        "name": "Usha Martin Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.ushamartin.com",
+        "logo_url": "https://logo.clearbit.com/ushamartin.com",
+        "employees": 2235,
+        "marketCap": 123995807744
+      },
+      {
+        "symbol": "TECHNOE.NS",
+        "name": "Techno Electric & Engineering Company Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "website": "https://www.techno.co.in",
+        "logo_url": "https://logo.clearbit.com/techno.co.in",
+        "employees": 541,
+        "marketCap": 119945568256
+      },
+      {
+        "symbol": "JWL.NS",
+        "name": "Jupiter Wagons Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "website": "https://www.jupiterwagons.com",
+        "logo_url": "https://logo.clearbit.com/jupiterwagons.com",
+        "employees": 1016,
+        "marketCap": 109697433600
+      },
+      {
+        "symbol": "PCBL.NS",
+        "name": "PCBL Chemical Limited",
+        "city": "Kolkata",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.pcblltd.com",
+        "logo_url": "https://logo.clearbit.com/pcblltd.com",
+        "employees": 1320,
+        "marketCap": 101363834880
+      }
+    ]
+  },
+  {
+    "city": "Noida",
+    "country": "India",
+    "count": 21,
+    "companies": [
+      {
+        "symbol": "HCLTECH.NS",
+        "name": "HCL Technologies Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.hcltech.com",
+        "logo_url": "https://logo.clearbit.com/hcltech.com",
+        "employees": 0,
+        "marketCap": 3664535879680
+      },
+      {
+        "symbol": "MOTHERSON.NS",
+        "name": "Samvardhana Motherson International Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.motherson.com",
+        "logo_url": "https://logo.clearbit.com/motherson.com",
+        "employees": 0,
+        "marketCap": 1135869165568
+      },
+      {
+        "symbol": "GVT&D.NS",
+        "name": "GE Vernova T&D India Ltd",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.gevernova.com/regions/asia/in/gevernova-td-india",
+        "logo_url": "https://logo.clearbit.com/gevernova.com",
+        "employees": 1697,
+        "marketCap": 972643958784
+      },
+      {
+        "symbol": "OIL.NS",
+        "name": "Oil India Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "website": "https://www.oil-india.com",
+        "logo_url": "https://logo.clearbit.com/oil-india.com",
+        "employees": 6412,
+        "marketCap": 770308308992
+      },
+      {
+        "symbol": "HAVELLS.NS",
+        "name": "Havells India Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.havells.com",
+        "logo_url": "https://logo.clearbit.com/havells.com",
+        "employees": 7532,
+        "marketCap": 743907590144
+      },
+      {
+        "symbol": "PAYTM.NS",
+        "name": "One97 Communications Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "website": "https://www.paytm.com",
+        "logo_url": "https://logo.clearbit.com/paytm.com",
+        "employees": 39368,
+        "marketCap": 638189568000
+      },
+      {
+        "symbol": "NAUKRI.NS",
+        "name": "Info Edge (India) Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "website": "https://www.infoedge.in",
+        "logo_url": "https://logo.clearbit.com/infoedge.in",
+        "employees": 6150,
+        "marketCap": 637949706240
+      },
+      {
+        "symbol": "DIXON.NS",
+        "name": "Dixon Technologies (India) Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "website": "https://www.dixoninfo.com",
+        "logo_url": "https://logo.clearbit.com/dixoninfo.com",
+        "employees": 1567,
+        "marketCap": 622526136320
+      },
+      {
+        "symbol": "APLAPOLLO.NS",
+        "name": "APL Apollo Tubes Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.aplapollo.com",
+        "logo_url": "https://logo.clearbit.com/aplapollo.com",
+        "employees": 3382,
+        "marketCap": 537213501440
+      },
+      {
+        "symbol": "MFSL.NS",
+        "name": "Max Financial Services Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "website": "https://www.maxfinancialservices.com",
+        "logo_url": "https://logo.clearbit.com/maxfinancialservices.com",
+        "employees": 10,
+        "marketCap": 510192812032
+      },
+      {
+        "symbol": "FLUOROCHEM.NS",
+        "name": "Gujarat Fluorochemicals Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.gfl.co.in",
+        "logo_url": "https://logo.clearbit.com/gfl.co.in",
+        "employees": 3405,
+        "marketCap": 355342778368
+      },
+      {
+        "symbol": "JUBLFOOD.NS",
+        "name": "Jubilant FoodWorks Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "website": "https://www.jubilantfoodworks.com",
+        "logo_url": "https://logo.clearbit.com/jubilantfoodworks.com",
+        "employees": 10298,
+        "marketCap": 291812605952
+      },
+      {
+        "symbol": "MSUMI.NS",
+        "name": "Motherson Sumi Wiring India Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.mswil.motherson.com",
+        "logo_url": "https://logo.clearbit.com/mswil.motherson.com",
+        "employees": 6041,
+        "marketCap": 253329489920
+      },
+      {
+        "symbol": "INOXWIND.NS",
+        "name": "Inox Wind Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://inoxwind.com",
+        "logo_url": "https://logo.clearbit.com/inoxwind.com",
+        "employees": 1235,
+        "marketCap": 139253858304
+      },
+      {
+        "symbol": "JUBLPHARMA.NS",
+        "name": "Jubilant Pharmova Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.jubilantpharmova.com",
+        "logo_url": "https://logo.clearbit.com/jubilantpharmova.com",
+        "employees": 5547,
+        "marketCap": 129412980736
+      },
+      {
+        "symbol": "INDIAMART.NS",
+        "name": "IndiaMART InterMESH Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "website": "https://www.indiamart.com",
+        "logo_url": "https://logo.clearbit.com/indiamart.com",
+        "employees": 0,
+        "marketCap": 122470260736
+      },
+      {
+        "symbol": "MINDACORP.NS",
+        "name": "Minda Corporation Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://sparkminda.com",
+        "logo_url": "https://logo.clearbit.com/sparkminda.com",
+        "employees": 3387,
+        "marketCap": 121010814976
+      },
+      {
+        "symbol": "HEG.NS",
+        "name": "HEG Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.hegltd.com",
+        "logo_url": "https://logo.clearbit.com/hegltd.com",
+        "employees": 1114,
+        "marketCap": 108868280320
+      },
+      {
+        "symbol": "IEX.NS",
+        "name": "Indian Energy Exchange Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "website": "https://www.iexindia.com",
+        "logo_url": "https://logo.clearbit.com/iexindia.com",
+        "employees": 179,
+        "marketCap": 106671562752
+      },
+      {
+        "symbol": "JUBLINGREA.NS",
+        "name": "Jubilant Ingrevia Limited",
+        "city": "Noida",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://jubilantingrevia.com",
+        "logo_url": "https://logo.clearbit.com/jubilantingrevia.com",
+        "employees": 2139,
+        "marketCap": 90589200384
+      }
+    ]
+  },
+  {
+    "city": "Ahmedabad",
+    "country": "India",
+    "count": 19,
+    "companies": [
+      {
+        "symbol": "ADANIPORTS.NS",
+        "name": "Adani Ports and Special Economic Zone Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Marine Shipping",
+        "website": "https://www.adaniports.com",
+        "logo_url": "https://logo.clearbit.com/adaniports.com",
+        "employees": 3118,
+        "marketCap": 3191904927744
+      },
+      {
+        "symbol": "ADANIPOWER.NS",
+        "name": "Adani Power Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Independent Power Producers",
+        "website": "https://www.adanipower.com",
+        "logo_url": "https://logo.clearbit.com/adanipower.com",
+        "employees": 4176,
+        "marketCap": 3030030221312
+      },
+      {
+        "symbol": "ADANIENT.NS",
+        "name": "Adani Enterprises Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Thermal Coal",
+        "website": "https://www.adanienterprises.com",
+        "logo_url": "https://logo.clearbit.com/adanienterprises.com",
+        "employees": 11571,
+        "marketCap": 2509362167808
+      },
+      {
+        "symbol": "ADANIGREEN.NS",
+        "name": "Adani Green Energy Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "website": "https://www.adanigreenenergy.com",
+        "logo_url": "https://logo.clearbit.com/adanigreenenergy.com",
+        "employees": 1247,
+        "marketCap": 1403311751168
+      },
+      {
+        "symbol": "TORNTPHARM.NS",
+        "name": "Torrent Pharmaceuticals Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.torrentpharma.com",
+        "logo_url": "https://logo.clearbit.com/torrentpharma.com",
+        "employees": 17059,
+        "marketCap": 1391450652672
+      },
+      {
+        "symbol": "ADANIENSOL.NS",
+        "name": "Adani Energy Solutions Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Independent Power Producers",
+        "website": "https://www.adanienergysolutions.com",
+        "logo_url": "https://logo.clearbit.com/adanienergysolutions.com",
+        "employees": 4191,
+        "marketCap": 1150481858560
+      },
+      {
+        "symbol": "AMBUJACEM.NS",
+        "name": "Ambuja Cements Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.ambujacement.com",
+        "logo_url": "https://logo.clearbit.com/ambujacement.com",
+        "employees": 3883,
+        "marketCap": 1039030943744
+      },
+      {
+        "symbol": "ZYDUSLIFE.NS",
+        "name": "Zydus Lifesciences Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://zyduslife.com",
+        "logo_url": "https://logo.clearbit.com/zyduslife.com",
+        "employees": 27917,
+        "marketCap": 868866195456
+      },
+      {
+        "symbol": "TORNTPOWER.NS",
+        "name": "Torrent Power Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Independent Power Producers",
+        "website": "https://www.torrentpower.com",
+        "logo_url": "https://logo.clearbit.com/torrentpower.com",
+        "employees": 7969,
+        "marketCap": 673769455616
+      },
+      {
+        "symbol": "ATGL.NS",
+        "name": "Adani Total Gas Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "website": "https://www.adanigas.com",
+        "logo_url": "https://logo.clearbit.com/adanigas.com",
+        "employees": 578,
+        "marketCap": 573194371072
+      },
+      {
+        "symbol": "ASTRAL.NS",
+        "name": "Astral Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Building Products & Equipment",
+        "website": "https://astralltd.com",
+        "logo_url": "https://logo.clearbit.com/astralltd.com",
+        "employees": 0,
+        "marketCap": 421861392384
+      },
+      {
+        "symbol": "AIAENG.NS",
+        "name": "AIA Engineering Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.aiaengineering.com",
+        "logo_url": "https://logo.clearbit.com/aiaengineering.com",
+        "employees": 1306,
+        "marketCap": 343512285184
+      },
+      {
+        "symbol": "ACC.NS",
+        "name": "ACC Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.acclimited.com",
+        "logo_url": "https://logo.clearbit.com/acclimited.com",
+        "employees": 3170,
+        "marketCap": 249362710528
+      },
+      {
+        "symbol": "AWL.NS",
+        "name": "AWL Agri Business Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://www.awl.in",
+        "logo_url": "https://logo.clearbit.com/awl.in",
+        "employees": 2772,
+        "marketCap": 236756910080
+      },
+      {
+        "symbol": "GMDCLTD.NS",
+        "name": "Gujarat Mineral Development Corporation Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Thermal Coal",
+        "website": "https://www.gmdcltd.com",
+        "logo_url": "https://logo.clearbit.com/gmdcltd.com",
+        "employees": 765,
+        "marketCap": 184566218752
+      },
+      {
+        "symbol": "ERIS.NS",
+        "name": "Eris Lifesciences Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.eris.co.in",
+        "logo_url": "https://logo.clearbit.com/eris.co.in",
+        "employees": 3354,
+        "marketCap": 181518876672
+      },
+      {
+        "symbol": "CONCORDBIO.NS",
+        "name": "Concord Biotech Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "website": "https://www.concordbiotech.com",
+        "logo_url": "https://logo.clearbit.com/concordbiotech.com",
+        "employees": 1571,
+        "marketCap": 106708533248
+      },
+      {
+        "symbol": "TARIL.NS",
+        "name": "TARIL.NS",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.transformerindia.com",
+        "logo_url": "https://logo.clearbit.com/transformerindia.com",
+        "employees": 553,
+        "marketCap": 82335481856
+      },
+      {
+        "symbol": "CERA.NS",
+        "name": "Cera Sanitaryware Limited",
+        "city": "Ahmedabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Building Products & Equipment",
+        "website": "https://www.cera-india.com",
+        "logo_url": "https://logo.clearbit.com/cera-india.com",
+        "employees": 2474,
+        "marketCap": 60175831040
+      }
+    ]
+  },
+  {
+    "city": "Navi Mumbai",
+    "country": "India",
+    "count": 5,
+    "companies": [
+      {
+        "symbol": "HEXT.NS",
+        "name": "Hexaware Technologies Limited",
+        "city": "Navi Mumbai",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://hexaware.com",
+        "logo_url": "https://logo.clearbit.com/hexaware.com",
+        "employees": 33844,
+        "marketCap": 263481196544
+      },
+      {
+        "symbol": "IKS.NS",
+        "name": "IKS.NS",
+        "city": "Navi Mumbai",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "website": "https://ikshealth.com",
+        "logo_url": "https://logo.clearbit.com/ikshealth.com",
+        "employees": 7530,
+        "marketCap": 223042142208
+      },
+      {
+        "symbol": "BASF.NS",
+        "name": "BASF India Limited",
+        "city": "Navi Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.basf.com/in",
+        "logo_url": "https://logo.clearbit.com/basf.com",
+        "employees": 1367,
+        "marketCap": 141617627136
+      },
+      {
+        "symbol": "TTML.NS",
+        "name": "Tata Teleservices (Maharashtra) Limited",
+        "city": "Navi Mumbai",
+        "country": "India",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "website": "https://www.tatatelebusiness.com",
+        "logo_url": "https://logo.clearbit.com/tatatelebusiness.com",
+        "employees": 390,
+        "marketCap": 68821663744
+      },
+      {
+        "symbol": "ALKYLAMINE.NS",
+        "name": "Alkyl Amines Chemicals Limited",
+        "city": "Navi Mumbai",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://alkylamines.com",
+        "logo_url": "https://logo.clearbit.com/alkylamines.com",
+        "employees": 686,
+        "marketCap": 67274887168
+      }
+    ]
+  },
+  {
+    "city": "Vadodara",
+    "country": "India",
+    "count": 5,
+    "companies": [
+      {
+        "symbol": "BANKBARODA.NS",
+        "name": "Bank of Baroda Limited",
+        "city": "Vadodara",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://bankofbaroda.bank.in",
+        "logo_url": "https://logo.clearbit.com/bankofbaroda.bank.in",
+        "employees": 75008,
+        "marketCap": 1303338418176
+      },
+      {
+        "symbol": "LTTS.NS",
+        "name": "L&T Technology Services Limited",
+        "city": "Vadodara",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.ltts.com",
+        "logo_url": "https://logo.clearbit.com/ltts.com",
+        "employees": 21028,
+        "marketCap": 352337821696
+      },
+      {
+        "symbol": "DEEPAKNTR.NS",
+        "name": "Deepak Nitrite Limited",
+        "city": "Vadodara",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "website": "https://www.godeepak.com",
+        "logo_url": "https://logo.clearbit.com/godeepak.com",
+        "employees": 1757,
+        "marketCap": 184430657536
+      },
+      {
+        "symbol": "APLLTD.NS",
+        "name": "Alembic Pharmaceuticals Limited",
+        "city": "Vadodara",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://alembicpharmaceuticals.com",
+        "logo_url": "https://logo.clearbit.com/alembicpharmaceuticals.com",
+        "employees": 16571,
+        "marketCap": 133405483008
+      },
+      {
+        "symbol": "INOXINDIA.NS",
+        "name": "INOX India Limited",
+        "city": "Vadodara",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.inoxcva.com",
+        "logo_url": "https://logo.clearbit.com/inoxcva.com",
+        "employees": 642,
+        "marketCap": 113009639424
+      }
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "country": "India",
+    "count": 3,
+    "companies": [
+      {
+        "symbol": "AUBANK.NS",
+        "name": "AU Small Finance Bank Limited",
+        "city": "Jaipur",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.au.bank.in",
+        "logo_url": "https://logo.clearbit.com/au.bank.in",
+        "employees": 50946,
+        "marketCap": 653708427264
+      },
+      {
+        "symbol": "GRAVITA.NS",
+        "name": "Gravita India Limited",
+        "city": "Jaipur",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Metal Fabrication",
+        "website": "https://www.gravitaindia.com",
+        "logo_url": "https://logo.clearbit.com/gravitaindia.com",
+        "employees": 3116,
+        "marketCap": 96020905984
+      },
+      {
+        "symbol": "AAVAS.NS",
+        "name": "Aavas Financiers Limited",
+        "city": "Jaipur",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "website": "https://www.aavas.in",
+        "logo_url": "https://logo.clearbit.com/aavas.in",
+        "employees": 7233,
+        "marketCap": 89958809600
+      }
+    ]
+  },
+  {
+    "city": "Coimbatore",
+    "country": "India",
+    "count": 3,
+    "companies": [
+      {
+        "symbol": "KPRMILL.NS",
+        "name": "K.P.R. Mill Limited",
+        "city": "Coimbatore",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "website": "https://www.kprmilllimited.com",
+        "logo_url": "https://logo.clearbit.com/kprmilllimited.com",
+        "employees": 20478,
+        "marketCap": 286828396544
+      },
+      {
+        "symbol": "CRAFTSMAN.NS",
+        "name": "Craftsman Automation Limited",
+        "city": "Coimbatore",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.craftsmanautomation.com",
+        "logo_url": "https://logo.clearbit.com/craftsmanautomation.com",
+        "employees": 2893,
+        "marketCap": 163124477952
+      },
+      {
+        "symbol": "ELGIEQUIP.NS",
+        "name": "Elgi Equipments Limited",
+        "city": "Coimbatore",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.elgi.com",
+        "logo_url": "https://logo.clearbit.com/elgi.com",
+        "employees": 2138,
+        "marketCap": 151295705088
+      }
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "country": "India",
+    "count": 3,
+    "companies": [
+      {
+        "symbol": "NHPC.NS",
+        "name": "NHPC Limited",
+        "city": "Faridabad",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "website": "https://www.nhpcindia.com",
+        "logo_url": "https://logo.clearbit.com/nhpcindia.com",
+        "employees": 4240,
+        "marketCap": 757295153152
+      },
+      {
+        "symbol": "ESCORTS.NS",
+        "name": "Escorts Kubota Limited",
+        "city": "Faridabad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery",
+        "website": "https://www.escortskubota.com",
+        "logo_url": "https://logo.clearbit.com/escortskubota.com",
+        "employees": 4622,
+        "marketCap": 311062659072
+      },
+      {
+        "symbol": "NETWEB.NS",
+        "name": "Netweb Technologies India Limited",
+        "city": "Faridabad",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Computer Hardware",
+        "website": "https://www.netwebindia.com",
+        "logo_url": "https://logo.clearbit.com/netwebindia.com",
+        "employees": 441,
+        "marketCap": 179186565120
+      }
+    ]
+  },
+  {
+    "city": "Kochi",
+    "country": "India",
+    "count": 3,
+    "companies": [
+      {
+        "symbol": "MUTHOOTFIN.NS",
+        "name": "Muthoot Finance Limited",
+        "city": "Kochi",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.muthootfinance.com",
+        "logo_url": "https://logo.clearbit.com/muthootfinance.com",
+        "employees": 31565,
+        "marketCap": 1307918598144
+      },
+      {
+        "symbol": "FACT.NS",
+        "name": "The Fertilisers and Chemicals Travancore Limited",
+        "city": "Kochi",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "website": "https://www.fact.co.in",
+        "logo_url": "https://logo.clearbit.com/fact.co.in",
+        "employees": 1518,
+        "marketCap": 508372123648
+      },
+      {
+        "symbol": "VGUARD.NS",
+        "name": "V-Guard Industries Limited",
+        "city": "Kochi",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "website": "https://www.vguard.in",
+        "logo_url": "https://logo.clearbit.com/vguard.in",
+        "employees": 3133,
+        "marketCap": 138189914112
+      }
+    ]
+  },
+  {
+    "city": "Delhi",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "EIHOTEL.NS",
+        "name": "EIH Limited",
+        "city": "Delhi",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "website": "https://www.eihltd.com",
+        "logo_url": "https://logo.clearbit.com/eihltd.com",
+        "employees": 5708,
+        "marketCap": 175101968384
+      },
+      {
+        "symbol": "AKUMS.NS",
+        "name": "AKUMS.NS",
+        "city": "Delhi",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "website": "https://www.akums.in",
+        "logo_url": "https://logo.clearbit.com/akums.in",
+        "employees": 7536,
+        "marketCap": 76057812992
+      }
+    ]
+  },
+  {
+    "city": "Valsad",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "ATUL.NS",
+        "name": "Atul Ltd",
+        "city": "Valsad",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.atul.co.in",
+        "logo_url": "https://logo.clearbit.com/atul.co.in",
+        "employees": 3365,
+        "marketCap": 189501865984
+      },
+      {
+        "symbol": "DOMS.NS",
+        "name": "DOMS Industries Limited",
+        "city": "Valsad",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Business Equipment & Supplies",
+        "website": "https://www.domsindia.com",
+        "logo_url": "https://logo.clearbit.com/domsindia.com",
+        "employees": 11300,
+        "marketCap": 142350106624
+      }
+    ]
+  },
+  {
+    "city": "Thane",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "BAYERCROP.NS",
+        "name": "Bayer CropScience Limited",
+        "city": "Thane",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "website": "https://www.bayer.in",
+        "logo_url": "https://logo.clearbit.com/bayer.in",
+        "employees": 1169,
+        "marketCap": 213309112320
+      },
+      {
+        "symbol": "BLUEJET.NS",
+        "name": "Blue Jet Healthcare Limited",
+        "city": "Thane",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "website": "https://www.bluejethealthcare.com",
+        "logo_url": "https://logo.clearbit.com/bluejethealthcare.com",
+        "employees": 196,
+        "marketCap": 60886364160
+      }
+    ]
+  },
+  {
+    "city": "Raipur",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "SARDAEN.NS",
+        "name": "Sarda Energy & Minerals Limited",
+        "city": "Raipur",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.seml.co.in",
+        "logo_url": "https://logo.clearbit.com/seml.co.in",
+        "employees": 1905,
+        "marketCap": 185176358912
+      },
+      {
+        "symbol": "GPIL.NS",
+        "name": "Godawari Power & Ispat Limited",
+        "city": "Raipur",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "website": "https://www.godawaripowerispat.com",
+        "logo_url": "https://logo.clearbit.com/godawaripowerispat.com",
+        "employees": 1884,
+        "marketCap": 180806205440
+      }
+    ]
+  },
+  {
+    "city": "Gandhinagar",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "GUJGASLTD.NS",
+        "name": "Gujarat Gas Limited",
+        "city": "Gandhinagar",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "website": "https://www.gujaratgas.com",
+        "logo_url": "https://logo.clearbit.com/gujaratgas.com",
+        "employees": 895,
+        "marketCap": 214227025920
+      },
+      {
+        "symbol": "GSPL.NS",
+        "name": "Gujarat State Petronet Limited",
+        "city": "Gandhinagar",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "website": "https://gspcgroup.com/GSPL",
+        "logo_url": "https://logo.clearbit.com/gspcgroup.com",
+        "employees": 252,
+        "marketCap": 132283039744
+      }
+    ]
+  },
+  {
+    "city": "Thrissur",
+    "country": "India",
+    "count": 2,
+    "companies": [
+      {
+        "symbol": "KALYANKJIL.NS",
+        "name": "Kalyan Jewellers India Limited",
+        "city": "Thrissur",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Luxury Goods",
+        "website": "https://www.kalyanjewellers.net",
+        "logo_url": "https://logo.clearbit.com/kalyanjewellers.net",
+        "employees": 12534,
+        "marketCap": 399949627392
+      },
+      {
+        "symbol": "MANAPPURAM.NS",
+        "name": "Manappuram Finance Limited",
+        "city": "Thrissur",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.manappuram.com",
+        "logo_url": "https://logo.clearbit.com/manappuram.com",
+        "employees": 24650,
+        "marketCap": 239906439168
+      }
+    ]
+  },
+  {
+    "city": "Menlo Park",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "META",
+        "name": "Meta Platforms, Inc.",
+        "city": "Menlo Park",
+        "country": "United States",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "website": "https://www.meta.com",
+        "logo_url": "https://logo.clearbit.com/meta.com",
+        "employees": 78865,
+        "marketCap": 1447234633728
+      }
+    ]
+  },
+  {
+    "city": "Mountain View",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc.",
+        "city": "Mountain View",
+        "country": "United States",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information",
+        "website": "https://abc.xyz",
+        "logo_url": "https://logo.clearbit.com/abc.xyz",
+        "employees": 190820,
+        "marketCap": 3478613393408
+      }
+    ]
+  },
+  {
+    "city": "Seattle",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "AMZN",
+        "name": "Amazon.com, Inc.",
+        "city": "Seattle",
+        "country": "United States",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "website": "https://www.amazon.com",
+        "logo_url": "https://logo.clearbit.com/amazon.com",
+        "employees": 1576000,
+        "marketCap": 2235761950720
+      }
+    ]
+  },
+  {
+    "city": "Hsinchu City",
+    "country": "Taiwan",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "TSM",
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "city": "Hsinchu City",
+        "country": "Taiwan",
+        "sector": "Technology",
+        "industry": "Semiconductors",
+        "website": "https://www.tsmc.com",
+        "logo_url": "https://logo.clearbit.com/tsmc.com",
+        "employees": 76907,
+        "marketCap": 1752779325440
+      }
+    ]
+  },
+  {
+    "city": "Cupertino",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "city": "Cupertino",
+        "country": "United States",
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "website": "https://www.apple.com",
+        "logo_url": "https://logo.clearbit.com/apple.com",
+        "employees": 150000,
+        "marketCap": 3730186436608
+      }
+    ]
+  },
+  {
+    "city": "New York",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "JPM",
+        "name": "JPMorgan Chase & Co.",
+        "city": "New York",
+        "country": "United States",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified",
+        "website": "https://www.jpmorganchase.com",
+        "logo_url": "https://logo.clearbit.com/jpmorganchase.com",
+        "employees": 318512,
+        "marketCap": 793359089664
+      }
+    ]
+  },
+  {
+    "city": "Redmond",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "city": "Redmond",
+        "country": "United States",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "website": "https://www.microsoft.com",
+        "logo_url": "https://logo.clearbit.com/microsoft.com",
+        "employees": 228000,
+        "marketCap": 2751243485184
+      }
+    ]
+  },
+  {
+    "city": "Omaha",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "BRK-B",
+        "name": "Berkshire Hathaway Inc.",
+        "city": "Omaha",
+        "country": "United States",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "website": "https://www.berkshirehathaway.com",
+        "logo_url": "https://logo.clearbit.com/berkshirehathaway.com",
+        "employees": 387800,
+        "marketCap": 1033572581376
+      }
+    ]
+  },
+  {
+    "city": "Bagsvaerd",
+    "country": "Denmark",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "NVO",
+        "name": "Novo Nordisk A/S",
+        "city": "Bagsvaerd",
+        "country": "Denmark",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "website": "https://www.novonordisk.com",
+        "logo_url": "https://logo.clearbit.com/novonordisk.com",
+        "employees": 68794,
+        "marketCap": 164388896768
+      }
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "V",
+        "name": "Visa Inc.",
+        "city": "San Francisco",
+        "country": "United States",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "website": "https://www.visa.com",
+        "logo_url": "https://logo.clearbit.com/visa.com",
+        "employees": 0,
+        "marketCap": 582730645504
+      }
+    ]
+  },
+  {
+    "city": "New Brunswick",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "JNJ",
+        "name": "Johnson & Johnson",
+        "city": "New Brunswick",
+        "country": "United States",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "website": "https://www.jnj.com",
+        "logo_url": "https://logo.clearbit.com/jnj.com",
+        "employees": 138200,
+        "marketCap": 589075709952
+      }
+    ]
+  },
+  {
+    "city": "Palo Alto",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "AVGO",
+        "name": "Broadcom Inc.",
+        "city": "Palo Alto",
+        "country": "United States",
+        "sector": "Technology",
+        "industry": "Semiconductors",
+        "website": "https://www.broadcom.com",
+        "logo_url": "https://logo.clearbit.com/broadcom.com",
+        "employees": 33000,
+        "marketCap": 1467471626240
+      }
+    ]
+  },
+  {
+    "city": "Bentonville",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "WMT",
+        "name": "Walmart Inc.",
+        "city": "Bentonville",
+        "country": "United States",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "website": "https://www.stock.walmart.com",
+        "logo_url": "https://logo.clearbit.com/stock.walmart.com",
+        "employees": 2100000,
+        "marketCap": 990810210304
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "TSLA",
+        "name": "Tesla, Inc.",
+        "city": "Austin",
+        "country": "United States",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "website": "https://www.tesla.com",
+        "logo_url": "https://logo.clearbit.com/tesla.com",
+        "employees": 134785,
+        "marketCap": 1394966528000
+      }
+    ]
+  },
+  {
+    "city": "Santa Clara",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA Corporation",
+        "city": "Santa Clara",
+        "country": "United States",
+        "sector": "Technology",
+        "industry": "Semiconductors",
+        "website": "https://www.nvidia.com",
+        "logo_url": "https://logo.clearbit.com/nvidia.com",
+        "employees": 42000,
+        "marketCap": 4238791933952
+      }
+    ]
+  },
+  {
+    "city": "Veldhoven",
+    "country": "Netherlands",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "city": "Veldhoven",
+        "country": "Netherlands",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "website": "https://www.asml.com",
+        "logo_url": "https://logo.clearbit.com/asml.com",
+        "employees": 43520,
+        "marketCap": 518635356160
+      }
+    ]
+  },
+  {
+    "city": "Causeway Bay",
+    "country": "Hong Kong",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "BABA",
+        "name": "Alibaba Group Holding Limited",
+        "city": "Causeway Bay",
+        "country": "Hong Kong",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "website": "https://www.alibabagroup.com",
+        "logo_url": "https://logo.clearbit.com/alibabagroup.com",
+        "employees": 128197,
+        "marketCap": 299524784128
+      }
+    ]
+  },
+  {
+    "city": "Indianapolis",
+    "country": "United States",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "LLY",
+        "name": "Eli Lilly and Company",
+        "city": "Indianapolis",
+        "country": "United States",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General",
+        "website": "https://www.lilly.com",
+        "logo_url": "https://logo.clearbit.com/lilly.com",
+        "employees": 50000,
+        "marketCap": 823211393024
+      }
+    ]
+  },
+  {
+    "city": "Palwal",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "ACE.NS",
+        "name": "Action Construction Equipment Limited",
+        "city": "Palwal",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery",
+        "website": "https://www.ace-cranes.com",
+        "logo_url": "https://logo.clearbit.com/ace-cranes.com",
+        "employees": 1492,
+        "marketCap": 96586973184
+      }
+    ]
+  },
+  {
+    "city": "Bikaner",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "BIKAJI.NS",
+        "name": "Bikaji Foods International Limited",
+        "city": "Bikaner",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://www.bikaji.com",
+        "logo_url": "https://logo.clearbit.com/bikaji.com",
+        "employees": 2589,
+        "marketCap": 155870527488
+      }
+    ]
+  },
+  {
+    "city": "Kumbakonam",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "CUB.NS",
+        "name": "City Union Bank Limited",
+        "city": "Kumbakonam",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://cityunionbank.bank.in",
+        "logo_url": "https://logo.clearbit.com/cityunionbank.bank.in",
+        "employees": 7605,
+        "marketCap": 178093555712
+      }
+    ]
+  },
+  {
+    "city": "Ernakulam",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "COCHINSHIP.NS",
+        "name": "Cochin Shipyard Limited",
+        "city": "Ernakulam",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "website": "https://cochinshipyard.in",
+        "logo_url": "https://logo.clearbit.com/cochinshipyard.in",
+        "employees": 2140,
+        "marketCap": 352257736704
+      }
+    ]
+  },
+  {
+    "city": "Gautam Buddha Nagar",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "COFORGE.NS",
+        "name": "Coforge Limited",
+        "city": "Gautam Buddha Nagar",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "website": "https://www.coforge.com",
+        "logo_url": "https://logo.clearbit.com/coforge.com",
+        "employees": 25620,
+        "marketCap": 387492249600
+      }
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "DABUR.NS",
+        "name": "Dabur India Limited",
+        "city": "Ghaziabad",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "website": "https://www.dabur.com",
+        "logo_url": "https://logo.clearbit.com/dabur.com",
+        "employees": 5341,
+        "marketCap": 735992741888
+      }
+    ]
+  },
+  {
+    "city": "Vallabh Vidya Nagar",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "ELECON.NS",
+        "name": "Elecon Engineering Company Limited",
+        "city": "Vallabh Vidya Nagar",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.elecon.com",
+        "logo_url": "https://logo.clearbit.com/elecon.com",
+        "employees": 2162,
+        "marketCap": 85574918144
+      }
+    ]
+  },
+  {
+    "city": "Aurangabad",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "ENDURANCE.NS",
+        "name": "Endurance Technologies Limited",
+        "city": "Aurangabad",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "website": "https://www.endurancegroup.com",
+        "logo_url": "https://logo.clearbit.com/endurancegroup.com",
+        "employees": 4370,
+        "marketCap": 316772745216
+      }
+    ]
+  },
+  {
+    "city": "Aluva",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "FEDERALBNK.NS",
+        "name": "The Federal Bank Limited",
+        "city": "Aluva",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.federal.bank.in",
+        "logo_url": "https://logo.clearbit.com/federal.bank.in",
+        "employees": 15545,
+        "marketCap": 659278987264
+      }
+    ]
+  },
+  {
+    "city": "Udaipur",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "HINDZINC.NS",
+        "name": "Hindustan Zinc Limited",
+        "city": "Udaipur",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "website": "https://www.hzlindia.com",
+        "logo_url": "https://logo.clearbit.com/hzlindia.com",
+        "employees": 3478,
+        "marketCap": 2215968505856
+      }
+    ]
+  },
+  {
+    "city": "Kanpur",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "JKCEMENT.NS",
+        "name": "J.K. Cement Limited",
+        "city": "Kanpur",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "website": "https://www.jkcement.com",
+        "logo_url": "https://logo.clearbit.com/jkcement.com",
+        "employees": 4097,
+        "marketCap": 397158809600
+      }
+    ]
+  },
+  {
+    "city": "Srinagar",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "J&KBANK.NS",
+        "name": "Jammu and Kashmir Bank Limited",
+        "city": "Srinagar",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://jkb.bank.in",
+        "logo_url": "https://logo.clearbit.com/jkb.bank.in",
+        "employees": 12251,
+        "marketCap": 125832118272
+      }
+    ]
+  },
+  {
+    "city": "Rajkot",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "JYOTICNC.NS",
+        "name": "Jyoti CNC Automation Limited",
+        "city": "Rajkot",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "website": "https://www.jyoti.co.in",
+        "logo_url": "https://logo.clearbit.com/jyoti.co.in",
+        "employees": 2156,
+        "marketCap": 174217461760
+      }
+    ]
+  },
+  {
+    "city": "Mysore",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "KAYNES.NS",
+        "name": "Kaynes Technology India Limited",
+        "city": "Mysore",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Electronic Components",
+        "website": "https://www.kaynestechnology.co.in",
+        "logo_url": "https://logo.clearbit.com/kaynestechnology.co.in",
+        "employees": 0,
+        "marketCap": 237476315136
+      }
+    ]
+  },
+  {
+    "city": "Secunderabad",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "KIMS.NS",
+        "name": "Krishna Institute of Medical Sciences Limited",
+        "city": "Secunderabad",
+        "country": "India",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "website": "https://www.kimshospitals.com",
+        "logo_url": "https://logo.clearbit.com/kimshospitals.com",
+        "employees": 5264,
+        "marketCap": 250046840832
+      }
+    ]
+  },
+  {
+    "city": "Mangalore",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "MRPL.NS",
+        "name": "Mangalore Refinery and Petrochemicals Limited",
+        "city": "Mangalore",
+        "country": "India",
+        "sector": "Energy",
+        "industry": "Oil & Gas Refining & Marketing",
+        "website": "https://www.mrpl.co.in",
+        "logo_url": "https://logo.clearbit.com/mrpl.co.in",
+        "employees": 2530,
+        "marketCap": 323084419072
+      }
+    ]
+  },
+  {
+    "city": "Karur",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "KARURVYSYA.NS",
+        "name": "The Karur Vysya Bank Limited",
+        "city": "Karur",
+        "country": "India",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "website": "https://www.kvb.bank.in",
+        "logo_url": "https://logo.clearbit.com/kvb.bank.in",
+        "employees": 9765,
+        "marketCap": 282107740160
+      }
+    ]
+  },
+  {
+    "city": "Cuddalore",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "NLCINDIA.NS",
+        "name": "NLC India Limited",
+        "city": "Cuddalore",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "website": "https://www.nlcindia.in",
+        "logo_url": "https://logo.clearbit.com/nlcindia.in",
+        "employees": 10227,
+        "marketCap": 392695513088
+      }
+    ]
+  },
+  {
+    "city": "Bhubaneswar",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "NATIONALUM.NS",
+        "name": "National Aluminium Company Limited",
+        "city": "Bhubaneswar",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Aluminum",
+        "website": "https://nalcoindia.com",
+        "logo_url": "https://logo.clearbit.com/nalcoindia.com",
+        "employees": 4803,
+        "marketCap": 734459527168
+      }
+    ]
+  },
+  {
+    "city": "Greater Noida",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "PGEL.NS",
+        "name": "PG Electroplast Limited",
+        "city": "Greater Noida",
+        "country": "India",
+        "sector": "Technology",
+        "industry": "Electronic Components",
+        "website": "https://www.pgel.in",
+        "logo_url": "https://logo.clearbit.com/pgel.in",
+        "employees": 1844,
+        "marketCap": 136851365888
+      }
+    ]
+  },
+  {
+    "city": "Lucknow",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "PTCIL.NS",
+        "name": "PTC Industries Limited",
+        "city": "Lucknow",
+        "country": "India",
+        "sector": "Industrials",
+        "industry": "Metal Fabrication",
+        "website": "https://www.ptcil.com",
+        "logo_url": "https://logo.clearbit.com/ptcil.com",
+        "employees": 510,
+        "marketCap": 225338015744
+      }
+    ]
+  },
+  {
+    "city": "Indore",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "PATANJALI.NS",
+        "name": "Patanjali Foods Limited",
+        "city": "Indore",
+        "country": "India",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "website": "https://www.patanjalifoods.com",
+        "logo_url": "https://logo.clearbit.com/patanjalifoods.com",
+        "employees": 7444,
+        "marketCap": 512153518080
+      }
+    ]
+  },
+  {
+    "city": "Shimla",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "SJVN.NS",
+        "name": "SJVN Limited",
+        "city": "Shimla",
+        "country": "India",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "website": "https://www.sjvn.nic.in",
+        "logo_url": "https://logo.clearbit.com/sjvn.nic.in",
+        "employees": 1349,
+        "marketCap": 264318025728
+      }
+    ]
+  },
+  {
+    "city": "Nagpur",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "SOLARINDS.NS",
+        "name": "Solar Industries India Limited",
+        "city": "Nagpur",
+        "country": "India",
+        "sector": "Basic Materials",
+        "industry": "Specialty Chemicals",
+        "website": "https://www.solargroup.com",
+        "logo_url": "https://logo.clearbit.com/solargroup.com",
+        "employees": 2403,
+        "marketCap": 1158906118144
+      }
+    ]
+  },
+  {
+    "city": "Barnala",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "TRIDENT.NS",
+        "name": "Trident Limited",
+        "city": "Barnala",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "website": "https://www.tridentindia.com",
+        "logo_url": "https://logo.clearbit.com/tridentindia.com",
+        "employees": 13804,
+        "marketCap": 121865265152
+      }
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "country": "India",
+    "count": 1,
+    "companies": [
+      {
+        "symbol": "VTL.NS",
+        "name": "Vardhman Textiles Limited",
+        "city": "Ludhiana",
+        "country": "India",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "website": "https://www.vardhman.com",
+        "logo_url": "https://logo.clearbit.com/vardhman.com",
+        "employees": 23196,
+        "marketCap": 153237929984
+      }
+    ]
+  }
+]

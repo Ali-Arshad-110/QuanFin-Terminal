@@ -1,0 +1,15 @@
+ ? (
+                 <>
+                   {/* CITY INTELLIGENCE HUB */}
+                   <div className="p-8 border-b border-border bg-background">
+                      <div className={isSidebarFullScreen ? "max-w-6xl mx-auto w-full" : ""}>
+                      <div className="flex justify-between items-start mb-6">
+                         <div className="bg-orange-500/10 px-4 py-1 rounded-full border border-orange-500/20 flex items-center space-x-2 text-orange-500">
+                            <MapPin size={14} />
+                            <span className="text-[10px] font-black uppercase tracking-widest">City Intelligence Hub</span>
+                         </div>
+                         <div className="flex items-center space-x-2">
+                           <button onClick={() => setIsSidebarFullScreen(!isSidebarFullScreen)} className="p-2 hover:bg-background rounded-full transition-all text-text-muted text-accent" title="Toggle Full Screen">
+                              <Maximize2 size={16} />
+                           </button>
+                           <button onClick={() => { setSelectedPlant(null); setSelectedCity(null); setActiveSectorFilter(null); setIsSidebarFullScreen(false); setActiveSector

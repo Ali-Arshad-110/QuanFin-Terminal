@@ -1,0 +1,2937 @@
+{
+   "metadata": {
+      "total_nodes": 1137,
+      "total_hqs": 537,
+      "total_assets": 600,
+      "mapping": {
+         "id": "str",
+         "name": "str",
+         "lat": "float",
+         "lng": "float",
+         "type": "str",
+         "sector": "str",
+         "status": "str",
+         "intensity": "float",
+         "company": "str",
+         "isHQ": "bool",
+         "city": "str"
+      }
+   },
+   "city_clusters": {
+      "Mumbai": {
+         "node_count": 92,
+         "hq_count": 92,
+         "sector_distribution": {
+            "Finance": 45,
+            "FMCG/Consumer": 27,
+            "Energy": 2,
+            "Healthcare/Pharma": 4,
+            "Infrastructure": 2,
+            "Metals & Mining": 1,
+            "Energy/Petro": 1,
+            "Petro": 2,
+            "Metals": 3,
+            "Engineering": 1,
+            "Automotive": 2,
+            "IT/Software": 1,
+            "FMCG": 1
+         },
+         "official_hqs": [
+            {
+               "name": "360 ONE WAM Ltd. (360ONE)",
+               "sector": "Finance",
+               "id": "hq_360ONE"
+            },
+            {
+               "name": "ACME Solar Holdings Ltd. (ACMESOLAR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ACMESOLAR"
+            },
+            {
+               "name": "Aavas Financiers Ltd. (AAVAS)",
+               "sector": "Finance",
+               "id": "hq_AAVAS"
+            },
+            {
+               "name": "Aditya Birla Fashion and Retail Ltd. (ABFRL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ABFRL"
+            },
+            {
+               "name": "Aditya Birla Lifestyle Brands Ltd. (ABLBL)",
+               "sector": "Finance",
+               "id": "hq_ABLBL"
+            },
+            {
+               "name": "Amara Raja Energy & Mobility Ltd. (ARE&M)",
+               "sector": "Energy",
+               "id": "hq_ARE&M"
+            },
+            {
+               "name": "Anand Rathi Wealth Ltd. (ANANDRATHI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ANANDRATHI"
+            },
+            {
+               "name": "Authum Investment & Infrastructure Ltd. (AIIL)",
+               "sector": "Finance",
+               "id": "hq_AIIL"
+            },
+            {
+               "name": "Axis Bank Ltd. (AXISBANK)",
+               "sector": "Finance",
+               "id": "hq_AXISBANK"
+            },
+            {
+               "name": "BASF India Ltd. (BASF)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BASF"
+            },
+            {
+               "name": "Bajaj Finance Ltd. (BAJFINANCE)",
+               "sector": "Finance",
+               "id": "hq_BAJFINANCE"
+            },
+            {
+               "name": "Bajaj Holdings & Investment Ltd. (BAJAJHLDNG)",
+               "sector": "Finance",
+               "id": "hq_BAJAJHLDNG"
+            },
+            {
+               "name": "Bajaj Housing Finance Ltd. (BAJAJHFL)",
+               "sector": "Finance",
+               "id": "hq_BAJAJHFL"
+            },
+            {
+               "name": "Bank of Baroda (BANKBARODA)",
+               "sector": "Finance",
+               "id": "hq_BANKBARODA"
+            },
+            {
+               "name": "Bayer Cropscience Ltd. (BAYERCROP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BAYERCROP"
+            },
+            {
+               "name": "Bharat Dynamics Ltd. (BDL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BDL"
+            },
+            {
+               "name": "Bharti Hexacom Ltd. (BHARTIHEXA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BHARTIHEXA"
+            },
+            {
+               "name": "Brigade Enterprises Ltd. (BRIGADE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BRIGADE"
+            },
+            {
+               "name": "Chalet Hotels Ltd. (CHALET)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CHALET"
+            },
+            {
+               "name": "Cholamandalam Investment and Finance Company Ltd. (CHOLAFIN)",
+               "sector": "Finance",
+               "id": "hq_CHOLAFIN"
+            },
+            {
+               "name": "City Union Bank Ltd. (CUB)",
+               "sector": "Finance",
+               "id": "hq_CUB"
+            },
+            {
+               "name": "Coforge Ltd. (COFORGE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_COFORGE"
+            },
+            {
+               "name": "Cohance Lifesciences Ltd. (COHANCE)",
+               "sector": "Finance",
+               "id": "hq_COHANCE"
+            },
+            {
+               "name": "Cyient Ltd. (CYIENT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CYIENT"
+            },
+            {
+               "name": "Emcure Pharmaceuticals Ltd. (EMCURE)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_EMCURE"
+            },
+            {
+               "name": "Engineers India Ltd. (ENGINERSIN)",
+               "sector": "Infrastructure",
+               "id": "hq_ENGINERSIN"
+            },
+            {
+               "name": "Escorts Kubota Ltd. (ESCORTS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ESCORTS"
+            },
+            {
+               "name": "Federal Bank Ltd. (FEDERALBNK)",
+               "sector": "Finance",
+               "id": "hq_FEDERALBNK"
+            },
+            {
+               "name": "General Insurance Corporation of India (GICRE)",
+               "sector": "Finance",
+               "id": "hq_GICRE"
+            },
+            {
+               "name": "Gillette India Ltd. (GILLETTE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GILLETTE"
+            },
+            {
+               "name": "Glenmark Pharmaceuticals Ltd. (GLENMARK)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_GLENMARK"
+            },
+            {
+               "name": "Go Digit General Insurance Ltd. (GODIGIT)",
+               "sector": "Finance",
+               "id": "hq_GODIGIT"
+            },
+            {
+               "name": "HDFC Bank Ltd. (HDFCBANK)",
+               "sector": "Finance",
+               "id": "hq_HDFCBANK"
+            },
+            {
+               "name": "Hindustan Unilever Ltd. (HINDUNILVR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HINDUNILVR"
+            },
+            {
+               "name": "ICICI Bank Ltd. (ICICIBANK)",
+               "sector": "Finance",
+               "id": "hq_ICICIBANK"
+            },
+            {
+               "name": "ICICI Lombard General Insurance Company Ltd. (ICICIGI)",
+               "sector": "Finance",
+               "id": "hq_ICICIGI"
+            },
+            {
+               "name": "IDFC First Bank Ltd. (IDFCFIRSTB)",
+               "sector": "Finance",
+               "id": "hq_IDFCFIRSTB"
+            },
+            {
+               "name": "Indian Bank (INDIANB)",
+               "sector": "Finance",
+               "id": "hq_INDIANB"
+            },
+            {
+               "name": "Indian Hotels Co. Ltd. (INDHOTEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INDHOTEL"
+            },
+            {
+               "name": "Indian Railway Finance Corporation Ltd. (IRFC)",
+               "sector": "Finance",
+               "id": "hq_IRFC"
+            },
+            {
+               "name": "IndusInd Bank Ltd. (INDUSINDBK)",
+               "sector": "Finance",
+               "id": "hq_INDUSINDBK"
+            },
+            {
+               "name": "JM Financial Ltd. (JMFINANCIL)",
+               "sector": "Finance",
+               "id": "hq_JMFINANCIL"
+            },
+            {
+               "name": "Jammu & Kashmir Bank Ltd. (J&KBANK)",
+               "sector": "Finance",
+               "id": "hq_J&KBANK"
+            },
+            {
+               "name": "Jio Financial Services Ltd. (JIOFIN)",
+               "sector": "Finance",
+               "id": "hq_JIOFIN"
+            },
+            {
+               "name": "Jubilant Ingrevia Ltd. (JUBLINGREA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_JUBLINGREA"
+            },
+            {
+               "name": "Karur Vysya Bank Ltd. (KARURVYSYA)",
+               "sector": "Finance",
+               "id": "hq_KARURVYSYA"
+            },
+            {
+               "name": "Kotak Mahindra Bank Ltd. (KOTAKBANK)",
+               "sector": "Finance",
+               "id": "hq_KOTAKBANK"
+            },
+            {
+               "name": "Laurus Labs Ltd. (LAURUSLABS)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_LAURUSLABS"
+            },
+            {
+               "name": "Life Insurance Corporation of India (LICI)",
+               "sector": "Finance",
+               "id": "hq_LICI"
+            },
+            {
+               "name": "Lodha Developers Ltd. (LODHA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LODHA"
+            },
+            {
+               "name": "MMTC Ltd. (MMTC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MMTC"
+            },
+            {
+               "name": "Mahindra & Mahindra Financial Services Ltd. (M&MFIN)",
+               "sector": "Finance",
+               "id": "hq_M&MFIN"
+            },
+            {
+               "name": "Manappuram Finance Ltd. (MANAPPURAM)",
+               "sector": "Finance",
+               "id": "hq_MANAPPURAM"
+            },
+            {
+               "name": "Mangalore Refinery & Petrochemicals Ltd. (MRPL)",
+               "sector": "Energy",
+               "id": "hq_MRPL"
+            },
+            {
+               "name": "Max Financial Services Ltd. (MFSL)",
+               "sector": "Finance",
+               "id": "hq_MFSL"
+            },
+            {
+               "name": "Motilal Oswal Financial Services Ltd. (MOTILALOFS)",
+               "sector": "Finance",
+               "id": "hq_MOTILALOFS"
+            },
+            {
+               "name": "Muthoot Finance Ltd. (MUTHOOTFIN)",
+               "sector": "Finance",
+               "id": "hq_MUTHOOTFIN"
+            },
+            {
+               "name": "NMDC Ltd. (NMDC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NMDC"
+            },
+            {
+               "name": "NTPC Ltd. (NTPC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NTPC"
+            },
+            {
+               "name": "Neuland Laboratories Ltd. (NEULANDLAB)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_NEULANDLAB"
+            },
+            {
+               "name": "One 97 Communications Ltd. (PAYTM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PAYTM"
+            },
+            {
+               "name": "Oracle Financial Services Software Ltd. (OFSS)",
+               "sector": "Finance",
+               "id": "hq_OFSS"
+            },
+            {
+               "name": "Pidilite Industries Ltd. (PIDILITIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PIDILITIND"
+            },
+            {
+               "name": "RBL Bank Ltd. (RBLBANK)",
+               "sector": "Finance",
+               "id": "hq_RBLBANK"
+            },
+            {
+               "name": "REC Ltd. (RECLTD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RECLTD"
+            },
+            {
+               "name": "Redington Ltd. (REDINGTON)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_REDINGTON"
+            },
+            {
+               "name": "SBFC Finance Ltd. (SBFC)",
+               "sector": "Finance",
+               "id": "hq_SBFC"
+            },
+            {
+               "name": "SBI Life Insurance Company Ltd. (SBILIFE)",
+               "sector": "Finance",
+               "id": "hq_SBILIFE"
+            },
+            {
+               "name": "Shriram Finance Ltd. (SHRIRAMFIN)",
+               "sector": "Finance",
+               "id": "hq_SHRIRAMFIN"
+            },
+            {
+               "name": "Sona BLW Precision Forgings Ltd. (SONACOMS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SONACOMS"
+            },
+            {
+               "name": "Star Health and Allied Insurance Company Ltd. (STARHEALTH)",
+               "sector": "Finance",
+               "id": "hq_STARHEALTH"
+            },
+            {
+               "name": "Tata Elxsi Ltd. (TATAELXSI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TATAELXSI"
+            },
+            {
+               "name": "Tata Investment Corporation Ltd. (TATAINVEST)",
+               "sector": "Finance",
+               "id": "hq_TATAINVEST"
+            },
+            {
+               "name": "Tata Steel Ltd. (TATASTEEL)",
+               "sector": "Metals & Mining",
+               "id": "hq_TATASTEEL"
+            },
+            {
+               "name": "Vardhman Textiles Ltd. (VTL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VTL"
+            },
+            {
+               "name": "Yes Bank Ltd. (YESBANK)",
+               "sector": "Finance",
+               "id": "hq_YESBANK"
+            },
+            {
+               "name": "Zydus Lifesciences Ltd. (ZYDUSLIFE)",
+               "sector": "Finance",
+               "id": "hq_ZYDUSLIFE"
+            },
+            {
+               "name": "Reliance Industries (RELIANCE)",
+               "sector": "Energy/Petro",
+               "id": "hq_RELIANCE"
+            },
+            {
+               "name": "BPCL (BPCL)",
+               "sector": "Petro",
+               "id": "hq_BPCL"
+            },
+            {
+               "name": "HPCL (HINDPETRO)",
+               "sector": "Petro",
+               "id": "hq_HINDPETRO"
+            },
+            {
+               "name": "Tata Steel (TATASTEEL)",
+               "sector": "Metals",
+               "id": "hq_TATASTEEL"
+            },
+            {
+               "name": "JSW Steel (JSWSTEEL)",
+               "sector": "Metals",
+               "id": "hq_JSWSTEEL"
+            },
+            {
+               "name": "Hindalco (HINDALCO)",
+               "sector": "Metals",
+               "id": "hq_HINDALCO"
+            },
+            {
+               "name": "Ultratech Cement (ULTRACEMCO)",
+               "sector": "Infrastructure",
+               "id": "hq_ULTRACEMCO"
+            },
+            {
+               "name": "Larsen & Toubro (LT)",
+               "sector": "Engineering",
+               "id": "hq_LT"
+            },
+            {
+               "name": "Tata Motors (TATAMOTORS)",
+               "sector": "Automotive",
+               "id": "hq_TATAMOTORS"
+            },
+            {
+               "name": "Mahindra & Mahindra (M&M)",
+               "sector": "Automotive",
+               "id": "hq_M&M"
+            },
+            {
+               "name": "HDFC Bank (HDFCBANK)",
+               "sector": "Finance",
+               "id": "hq_HDFCBANK"
+            },
+            {
+               "name": "ICICI Bank (ICICIBANK)",
+               "sector": "Finance",
+               "id": "hq_ICICIBANK"
+            },
+            {
+               "name": "State Bank of India (SBIN)",
+               "sector": "Finance",
+               "id": "hq_SBIN"
+            },
+            {
+               "name": "TCS (TCS)",
+               "sector": "IT/Software",
+               "id": "hq_TCS"
+            },
+            {
+               "name": "HUL (HINDUNILVR)",
+               "sector": "FMCG",
+               "id": "hq_HINDUNILVR"
+            }
+         ]
+      },
+      "Chennai": {
+         "node_count": 45,
+         "hq_count": 45,
+         "sector_distribution": {
+            "FMCG/Consumer": 25,
+            "Finance": 8,
+            "Automotive": 6,
+            "Energy": 3,
+            "Metals & Mining": 1,
+            "Infrastructure": 1,
+            "Tyres": 1
+         },
+         "official_hqs": [
+            {
+               "name": "3M India Ltd. (3MINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_3MINDIA"
+            },
+            {
+               "name": "Aadhar Housing Finance Ltd. (AADHARHFC)",
+               "sector": "Finance",
+               "id": "hq_AADHARHFC"
+            },
+            {
+               "name": "Aarti Industries Ltd. (AARTIIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AARTIIND"
+            },
+            {
+               "name": "Abbott India Ltd. (ABBOTINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ABBOTINDIA"
+            },
+            {
+               "name": "Adani Ports and Special Economic Zone Ltd. (ADANIPORTS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ADANIPORTS"
+            },
+            {
+               "name": "Affle 3i Ltd. (AFFLE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AFFLE"
+            },
+            {
+               "name": "Apollo Hospitals Enterprise Ltd. (APOLLOHOSP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_APOLLOHOSP"
+            },
+            {
+               "name": "Bajaj Auto Ltd. (BAJAJ-AUTO)",
+               "sector": "Automotive",
+               "id": "hq_BAJAJ-AUTO"
+            },
+            {
+               "name": "Bank of Maharashtra (MAHABANK)",
+               "sector": "Finance",
+               "id": "hq_MAHABANK"
+            },
+            {
+               "name": "CG Power and Industrial Solutions Ltd. (CGPOWER)",
+               "sector": "Energy",
+               "id": "hq_CGPOWER"
+            },
+            {
+               "name": "CRISIL Ltd. (CRISIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CRISIL"
+            },
+            {
+               "name": "Chambal Fertilizers & Chemicals Ltd. (CHAMBLFERT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CHAMBLFERT"
+            },
+            {
+               "name": "Computer Age Management Services Ltd. (CAMS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CAMS"
+            },
+            {
+               "name": "GE Vernova T&D India Ltd. (GVT&D)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GVT&D"
+            },
+            {
+               "name": "Godrej Consumer Products Ltd. (GODREJCP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GODREJCP"
+            },
+            {
+               "name": "Gujarat Mineral Development Corporation Ltd. (GMDCLTD)",
+               "sector": "Metals & Mining",
+               "id": "hq_GMDCLTD"
+            },
+            {
+               "name": "IDBI Bank Ltd. (IDBI)",
+               "sector": "Finance",
+               "id": "hq_IDBI"
+            },
+            {
+               "name": "IIFL Finance Ltd. (IIFL)",
+               "sector": "Finance",
+               "id": "hq_IIFL"
+            },
+            {
+               "name": "INOX India Ltd. (INOXINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INOXINDIA"
+            },
+            {
+               "name": "ITC Hotels Ltd. (ITCHOTELS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ITCHOTELS"
+            },
+            {
+               "name": "Indegene Ltd. (INDGN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INDGN"
+            },
+            {
+               "name": "Info Edge (India) Ltd. (NAUKRI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NAUKRI"
+            },
+            {
+               "name": "JK Tyre & Industries Ltd. (JKTYRE)",
+               "sector": "Automotive",
+               "id": "hq_JKTYRE"
+            },
+            {
+               "name": "JSW Cement Ltd. (JSWCEMENT)",
+               "sector": "Infrastructure",
+               "id": "hq_JSWCEMENT"
+            },
+            {
+               "name": "Jyoti CNC Automation Ltd. (JYOTICNC)",
+               "sector": "Automotive",
+               "id": "hq_JYOTICNC"
+            },
+            {
+               "name": "Kec International Ltd. (KEC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KEC"
+            },
+            {
+               "name": "LIC Housing Finance Ltd. (LICHSGFIN)",
+               "sector": "Finance",
+               "id": "hq_LICHSGFIN"
+            },
+            {
+               "name": "MRF Ltd. (MRF)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MRF"
+            },
+            {
+               "name": "Niva Bupa Health Insurance Company Ltd. (NIVABUPA)",
+               "sector": "Finance",
+               "id": "hq_NIVABUPA"
+            },
+            {
+               "name": "Punjab National Bank (PNB)",
+               "sector": "Finance",
+               "id": "hq_PNB"
+            },
+            {
+               "name": "Reliance Power Ltd. (RPOWER)",
+               "sector": "Energy",
+               "id": "hq_RPOWER"
+            },
+            {
+               "name": "Sagility Ltd. (SAGILITY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SAGILITY"
+            },
+            {
+               "name": "Shyam Metalics and Energy Ltd. (SHYAMMETL)",
+               "sector": "Energy",
+               "id": "hq_SHYAMMETL"
+            },
+            {
+               "name": "Siemens Ltd. (SIEMENS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SIEMENS"
+            },
+            {
+               "name": "Swan Corp Ltd. (SWANCORP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SWANCORP"
+            },
+            {
+               "name": "TVS Motor Company Ltd. (TVSMOTOR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TVSMOTOR"
+            },
+            {
+               "name": "Tata Motors Passenger Vehicles Ltd. (TMPV)",
+               "sector": "Automotive",
+               "id": "hq_TMPV"
+            },
+            {
+               "name": "Trident Ltd. (TRIDENT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TRIDENT"
+            },
+            {
+               "name": "UCO Bank (UCOBANK)",
+               "sector": "Finance",
+               "id": "hq_UCOBANK"
+            },
+            {
+               "name": "Valor Estate Ltd. (DBREALTY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DBREALTY"
+            },
+            {
+               "name": "Ventive Hospitality Ltd. (VENTIVE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VENTIVE"
+            },
+            {
+               "name": "Zee Entertainment Enterprises Ltd. (ZEEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ZEEL"
+            },
+            {
+               "name": "Ashok Leyland",
+               "sector": "Automotive",
+               "id": "hq_ASHOKLEY"
+            },
+            {
+               "name": "TVS Motor",
+               "sector": "Automotive",
+               "id": "hq_TVSMOTOR"
+            },
+            {
+               "name": "MRF",
+               "sector": "Tyres",
+               "id": "hq_MRF"
+            }
+         ]
+      },
+      "Kolkata": {
+         "node_count": 30,
+         "hq_count": 30,
+         "sector_distribution": {
+            "FMCG/Consumer": 24,
+            "Energy": 2,
+            "Metals & Mining": 1,
+            "Industrial": 1,
+            "Infrastructure": 1,
+            "FMCG": 1
+         },
+         "official_hqs": [
+            {
+               "name": "ABB India Ltd. (ABB)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ABB"
+            },
+            {
+               "name": "ACC Ltd. (ACC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ACC"
+            },
+            {
+               "name": "Adani Power Ltd. (ADANIPOWER)",
+               "sector": "Energy",
+               "id": "hq_ADANIPOWER"
+            },
+            {
+               "name": "Balkrishna Industries Ltd. (BALKRISIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BALKRISIND"
+            },
+            {
+               "name": "Bharat Petroleum Corporation Ltd. (BPCL)",
+               "sector": "Energy",
+               "id": "hq_BPCL"
+            },
+            {
+               "name": "Bikaji Foods International Ltd. (BIKAJI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BIKAJI"
+            },
+            {
+               "name": "E.I.D. Parry (India) Ltd. (EIDPARRY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_EIDPARRY"
+            },
+            {
+               "name": "Elgi Equipments Ltd. (ELGIEQUIP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ELGIEQUIP"
+            },
+            {
+               "name": "Emami Ltd. (EMAMILTD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_EMAMILTD"
+            },
+            {
+               "name": "Finolex Cables Ltd. (FINCABLES)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FINCABLES"
+            },
+            {
+               "name": "Firstsource Solutions Ltd. (FSL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FSL"
+            },
+            {
+               "name": "Great Eastern Shipping Co. Ltd. (GESHIP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GESHIP"
+            },
+            {
+               "name": "Havells India Ltd. (HAVELLS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HAVELLS"
+            },
+            {
+               "name": "InterGlobe Aviation Ltd. (INDIGO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INDIGO"
+            },
+            {
+               "name": "Jindal Steel Ltd. (JINDALSTEL)",
+               "sector": "Metals & Mining",
+               "id": "hq_JINDALSTEL"
+            },
+            {
+               "name": "Krishna Institute of Medical Sciences Ltd. (KIMS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KIMS"
+            },
+            {
+               "name": "LTM Limited (LTM)",
+               "sector": "Industrial",
+               "id": "hq_LTM"
+            },
+            {
+               "name": "Maharashtra Seamless Ltd. (MAHSEAMLES)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MAHSEAMLES"
+            },
+            {
+               "name": "Navin Fluorine International Ltd. (NAVINFLUOR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NAVINFLUOR"
+            },
+            {
+               "name": "Oberoi Realty Ltd. (OBEROIRLTY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_OBEROIRLTY"
+            },
+            {
+               "name": "SBI Cards and Payment Services Ltd. (SBICARD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SBICARD"
+            },
+            {
+               "name": "Shipping Corporation of India Ltd. (SCI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SCI"
+            },
+            {
+               "name": "Tata Consumer Products Ltd. (TATACONSUM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TATACONSUM"
+            },
+            {
+               "name": "Tejas Networks Ltd. (TEJASNET)",
+               "sector": "Infrastructure",
+               "id": "hq_TEJASNET"
+            },
+            {
+               "name": "Transformers And Rectifiers (India) Ltd. (TARIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TARIL"
+            },
+            {
+               "name": "UPL Ltd. (UPL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_UPL"
+            },
+            {
+               "name": "Varun Beverages Ltd. (VBL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VBL"
+            },
+            {
+               "name": "Waaree Energies Ltd. (WAAREEENER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_WAAREEENER"
+            },
+            {
+               "name": "ZF Commercial Vehicle Control Systems India Ltd. (ZFCVINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ZFCVINDIA"
+            },
+            {
+               "name": "ITC (ITC)",
+               "sector": "FMCG",
+               "id": "hq_ITC"
+            }
+         ]
+      },
+      "Kochi": {
+         "node_count": 31,
+         "hq_count": 31,
+         "sector_distribution": {
+            "Infrastructure": 2,
+            "Energy": 2,
+            "FMCG/Consumer": 27
+         },
+         "official_hqs": [
+            {
+               "name": "AIA Engineering Ltd. (AIAENG)",
+               "sector": "Infrastructure",
+               "id": "hq_AIAENG"
+            },
+            {
+               "name": "Adani Green Energy Ltd. (ADANIGREEN)",
+               "sector": "Energy",
+               "id": "hq_ADANIGREEN"
+            },
+            {
+               "name": "Amber Enterprises India Ltd. (AMBER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AMBER"
+            },
+            {
+               "name": "Ashok Leyland Ltd. (ASHOKLEY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ASHOKLEY"
+            },
+            {
+               "name": "Asian Paints Ltd. (ASIANPAINT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ASIANPAINT"
+            },
+            {
+               "name": "Berger Paints India Ltd. (BERGEPAINT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BERGEPAINT"
+            },
+            {
+               "name": "Blue Star Ltd. (BLUESTARCO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BLUESTARCO"
+            },
+            {
+               "name": "CCL Products (I) Ltd. (CCL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CCL"
+            },
+            {
+               "name": "CESC Ltd. (CESC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CESC"
+            },
+            {
+               "name": "Cummins India Ltd. (CUMMINSIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CUMMINSIND"
+            },
+            {
+               "name": "Data Patterns (India) Ltd. (DATAPATTNS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DATAPATTNS"
+            },
+            {
+               "name": "Fertilisers and Chemicals Travancore Ltd. (FACT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FACT"
+            },
+            {
+               "name": "Hindustan Zinc Ltd. (HINDZINC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HINDZINC"
+            },
+            {
+               "name": "JSW Energy Ltd. (JSWENERGY)",
+               "sector": "Energy",
+               "id": "hq_JSWENERGY"
+            },
+            {
+               "name": "Jubilant Pharmova Ltd. (JUBLPHARMA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_JUBLPHARMA"
+            },
+            {
+               "name": "Kajaria Ceramics Ltd. (KAJARIACER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KAJARIACER"
+            },
+            {
+               "name": "Kirloskar Brothers Ltd. (KIRLOSBROS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KIRLOSBROS"
+            },
+            {
+               "name": "Lemon Tree Hotels Ltd. (LEMONTREE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LEMONTREE"
+            },
+            {
+               "name": "Linde India Ltd. (LINDEINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LINDEINDIA"
+            },
+            {
+               "name": "PCBL Chemical Ltd. (PCBL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PCBL"
+            },
+            {
+               "name": "PTC Industries Ltd. (PTCIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PTCIL"
+            },
+            {
+               "name": "Pfizer Ltd. (PFIZER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PFIZER"
+            },
+            {
+               "name": "Polycab India Ltd. (POLYCAB)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_POLYCAB"
+            },
+            {
+               "name": "Praj Industries Ltd. (PRAJIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PRAJIND"
+            },
+            {
+               "name": "Ramkrishna Forgings Ltd. (RKFORGE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RKFORGE"
+            },
+            {
+               "name": "Sammaan Capital Ltd. (SAMMAANCAP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SAMMAANCAP"
+            },
+            {
+               "name": "Thermax Ltd. (THERMAX)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_THERMAX"
+            },
+            {
+               "name": "Timken India Ltd. (TIMKEN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TIMKEN"
+            },
+            {
+               "name": "Titan Company Ltd. (TITAN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TITAN"
+            },
+            {
+               "name": "Triveni Engineering & Industries Ltd. (TRIVENI)",
+               "sector": "Infrastructure",
+               "id": "hq_TRIVENI"
+            },
+            {
+               "name": "V-Guard Industries Ltd. (VGUARD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VGUARD"
+            }
+         ]
+      },
+      "Noida": {
+         "node_count": 29,
+         "hq_count": 29,
+         "sector_distribution": {
+            "FMCG/Consumer": 18,
+            "Energy": 4,
+            "IT/Software": 5,
+            "Infrastructure": 1,
+            "Metals & Mining": 1
+         },
+         "official_hqs": [
+            {
+               "name": "APL Apollo Tubes Ltd. (APLAPOLLO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_APLAPOLLO"
+            },
+            {
+               "name": "Apar Industries Ltd. (APARINDS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_APARINDS"
+            },
+            {
+               "name": "Britannia Industries Ltd. (BRITANNIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BRITANNIA"
+            },
+            {
+               "name": "Cera Sanitaryware Ltd (CERA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CERA"
+            },
+            {
+               "name": "Chennai Petroleum Corporation Ltd. (CHENNPETRO)",
+               "sector": "Energy",
+               "id": "hq_CHENNPETRO"
+            },
+            {
+               "name": "Choice International Ltd. (CHOICEIN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CHOICEIN"
+            },
+            {
+               "name": "Colgate Palmolive (India) Ltd. (COLPAL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_COLPAL"
+            },
+            {
+               "name": "Endurance Technologies Ltd. (ENDURANCE)",
+               "sector": "IT/Software",
+               "id": "hq_ENDURANCE"
+            },
+            {
+               "name": "Finolex Industries Ltd. (FINPIPE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FINPIPE"
+            },
+            {
+               "name": "Godrej Properties Ltd. (GODREJPROP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GODREJPROP"
+            },
+            {
+               "name": "HBL Engineering Ltd. (HBLENGINE)",
+               "sector": "Infrastructure",
+               "id": "hq_HBLENGINE"
+            },
+            {
+               "name": "Happiest Minds Technologies Ltd. (HAPPSTMNDS)",
+               "sector": "IT/Software",
+               "id": "hq_HAPPSTMNDS"
+            },
+            {
+               "name": "Indiamart Intermesh Ltd. (INDIAMART)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INDIAMART"
+            },
+            {
+               "name": "Indian Energy Exchange Ltd. (IEX)",
+               "sector": "Energy",
+               "id": "hq_IEX"
+            },
+            {
+               "name": "International Gemmological Institute (India) Ltd. (IGIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IGIL"
+            },
+            {
+               "name": "KSB Ltd. (KSB)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KSB"
+            },
+            {
+               "name": "L&T Technology Services Ltd. (LTTS)",
+               "sector": "IT/Software",
+               "id": "hq_LTTS"
+            },
+            {
+               "name": "Nuvama Wealth Management Ltd. (NUVAMA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NUVAMA"
+            },
+            {
+               "name": "Oil India Ltd. (OIL)",
+               "sector": "Energy",
+               "id": "hq_OIL"
+            },
+            {
+               "name": "PI Industries Ltd. (PIIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PIIND"
+            },
+            {
+               "name": "Page Industries Ltd. (PAGEIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PAGEIND"
+            },
+            {
+               "name": "Reliance Industries Ltd. (RELIANCE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RELIANCE"
+            },
+            {
+               "name": "Steel Authority of India Ltd. (SAIL)",
+               "sector": "Metals & Mining",
+               "id": "hq_SAIL"
+            },
+            {
+               "name": "Supreme Industries Ltd. (SUPREMEIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SUPREMEIND"
+            },
+            {
+               "name": "Tech Mahindra Ltd. (TECHM)",
+               "sector": "IT/Software",
+               "id": "hq_TECHM"
+            },
+            {
+               "name": "Torrent Power Ltd. (TORNTPOWER)",
+               "sector": "Energy",
+               "id": "hq_TORNTPOWER"
+            },
+            {
+               "name": "United Spirits Ltd. (UNITDSPR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_UNITDSPR"
+            },
+            {
+               "name": "Voltas Ltd. (VOLTAS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VOLTAS"
+            },
+            {
+               "name": "Zensar Technolgies Ltd. (ZENSARTECH)",
+               "sector": "IT/Software",
+               "id": "hq_ZENSARTECH"
+            }
+         ]
+      },
+      "New Delhi": {
+         "node_count": 48,
+         "hq_count": 48,
+         "sector_distribution": {
+            "Finance": 18,
+            "FMCG/Consumer": 21,
+            "Infrastructure": 2,
+            "Energy": 2,
+            "Petro": 1,
+            "Gas Utility": 1,
+            "Metals": 1,
+            "Automotive": 1,
+            "Telecom": 1
+         },
+         "official_hqs": [
+            {
+               "name": "AU Small Finance Bank Ltd. (AUBANK)",
+               "sector": "Finance",
+               "id": "hq_AUBANK"
+            },
+            {
+               "name": "Aegis Vopak Terminals Ltd. (AEGISVOPAK)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AEGISVOPAK"
+            },
+            {
+               "name": "Ambuja Cements Ltd. (AMBUJACEM)",
+               "sector": "Infrastructure",
+               "id": "hq_AMBUJACEM"
+            },
+            {
+               "name": "Bajaj Finserv Ltd. (BAJAJFINSV)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BAJAJFINSV"
+            },
+            {
+               "name": "Bandhan Bank Ltd. (BANDHANBNK)",
+               "sector": "Finance",
+               "id": "hq_BANDHANBNK"
+            },
+            {
+               "name": "Bank of India (BANKINDIA)",
+               "sector": "Finance",
+               "id": "hq_BANKINDIA"
+            },
+            {
+               "name": "Blue Dart Express Ltd. (BLUEDART)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BLUEDART"
+            },
+            {
+               "name": "Carborundum Universal Ltd. (CARBORUNIV)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CARBORUNIV"
+            },
+            {
+               "name": "Central Bank of India (CENTRALBK)",
+               "sector": "Finance",
+               "id": "hq_CENTRALBK"
+            },
+            {
+               "name": "Cochin Shipyard Ltd. (COCHINSHIP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_COCHINSHIP"
+            },
+            {
+               "name": "DOMS Industries Ltd. (DOMS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DOMS"
+            },
+            {
+               "name": "Eris Lifesciences Ltd. (ERIS)",
+               "sector": "Finance",
+               "id": "hq_ERIS"
+            },
+            {
+               "name": "Five-Star Business Finance Ltd. (FIVESTAR)",
+               "sector": "Finance",
+               "id": "hq_FIVESTAR"
+            },
+            {
+               "name": "GAIL (India) Ltd. (GAIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GAIL"
+            },
+            {
+               "name": "Godrej Agrovet Ltd. (GODREJAGRO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GODREJAGRO"
+            },
+            {
+               "name": "HDFC Life Insurance Company Ltd. (HDFCLIFE)",
+               "sector": "Finance",
+               "id": "hq_HDFCLIFE"
+            },
+            {
+               "name": "Home First Finance Company India Ltd. (HOMEFIRST)",
+               "sector": "Finance",
+               "id": "hq_HOMEFIRST"
+            },
+            {
+               "name": "Honasa Consumer Ltd. (HONASA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HONASA"
+            },
+            {
+               "name": "Housing & Urban Development Corporation Ltd. (HUDCO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HUDCO"
+            },
+            {
+               "name": "ICICI Prudential Life Insurance Company Ltd. (ICICIPRULI)",
+               "sector": "Finance",
+               "id": "hq_ICICIPRULI"
+            },
+            {
+               "name": "Indian Overseas Bank (IOB)",
+               "sector": "Finance",
+               "id": "hq_IOB"
+            },
+            {
+               "name": "Indian Railway Catering And Tourism Corporation Ltd. (IRCTC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IRCTC"
+            },
+            {
+               "name": "Jindal Saw Ltd. (JINDALSAW)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_JINDALSAW"
+            },
+            {
+               "name": "Kalpataru Projects International Ltd. (KPIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KPIL"
+            },
+            {
+               "name": "L&T Finance Ltd. (LTF)",
+               "sector": "Finance",
+               "id": "hq_LTF"
+            },
+            {
+               "name": "Motherson Sumi Wiring India Ltd. (MSUMI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MSUMI"
+            },
+            {
+               "name": "Nippon Life India Asset Management Ltd. (NAM-INDIA)",
+               "sector": "Finance",
+               "id": "hq_NAM-INDIA"
+            },
+            {
+               "name": "PNB Housing Finance Ltd. (PNBHOUSING)",
+               "sector": "Finance",
+               "id": "hq_PNBHOUSING"
+            },
+            {
+               "name": "Poly Medicure Ltd. (POLYMED)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_POLYMED"
+            },
+            {
+               "name": "Power Finance Corporation Ltd. (PFC)",
+               "sector": "Finance",
+               "id": "hq_PFC"
+            },
+            {
+               "name": "Railtel Corporation Of India Ltd. (RAILTEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RAILTEL"
+            },
+            {
+               "name": "Sai Life Sciences Ltd. (SAILIFE)",
+               "sector": "Finance",
+               "id": "hq_SAILIFE"
+            },
+            {
+               "name": "Sarda Energy and Minerals Ltd. (SARDAEN)",
+               "sector": "Energy",
+               "id": "hq_SARDAEN"
+            },
+            {
+               "name": "Sundaram Finance Ltd. (SUNDARMFIN)",
+               "sector": "Finance",
+               "id": "hq_SUNDARMFIN"
+            },
+            {
+               "name": "TBO Tek Ltd. (TBOTEK)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TBOTEK"
+            },
+            {
+               "name": "The Ramco Cements Ltd. (RAMCOCEM)",
+               "sector": "Infrastructure",
+               "id": "hq_RAMCOCEM"
+            },
+            {
+               "name": "Triveni Turbine Ltd. (TRITURBINE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TRITURBINE"
+            },
+            {
+               "name": "Tube Investments of India Ltd. (TIINDIA)",
+               "sector": "Finance",
+               "id": "hq_TIINDIA"
+            },
+            {
+               "name": "Union Bank of India (UNIONBANK)",
+               "sector": "Finance",
+               "id": "hq_UNIONBANK"
+            },
+            {
+               "name": "Usha Martin Ltd. (USHAMART)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_USHAMART"
+            },
+            {
+               "name": "Vedant Fashions Ltd. (MANYAVAR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MANYAVAR"
+            },
+            {
+               "name": "Vijaya Diagnostic Centre Ltd. (VIJAYA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VIJAYA"
+            },
+            {
+               "name": "ONGC (ONGC)",
+               "sector": "Energy",
+               "id": "hq_ONGC"
+            },
+            {
+               "name": "IOC (IOC)",
+               "sector": "Petro",
+               "id": "hq_IOC"
+            },
+            {
+               "name": "GAIL (GAIL)",
+               "sector": "Gas Utility",
+               "id": "hq_GAIL"
+            },
+            {
+               "name": "SAIL (SAIL)",
+               "sector": "Metals",
+               "id": "hq_SAIL"
+            },
+            {
+               "name": "Maruti Suzuki (MARUTI)",
+               "sector": "Automotive",
+               "id": "hq_MARUTI"
+            },
+            {
+               "name": "Bharti Airtel (BHARTIARTL)",
+               "sector": "Telecom",
+               "id": "hq_BHARTIARTL"
+            }
+         ]
+      },
+      "Gurugram": {
+         "node_count": 28,
+         "hq_count": 28,
+         "sector_distribution": {
+            "FMCG/Consumer": 19,
+            "Automotive": 2,
+            "IT/Software": 3,
+            "Energy": 3,
+            "Infrastructure": 1
+         },
+         "official_hqs": [
+            {
+               "name": "AWL Agri Business Ltd. (AWL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AWL"
+            },
+            {
+               "name": "Aditya Birla Capital Ltd. (ABCAPITAL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ABCAPITAL"
+            },
+            {
+               "name": "C.E. Info Systems Ltd. (MAPMYINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MAPMYINDIA"
+            },
+            {
+               "name": "Ceat Ltd. (CEATLTD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CEATLTD"
+            },
+            {
+               "name": "Craftsman Automation Ltd. (CRAFTSMAN)",
+               "sector": "Automotive",
+               "id": "hq_CRAFTSMAN"
+            },
+            {
+               "name": "Dixon Technologies (India) Ltd. (DIXON)",
+               "sector": "IT/Software",
+               "id": "hq_DIXON"
+            },
+            {
+               "name": "FSN E-Commerce Ventures Ltd. (NYKAA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NYKAA"
+            },
+            {
+               "name": "Gujarat State Petronet Ltd. (GSPL)",
+               "sector": "Energy",
+               "id": "hq_GSPL"
+            },
+            {
+               "name": "HDFC Asset Management Company Ltd. (HDFCAMC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HDFCAMC"
+            },
+            {
+               "name": "Hindustan Aeronautics Ltd. (HAL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HAL"
+            },
+            {
+               "name": "Hindustan Copper Ltd. (HINDCOPPER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HINDCOPPER"
+            },
+            {
+               "name": "Honeywell Automation India Ltd. (HONAUT)",
+               "sector": "Automotive",
+               "id": "hq_HONAUT"
+            },
+            {
+               "name": "Indian Renewable Energy Development Agency Ltd. (IREDA)",
+               "sector": "Energy",
+               "id": "hq_IREDA"
+            },
+            {
+               "name": "JSW Infrastructure Ltd. (JSWINFRA)",
+               "sector": "Infrastructure",
+               "id": "hq_JSWINFRA"
+            },
+            {
+               "name": "Jaiprakash Power Ventures Ltd. (JPPOWER)",
+               "sector": "Energy",
+               "id": "hq_JPPOWER"
+            },
+            {
+               "name": "Jupiter Wagons Ltd. (JWL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_JWL"
+            },
+            {
+               "name": "KEI Industries Ltd. (KEI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KEI"
+            },
+            {
+               "name": "Kalyan Jewellers India Ltd. (KALYANKJIL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KALYANKJIL"
+            },
+            {
+               "name": "Latent View Analytics Ltd. (LATENTVIEW)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LATENTVIEW"
+            },
+            {
+               "name": "Maharashtra Scooters Ltd. (MAHSCOOTER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MAHSCOOTER"
+            },
+            {
+               "name": "Minda Corporation Ltd. (MINDACORP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MINDACORP"
+            },
+            {
+               "name": "NLC India Ltd. (NLCINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NLCINDIA"
+            },
+            {
+               "name": "Nava Ltd. (NAVA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NAVA"
+            },
+            {
+               "name": "Nestle India Ltd. (NESTLEIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NESTLEIND"
+            },
+            {
+               "name": "Sumitomo Chemical India Ltd. (SUMICHEM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SUMICHEM"
+            },
+            {
+               "name": "Sundram Fasteners Ltd. (SUNDRMFAST)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SUNDRMFAST"
+            },
+            {
+               "name": "Tata Consultancy Services Ltd. (TCS)",
+               "sector": "IT/Software",
+               "id": "hq_TCS"
+            },
+            {
+               "name": "Zen Technologies Ltd. (ZENTEC)",
+               "sector": "IT/Software",
+               "id": "hq_ZENTEC"
+            }
+         ]
+      },
+      "Hyderabad": {
+         "node_count": 55,
+         "hq_count": 55,
+         "sector_distribution": {
+            "Infrastructure": 4,
+            "FMCG/Consumer": 24,
+            "Healthcare/Pharma": 13,
+            "Energy": 5,
+            "IT/Software": 6,
+            "Mining": 1,
+            "Pharma": 2
+         },
+         "official_hqs": [
+            {
+               "name": "Action Construction Equipment Ltd. (ACE)",
+               "sector": "Infrastructure",
+               "id": "hq_ACE"
+            },
+            {
+               "name": "Aditya Birla Real Estate Ltd. (ABREL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ABREL"
+            },
+            {
+               "name": "Aegis Logistics Ltd. (AEGISLOG)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AEGISLOG"
+            },
+            {
+               "name": "Akums Drugs and Pharmaceuticals Ltd. (AKUMS)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_AKUMS"
+            },
+            {
+               "name": "Asahi India Glass Ltd. (ASAHIINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ASAHIINDIA"
+            },
+            {
+               "name": "Aster DM Healthcare Ltd. (ASTERDM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_ASTERDM"
+            },
+            {
+               "name": "AstraZenca Pharma India Ltd. (ASTRAZEN)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_ASTRAZEN"
+            },
+            {
+               "name": "BEML Ltd. (BEML)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BEML"
+            },
+            {
+               "name": "Campus Activewear Ltd. (CAMPUS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CAMPUS"
+            },
+            {
+               "name": "Capri Global Capital Ltd. (CGCL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CGCL"
+            },
+            {
+               "name": "DCM Shriram Ltd. (DCMSHRIRAM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DCMSHRIRAM"
+            },
+            {
+               "name": "Dalmia Bharat Ltd. (DALBHARAT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DALBHARAT"
+            },
+            {
+               "name": "Dr. Agarwal's Health Care Ltd. (AGARWALEYE)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_AGARWALEYE"
+            },
+            {
+               "name": "Dr. Reddy's Laboratories Ltd. (DRREDDY)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_DRREDDY"
+            },
+            {
+               "name": "Elecon Engineering Co. Ltd. (ELECON)",
+               "sector": "Infrastructure",
+               "id": "hq_ELECON"
+            },
+            {
+               "name": "Eternal Ltd. (ETERNAL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ETERNAL"
+            },
+            {
+               "name": "Fortis Healthcare Ltd. (FORTIS)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_FORTIS"
+            },
+            {
+               "name": "Glaxosmithkline Pharmaceuticals Ltd. (GLAXO)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_GLAXO"
+            },
+            {
+               "name": "Godawari Power & Ispat Ltd. (GPIL)",
+               "sector": "Energy",
+               "id": "hq_GPIL"
+            },
+            {
+               "name": "Godfrey Phillips India Ltd. (GODFRYPHLP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GODFRYPHLP"
+            },
+            {
+               "name": "Granules India Ltd. (GRANULES)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GRANULES"
+            },
+            {
+               "name": "Graphite India Ltd. (GRAPHITE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GRAPHITE"
+            },
+            {
+               "name": "Gravita India Ltd. (GRAVITA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GRAVITA"
+            },
+            {
+               "name": "Gujarat Fluorochemicals Ltd. (FLUOROCHEM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FLUOROCHEM"
+            },
+            {
+               "name": "Gujarat Gas Ltd. (GUJGASLTD)",
+               "sector": "Energy",
+               "id": "hq_GUJGASLTD"
+            },
+            {
+               "name": "Hexaware Technologies Ltd. (HEXT)",
+               "sector": "IT/Software",
+               "id": "hq_HEXT"
+            },
+            {
+               "name": "Himadri Speciality Chemical Ltd. (HSCL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HSCL"
+            },
+            {
+               "name": "Ipca Laboratories Ltd. (IPCALAB)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_IPCALAB"
+            },
+            {
+               "name": "J.B. Chemicals & Pharmaceuticals Ltd. (JBCHEPHARM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_JBCHEPHARM"
+            },
+            {
+               "name": "Jyothy Labs Ltd. (JYOTHYLAB)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_JYOTHYLAB"
+            },
+            {
+               "name": "Kirloskar Oil Eng Ltd. (KIRLOSENG)",
+               "sector": "Energy",
+               "id": "hq_KIRLOSENG"
+            },
+            {
+               "name": "Larsen & Toubro Ltd. (LT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LT"
+            },
+            {
+               "name": "Mahanagar Gas Ltd. (MGL)",
+               "sector": "Energy",
+               "id": "hq_MGL"
+            },
+            {
+               "name": "Mankind Pharma Ltd. (MANKIND)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_MANKIND"
+            },
+            {
+               "name": "Marico Ltd. (MARICO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MARICO"
+            },
+            {
+               "name": "MphasiS Ltd. (MPHASIS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MPHASIS"
+            },
+            {
+               "name": "Multi Commodity Exchange of India Ltd. (MCX)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MCX"
+            },
+            {
+               "name": "NATCO Pharma Ltd. (NATCOPHARM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_NATCOPHARM"
+            },
+            {
+               "name": "Olectra Greentech Ltd. (OLECTRA)",
+               "sector": "IT/Software",
+               "id": "hq_OLECTRA"
+            },
+            {
+               "name": "PB Fintech Ltd. (POLICYBZR)",
+               "sector": "IT/Software",
+               "id": "hq_POLICYBZR"
+            },
+            {
+               "name": "PVR INOX Ltd. (PVRINOX)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PVRINOX"
+            },
+            {
+               "name": "Prestige Estates Projects Ltd. (PRESTIGE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PRESTIGE"
+            },
+            {
+               "name": "Procter & Gamble Hygiene & Health Care Ltd. (PGHH)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_PGHH"
+            },
+            {
+               "name": "Shree Cement Ltd. (SHREECEM)",
+               "sector": "Infrastructure",
+               "id": "hq_SHREECEM"
+            },
+            {
+               "name": "Sun TV Network Ltd. (SUNTV)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SUNTV"
+            },
+            {
+               "name": "Syngene International Ltd. (SYNGENE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SYNGENE"
+            },
+            {
+               "name": "Tata Power Co. Ltd. (TATAPOWER)",
+               "sector": "Energy",
+               "id": "hq_TATAPOWER"
+            },
+            {
+               "name": "Tata Technologies Ltd. (TATATECH)",
+               "sector": "IT/Software",
+               "id": "hq_TATATECH"
+            },
+            {
+               "name": "Techno Electric & Engineering Company Ltd. (TECHNOE)",
+               "sector": "IT/Software",
+               "id": "hq_TECHNOE"
+            },
+            {
+               "name": "Wipro Ltd. (WIPRO)",
+               "sector": "IT/Software",
+               "id": "hq_WIPRO"
+            },
+            {
+               "name": "eClerx Services Ltd. (ECLERX)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ECLERX"
+            },
+            {
+               "name": "NMDC (NMDC)",
+               "sector": "Mining",
+               "id": "hq_NMDC"
+            },
+            {
+               "name": "Dr. Reddy's",
+               "sector": "Pharma",
+               "id": "hq_DRREDDY"
+            },
+            {
+               "name": "Aurobindo Pharma",
+               "sector": "Pharma",
+               "id": "hq_AUROPHARMA"
+            },
+            {
+               "name": "NCC",
+               "sector": "Infrastructure",
+               "id": "hq_NCC"
+            }
+         ]
+      },
+      "Surat": {
+         "node_count": 31,
+         "hq_count": 31,
+         "sector_distribution": {
+            "Energy": 3,
+            "Infrastructure": 5,
+            "FMCG/Consumer": 23
+         },
+         "official_hqs": [
+            {
+               "name": "Adani Energy Solutions Ltd. (ADANIENSOL)",
+               "sector": "Energy",
+               "id": "hq_ADANIENSOL"
+            },
+            {
+               "name": "Afcons Infrastructure Ltd. (AFCONS)",
+               "sector": "Infrastructure",
+               "id": "hq_AFCONS"
+            },
+            {
+               "name": "Akzo Nobel India Ltd. (AKZOINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_AKZOINDIA"
+            },
+            {
+               "name": "Alok Industries Ltd. (ALOKINDS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ALOKINDS"
+            },
+            {
+               "name": "Anant Raj Ltd. (ANANTRAJ)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ANANTRAJ"
+            },
+            {
+               "name": "Angel One Ltd. (ANGELONE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ANGELONE"
+            },
+            {
+               "name": "Avenue Supermarts Ltd. (DMART)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DMART"
+            },
+            {
+               "name": "Bharat Forge Ltd. (BHARATFORG)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BHARATFORG"
+            },
+            {
+               "name": "Bombay Burmah Trading Corporation Ltd. (BBTC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BBTC"
+            },
+            {
+               "name": "Century Plyboards (India) Ltd. (CENTURYPLY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CENTURYPLY"
+            },
+            {
+               "name": "Crompton Greaves Consumer Electricals Ltd. (CROMPTON)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CROMPTON"
+            },
+            {
+               "name": "Deepak Nitrite Ltd. (DEEPAKNTR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DEEPAKNTR"
+            },
+            {
+               "name": "Delhivery Ltd. (DELHIVERY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DELHIVERY"
+            },
+            {
+               "name": "Garden Reach Shipbuilders & Engineers Ltd. (GRSE)",
+               "sector": "Infrastructure",
+               "id": "hq_GRSE"
+            },
+            {
+               "name": "Godrej Industries Ltd. (GODREJIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GODREJIND"
+            },
+            {
+               "name": "HFCL Ltd. (HFCL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HFCL"
+            },
+            {
+               "name": "Hindalco Industries Ltd. (HINDALCO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HINDALCO"
+            },
+            {
+               "name": "Hindustan Petroleum Corporation Ltd. (HINDPETRO)",
+               "sector": "Energy",
+               "id": "hq_HINDPETRO"
+            },
+            {
+               "name": "Hitachi Energy India Ltd. (POWERINDIA)",
+               "sector": "Energy",
+               "id": "hq_POWERINDIA"
+            },
+            {
+               "name": "Indus Towers Ltd. (INDUSTOWER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INDUSTOWER"
+            },
+            {
+               "name": "J.K. Cement Ltd. (JKCEMENT)",
+               "sector": "Infrastructure",
+               "id": "hq_JKCEMENT"
+            },
+            {
+               "name": "Jubilant Foodworks Ltd. (JUBLFOOD)",
+               "sector": "Infrastructure",
+               "id": "hq_JUBLFOOD"
+            },
+            {
+               "name": "National Aluminium Co. Ltd. (NATIONALUM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NATIONALUM"
+            },
+            {
+               "name": "R R Kabel Ltd. (RRKABEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RRKABEL"
+            },
+            {
+               "name": "Radico Khaitan Ltd (RADICO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RADICO"
+            },
+            {
+               "name": "Reliance Infrastructure Ltd. (RELINFRA)",
+               "sector": "Infrastructure",
+               "id": "hq_RELINFRA"
+            },
+            {
+               "name": "Saregama India Ltd (SAREGAMA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SAREGAMA"
+            },
+            {
+               "name": "Schaeffler India Ltd. (SCHAEFFLER)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SCHAEFFLER"
+            },
+            {
+               "name": "Vedanta Ltd. (VEDL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VEDL"
+            },
+            {
+               "name": "Vodafone Idea Ltd. (IDEA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IDEA"
+            },
+            {
+               "name": "Whirlpool of India Ltd. (WHIRLPOOL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_WHIRLPOOL"
+            }
+         ]
+      },
+      "Indore": {
+         "node_count": 28,
+         "hq_count": 28,
+         "sector_distribution": {
+            "FMCG/Consumer": 23,
+            "Energy": 5
+         },
+         "official_hqs": [
+            {
+               "name": "Adani Enterprises Ltd. (ADANIENT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ADANIENT"
+            },
+            {
+               "name": "BLS International Services Ltd. (BLS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BLS"
+            },
+            {
+               "name": "BSE Ltd. (BSE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BSE"
+            },
+            {
+               "name": "Balrampur Chini Mills Ltd. (BALRAMCHIN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BALRAMCHIN"
+            },
+            {
+               "name": "Birlasoft Ltd. (BSOFT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BSOFT"
+            },
+            {
+               "name": "CreditAccess Grameen Ltd. (CREDITACC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CREDITACC"
+            },
+            {
+               "name": "Devyani International Ltd. (DEVYANI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DEVYANI"
+            },
+            {
+               "name": "Dummy Hindustan Unilever Ltd. (DUMMYHDLVR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DUMMYHDLVR"
+            },
+            {
+               "name": "EIH Ltd. (EIHOTEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_EIHOTEL"
+            },
+            {
+               "name": "GMR Airports Ltd. (GMRAIRPORT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GMRAIRPORT"
+            },
+            {
+               "name": "Indian Oil Corporation Ltd. (IOC)",
+               "sector": "Energy",
+               "id": "hq_IOC"
+            },
+            {
+               "name": "K.P.R. Mill Ltd. (KPRMILL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_KPRMILL"
+            },
+            {
+               "name": "Leela Palaces Hotels & Resorts Ltd. (THELEELA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_THELEELA"
+            },
+            {
+               "name": "Lloyds Metals And Energy Ltd. (LLOYDSME)",
+               "sector": "Energy",
+               "id": "hq_LLOYDSME"
+            },
+            {
+               "name": "Lupin Ltd. (LUPIN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LUPIN"
+            },
+            {
+               "name": "NTPC Green Energy Ltd. (NTPCGREEN)",
+               "sector": "Energy",
+               "id": "hq_NTPCGREEN"
+            },
+            {
+               "name": "Petronet LNG Ltd. (PETRONET)",
+               "sector": "Energy",
+               "id": "hq_PETRONET"
+            },
+            {
+               "name": "Poonawalla Fincorp Ltd. (POONAWALLA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_POONAWALLA"
+            },
+            {
+               "name": "Premier Energies Ltd. (PREMIERENE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PREMIERENE"
+            },
+            {
+               "name": "SRF Ltd. (SRF)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SRF"
+            },
+            {
+               "name": "Samvardhana Motherson International Ltd. (MOTHERSON)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MOTHERSON"
+            },
+            {
+               "name": "Sapphire Foods India Ltd. (SAPPHIRE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SAPPHIRE"
+            },
+            {
+               "name": "Siemens Energy India Ltd. (ENRIN)",
+               "sector": "Energy",
+               "id": "hq_ENRIN"
+            },
+            {
+               "name": "Solar Industries India Ltd. (SOLARINDS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SOLARINDS"
+            },
+            {
+               "name": "Swiggy Ltd. (SWIGGY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SWIGGY"
+            },
+            {
+               "name": "The New India Assurance Company Ltd. (NIACL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NIACL"
+            },
+            {
+               "name": "Titagarh Rail Systems Ltd. (TITAGARH)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TITAGARH"
+            },
+            {
+               "name": "Welspun Living Ltd. (WELSPUNLIV)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_WELSPUNLIV"
+            }
+         ]
+      },
+      "Ahmedabad": {
+         "node_count": 33,
+         "hq_count": 33,
+         "sector_distribution": {
+            "Energy": 4,
+            "Finance": 4,
+            "Healthcare/Pharma": 6,
+            "FMCG/Consumer": 16,
+            "Automotive": 1,
+            "Infrastructure": 1,
+            "Manufacturing": 1
+         },
+         "official_hqs": [
+            {
+               "name": "Adani Total Gas Ltd. (ATGL)",
+               "sector": "Energy",
+               "id": "hq_ATGL"
+            },
+            {
+               "name": "Aditya Birla Sun Life AMC Ltd. (ABSLAMC)",
+               "sector": "Finance",
+               "id": "hq_ABSLAMC"
+            },
+            {
+               "name": "Alkem Laboratories Ltd. (ALKEM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_ALKEM"
+            },
+            {
+               "name": "Aptus Value Housing Finance India Ltd. (APTUS)",
+               "sector": "Finance",
+               "id": "hq_APTUS"
+            },
+            {
+               "name": "Ather Energy Ltd. (ATHERENERG)",
+               "sector": "Energy",
+               "id": "hq_ATHERENERG"
+            },
+            {
+               "name": "Aurobindo Pharma Ltd. (AUROPHARMA)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_AUROPHARMA"
+            },
+            {
+               "name": "Bharat Heavy Electricals Ltd. (BHEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BHEL"
+            },
+            {
+               "name": "Biocon Ltd. (BIOCON)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BIOCON"
+            },
+            {
+               "name": "Bosch Ltd. (BOSCHLTD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BOSCHLTD"
+            },
+            {
+               "name": "Can Fin Homes Ltd. (CANFINHOME)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CANFINHOME"
+            },
+            {
+               "name": "Canara Bank (CANBK)",
+               "sector": "Finance",
+               "id": "hq_CANBK"
+            },
+            {
+               "name": "Central Depository Services (India) Ltd. (CDSL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CDSL"
+            },
+            {
+               "name": "Cholamandalam Financial Holdings Ltd. (CHOLAHLDNG)",
+               "sector": "Finance",
+               "id": "hq_CHOLAHLDNG"
+            },
+            {
+               "name": "Coromandel International Ltd. (COROMANDEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_COROMANDEL"
+            },
+            {
+               "name": "Deepak Fertilisers & Petrochemicals Corp. Ltd. (DEEPAKFERT)",
+               "sector": "Energy",
+               "id": "hq_DEEPAKFERT"
+            },
+            {
+               "name": "Dr. Lal Path Labs Ltd. (LALPATHLAB)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_LALPATHLAB"
+            },
+            {
+               "name": "Eicher Motors Ltd. (EICHERMOT)",
+               "sector": "Automotive",
+               "id": "hq_EICHERMOT"
+            },
+            {
+               "name": "Gland Pharma Ltd. (GLAND)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_GLAND"
+            },
+            {
+               "name": "Grasim Industries Ltd. (GRASIM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_GRASIM"
+            },
+            {
+               "name": "Hyundai Motor India Ltd. (HYUNDAI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HYUNDAI"
+            },
+            {
+               "name": "IFCI Ltd. (IFCI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IFCI"
+            },
+            {
+               "name": "Metropolis Healthcare Ltd. (METROPOLIS)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_METROPOLIS"
+            },
+            {
+               "name": "NHPC Ltd. (NHPC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NHPC"
+            },
+            {
+               "name": "Oil & Natural Gas Corporation Ltd. (ONGC)",
+               "sector": "Energy",
+               "id": "hq_ONGC"
+            },
+            {
+               "name": "Onesource Specialty Pharma Ltd. (ONESOURCE)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_ONESOURCE"
+            },
+            {
+               "name": "Patanjali Foods Ltd. (PATANJALI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PATANJALI"
+            },
+            {
+               "name": "Persistent Systems Ltd. (PERSISTENT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PERSISTENT"
+            },
+            {
+               "name": "Phoenix Mills Ltd. (PHOENIXLTD)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PHOENIXLTD"
+            },
+            {
+               "name": "Rainbow Childrens Medicare Ltd. (RAINBOW)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RAINBOW"
+            },
+            {
+               "name": "Schneider Electric Infrastructure Ltd. (SCHNEIDER)",
+               "sector": "Infrastructure",
+               "id": "hq_SCHNEIDER"
+            },
+            {
+               "name": "UTI Asset Management Company Ltd. (UTIAMC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_UTIAMC"
+            },
+            {
+               "name": "Wockhardt Ltd. (WOCKPHARMA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_WOCKPHARMA"
+            },
+            {
+               "name": "Adani Enterprises (ADANIENT)",
+               "sector": "Manufacturing",
+               "id": "hq_ADANIENT"
+            }
+         ]
+      },
+      "Bangalore": {
+         "node_count": 40,
+         "hq_count": 40,
+         "sector_distribution": {
+            "Healthcare/Pharma": 7,
+            "FMCG/Consumer": 21,
+            "IT/Software": 10,
+            "Infrastructure": 1,
+            "Energy": 1
+         },
+         "official_hqs": [
+            {
+               "name": "Ajanta Pharmaceuticals Ltd. (AJANTPHARM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_AJANTPHARM"
+            },
+            {
+               "name": "Alembic Pharmaceuticals Ltd. (APLLTD)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_APLLTD"
+            },
+            {
+               "name": "Astral Ltd. (ASTRAL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ASTRAL"
+            },
+            {
+               "name": "Bharti Airtel Ltd. (BHARTIARTL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BHARTIARTL"
+            },
+            {
+               "name": "Blue Jet Healthcare Ltd. (BLUEJET)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_BLUEJET"
+            },
+            {
+               "name": "Caplin Point Laboratories Ltd. (CAPLIPOINT)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_CAPLIPOINT"
+            },
+            {
+               "name": "Castrol India Ltd. (CASTROLIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CASTROLIND"
+            },
+            {
+               "name": "Cipla Ltd. (CIPLA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CIPLA"
+            },
+            {
+               "name": "Clean Science and Technology Ltd. (CLEAN)",
+               "sector": "IT/Software",
+               "id": "hq_CLEAN"
+            },
+            {
+               "name": "Coal India Ltd. (COALINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_COALINDIA"
+            },
+            {
+               "name": "Container Corporation of India Ltd. (CONCOR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_CONCOR"
+            },
+            {
+               "name": "Exide Industries Ltd. (EXIDEIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_EXIDEIND"
+            },
+            {
+               "name": "Global Health Ltd. (MEDANTA)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_MEDANTA"
+            },
+            {
+               "name": "HCL Technologies Ltd. (HCLTECH)",
+               "sector": "IT/Software",
+               "id": "hq_HCLTECH"
+            },
+            {
+               "name": "Hero MotoCorp Ltd. (HEROMOTOCO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HEROMOTOCO"
+            },
+            {
+               "name": "ITC Ltd. (ITC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ITC"
+            },
+            {
+               "name": "ITI Ltd. (ITI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ITI"
+            },
+            {
+               "name": "India Cements Ltd. (INDIACEM)",
+               "sector": "Infrastructure",
+               "id": "hq_INDIACEM"
+            },
+            {
+               "name": "Indraprastha Gas Ltd. (IGL)",
+               "sector": "Energy",
+               "id": "hq_IGL"
+            },
+            {
+               "name": "Infosys Ltd. (INFY)",
+               "sector": "IT/Software",
+               "id": "hq_INFY"
+            },
+            {
+               "name": "Inox Wind Ltd. (INOXWIND)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INOXWIND"
+            },
+            {
+               "name": "Inventurus Knowledge Solutions Ltd. (IKS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IKS"
+            },
+            {
+               "name": "Jindal Stainless Ltd. (JSL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_JSL"
+            },
+            {
+               "name": "KPIT Technologies Ltd. (KPITTECH)",
+               "sector": "IT/Software",
+               "id": "hq_KPITTECH"
+            },
+            {
+               "name": "Kaynes Technology India Ltd. (KAYNES)",
+               "sector": "IT/Software",
+               "id": "hq_KAYNES"
+            },
+            {
+               "name": "Kfin Technologies Ltd. (KFINTECH)",
+               "sector": "IT/Software",
+               "id": "hq_KFINTECH"
+            },
+            {
+               "name": "NBCC (India) Ltd. (NBCC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NBCC"
+            },
+            {
+               "name": "NCC Ltd. (NCC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NCC"
+            },
+            {
+               "name": "Narayana Hrudayalaya Ltd. (NH)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NH"
+            },
+            {
+               "name": "Newgen Software Technologies Ltd. (NEWGEN)",
+               "sector": "IT/Software",
+               "id": "hq_NEWGEN"
+            },
+            {
+               "name": "Nuvoco Vistas Corporation Ltd. (NUVOCO)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_NUVOCO"
+            },
+            {
+               "name": "Piramal Pharma Ltd. (PPLPHARMA)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_PPLPHARMA"
+            },
+            {
+               "name": "RHI MAGNESITA INDIA LTD. (RHIM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RHIM"
+            },
+            {
+               "name": "Rashtriya Chemicals & Fertilizers Ltd. (RCF)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RCF"
+            },
+            {
+               "name": "Sobha Ltd. (SOBHA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SOBHA"
+            },
+            {
+               "name": "Sonata Software Ltd. (SONATSOFTW)",
+               "sector": "IT/Software",
+               "id": "hq_SONATSOFTW"
+            },
+            {
+               "name": "Syrma SGS Technology Ltd. (SYRMA)",
+               "sector": "IT/Software",
+               "id": "hq_SYRMA"
+            },
+            {
+               "name": "Torrent Pharmaceuticals Ltd. (TORNTPHARM)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_TORNTPHARM"
+            },
+            {
+               "name": "UNO Minda Ltd. (UNOMINDA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_UNOMINDA"
+            },
+            {
+               "name": "UltraTech Cement Ltd. (ULTRACEMCO)",
+               "sector": "IT/Software",
+               "id": "hq_ULTRACEMCO"
+            }
+         ]
+      },
+      "Pune": {
+         "node_count": 40,
+         "hq_count": 40,
+         "sector_distribution": {
+            "FMCG/Consumer": 27,
+            "Automotive": 3,
+            "IT/Software": 2,
+            "Healthcare/Pharma": 3,
+            "Infrastructure": 1,
+            "Metals & Mining": 2,
+            "Energy": 2
+         },
+         "official_hqs": [
+            {
+               "name": "Alkyl Amines Chemicals Ltd. (ALKYLAMINE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ALKYLAMINE"
+            },
+            {
+               "name": "Apollo Tyres Ltd. (APOLLOTYRE)",
+               "sector": "Automotive",
+               "id": "hq_APOLLOTYRE"
+            },
+            {
+               "name": "Atul Ltd. (ATUL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_ATUL"
+            },
+            {
+               "name": "Bata India Ltd. (BATAINDIA)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BATAINDIA"
+            },
+            {
+               "name": "Bharat Electronics Ltd. (BEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_BEL"
+            },
+            {
+               "name": "Brainbees Solutions Ltd. (FIRSTCRY)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_FIRSTCRY"
+            },
+            {
+               "name": "Concord Biotech Ltd. (CONCORDBIO)",
+               "sector": "IT/Software",
+               "id": "hq_CONCORDBIO"
+            },
+            {
+               "name": "DLF Ltd. (DLF)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DLF"
+            },
+            {
+               "name": "Dabur India Ltd. (DABUR)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_DABUR"
+            },
+            {
+               "name": "Divi's Laboratories Ltd. (DIVISLAB)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_DIVISLAB"
+            },
+            {
+               "name": "Force Motors Ltd. (FORCEMOT)",
+               "sector": "Automotive",
+               "id": "hq_FORCEMOT"
+            },
+            {
+               "name": "H.E.G. Ltd. (HEG)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_HEG"
+            },
+            {
+               "name": "IRB Infrastructure Developers Ltd. (IRB)",
+               "sector": "Infrastructure",
+               "id": "hq_IRB"
+            },
+            {
+               "name": "IRCON International Ltd. (IRCON)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_IRCON"
+            },
+            {
+               "name": "Intellect Design Arena Ltd. (INTELLECT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_INTELLECT"
+            },
+            {
+               "name": "JBM Auto Ltd. (JBMA)",
+               "sector": "Automotive",
+               "id": "hq_JBMA"
+            },
+            {
+               "name": "JSW Steel Ltd. (JSWSTEEL)",
+               "sector": "Metals & Mining",
+               "id": "hq_JSWSTEEL"
+            },
+            {
+               "name": "LT Foods Ltd. (LTFOODS)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_LTFOODS"
+            },
+            {
+               "name": "Mahindra & Mahindra Ltd. (M&M)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_M&M"
+            },
+            {
+               "name": "Maruti Suzuki India Ltd. (MARUTI)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MARUTI"
+            },
+            {
+               "name": "Max Healthcare Institute Ltd. (MAXHEALTH)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_MAXHEALTH"
+            },
+            {
+               "name": "Mazagoan Dock Shipbuilders Ltd. (MAZDOCK)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_MAZDOCK"
+            },
+            {
+               "name": "NMDC Steel Ltd. (NSLNISP)",
+               "sector": "Metals & Mining",
+               "id": "hq_NSLNISP"
+            },
+            {
+               "name": "Netweb Technologies India Ltd. (NETWEB)",
+               "sector": "IT/Software",
+               "id": "hq_NETWEB"
+            },
+            {
+               "name": "Ola Electric Mobility Ltd. (OLAELEC)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_OLAELEC"
+            },
+            {
+               "name": "PG Electroplast Ltd. (PGEL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_PGEL"
+            },
+            {
+               "name": "Power Grid Corporation of India Ltd. (POWERGRID)",
+               "sector": "Energy",
+               "id": "hq_POWERGRID"
+            },
+            {
+               "name": "RITES Ltd. (RITES)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RITES"
+            },
+            {
+               "name": "Rail Vikas Nigam Ltd. (RVNL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_RVNL"
+            },
+            {
+               "name": "SJVN Ltd. (SJVN)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SJVN"
+            },
+            {
+               "name": "Signatureglobal (India) Ltd. (SIGNATURE)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_SIGNATURE"
+            },
+            {
+               "name": "Sun Pharmaceutical Industries Ltd. (SUNPHARMA)",
+               "sector": "Healthcare/Pharma",
+               "id": "hq_SUNPHARMA"
+            },
+            {
+               "name": "Suzlon Energy Ltd. (SUZLON)",
+               "sector": "Energy",
+               "id": "hq_SUZLON"
+            },
+            {
+               "name": "Tata Chemicals Ltd. (TATACHEM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TATACHEM"
+            },
+            {
+               "name": "Tata Communications Ltd. (TATACOMM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TATACOMM"
+            },
+            {
+               "name": "Tata Teleservices (Maharashtra) Ltd. (TTML)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TTML"
+            },
+            {
+               "name": "Trent Ltd. (TRENT)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_TRENT"
+            },
+            {
+               "name": "United Breweries Ltd. (UBL)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_UBL"
+            },
+            {
+               "name": "Vishal Mega Mart Ltd. (VMM)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_VMM"
+            },
+            {
+               "name": "Welspun Corp Ltd. (WELCORP)",
+               "sector": "FMCG/Consumer",
+               "id": "hq_WELCORP"
+            }
+         ]
+      },
+      "Panaji": {
+         "node_count": 1,
+         "hq_count": 1,
+         "sector_distribution": {
+            "Mining": 1
+         },
+         "official_hqs": [
+            {
+               "name": "Vedanta (VEDL)",
+               "sector": "Mining",
+               "id": "hq_VEDL"
+            }
+         ]
+      },
+      "Bengaluru": {
+         "node_count": 6,
+         "hq_count": 6,
+         "sector_distribution": {
+            "IT/Software": 2,
+            "Defense/Aero": 1,
+            "Consumer": 1,
+            "Biotech/Pharma": 1,
+            "Defense/Heavy": 1
+         },
+         "official_hqs": [
+            {
+               "name": "Infosys (INFY)",
+               "sector": "IT/Software",
+               "id": "hq_INFY"
+            },
+            {
+               "name": "Wipro (WIPRO)",
+               "sector": "IT/Software",
+               "id": "hq_WIPRO"
+            },
+            {
+               "name": "HAL",
+               "sector": "Defense/Aero",
+               "id": "hq_HAL"
+            },
+            {
+               "name": "Titan Company",
+               "sector": "Consumer",
+               "id": "hq_TITAN"
+            },
+            {
+               "name": "Biocon",
+               "sector": "Biotech/Pharma",
+               "id": "hq_BIOCON"
+            },
+            {
+               "name": "BEML",
+               "sector": "Defense/Heavy",
+               "id": "hq_BEML"
+            }
+         ]
+      },
+      "Unknown": {
+         "node_count": 600,
+         "hq_count": 0,
+         "sector_distribution": {
+            "Energy/Petro": 18,
+            "Energy": 18,
+            "Petro": 54,
+            "Gas Utility": 17,
+            "Metals": 68,
+            "Mining": 34,
+            "Infrastructure": 17,
+            "Chemicals": 17,
+            "Engineering": 17,
+            "Cement": 17,
+            "Power": 34,
+            "Automotive": 68,
+            "Pharma": 51,
+            "Finance": 51,
+            "IT/Software": 51,
+            "FMCG": 34,
+            "Telecom": 17,
+            "Manufacturing": 17
+         },
+         "official_hqs": []
+      }
+   }
+}

@@ -1,0 +1,68 @@
+# QUANFIN TERMINAL - EXTENDED MARITIME INTELLIGENCE STRATEGY
+# Date: April 02, 2026
+# Version: 2.0 (High-Density Integration)
+
+================================================================================
+SECTION 1: DATA SOURCE & ARCHITECTURE
+================================================================================
+Data is fetched exclusively from AISStream.io (Official v0 Satellite Relay).
+The architecture uses a high-performance WebSocket Proxy (Backend) to bridge
+raw satellite signals to our Frontend.
+
+[Source Breakdown]
+- Provider: stream.aisstream.io (Satellite + Terrestrial Nodes)
+- Frequency:
+  * Positional Data (Sog/Cog/Lat/Lng): Every 2-10 Seconds.
+  * Static Voyage Data (Destination/ETA/Draft): Every 6 Minutes.
+- Protocol: JSON via WSS (Secure WebSocket).
+
+================================================================================
+SECTION 2: WHY THIS DATA MATTERS (THE "SO WHAT?")
+================================================================================
+
+1. DRAFT (The Profit Signal):
+   Use: Draft is the distance between the waterline and the bottom of the hull.
+   Value: A high Draft means the ship is HEAVILY LOADED. This helps us track 
+          exactly when massive amounts of commodities (Oil, Coal, Iron) are 
+          entering or leaving India before official reports are out.
+
+2. DESTINATION & ETA:
+   Use: Tracking the "Route Confidence".
+   Value: Foreseeing port congestion. If 15 tankers are headed to Jamnagar 
+          simultaneously with close ETAs, we can predict a supply-chain bottleneck
+          and market price volatility.
+
+3. VESSEL TYPE (Market Segmentation):
+   Use: Tanker vs. Cargo vs. LCG Carrier.
+   Value: Allows institutional users to filter only for "Energy Trade" or 
+          "Consumer Goods" depending on their trading focus.
+
+4. NAVIGATIONAL STATUS (Logistical Efficiency):
+   Use: Distinguishing between 'Underway' and 'At Anchor'.
+   Value: Ships "At Anchor" for long periods signal poor port efficiency or 
+          low demand at that destination.
+
+================================================================================
+SECTION 3: THE DEEP-DIVE UI IMPLEMENTATION
+================================================================================
+
+[Phase 1] - Backend Relay Update:
+Enable parsing of Message Type 5 (Ship Static Data) and Type 24 (Static Data Report).
+This adds Destination, CallSign, ShipType, and Draft to the live stream.
+
+[Phase 2] - Smart Sidebar:
+A slide-in 'Intelligence Dashboard' on the map. Instead of a popup, this 
+professional pane will show:
+- Vessel 3D Avatar (Rotating Icon)
+- Real-time Course Gauges
+- Voyage ETA Countdown
+- Draft/Loading Metric Indicator
+
+================================================================================
+SUMMARY OF IMPACT
+================================================================================
+This upgrade moves the QuanFin Terminal from a simple "Marker Map" to a 
+powerful "Commodity Prediction Engine". By correlating Draft and Destination,
+users can anticipate trade movements globally.
+
+# END OF DOCUMENT

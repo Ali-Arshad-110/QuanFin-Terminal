@@ -1,0 +1,153 @@
+================================================================================
+           PULSE MOMENTUM SCANNER: FINAL STRATEGIC IMPLEMENTATION PLAN
+================================================================================
+
+--------------------------------------------------------------------------------
+[I] CORE OBJECTIVE & PHILOSOPHY
+--------------------------------------------------------------------------------
+The Pulse Momentum Scanner is a high-frequency market intelligence engine
+designed to detect institutional-grade breakouts and volatility shifts. 
+Instead of a "flat" scan of 2100+ stocks, we implement a "Liquidity-First" 
+tiered approach to ensure maximum reliability and relevance.
+
+--------------------------------------------------------------------------------
+[II] DATA EXTRACTION & TIERED SCANNING STRATEGY
+--------------------------------------------------------------------------------
+Liquidity is the precursor to volatility. Therefore, our radar prioritizes
+segments where the "Big Money" moves.
+
+1. TIER-1: FnO SEGMENT (RADAR ALPHA)
+   - Focus: ~184 Stocks (Derivatives Segment).
+   - Reason: Highest liquidity, real-time price discovery, and institutional flow.
+   - Initial Priority: Scanned every 5-10 seconds.
+
+2. TIER-2: NIFTY 500 (RADAR BETA)
+   - Focus: Top 500 stocks by market cap.
+   - Reason: Broad market sentiment and sectoral rotation indicators.
+
+3. TIER-3: GLOBAL UNIVERSE (RADAR GAMMA)
+   - Focus: All 2,132+ NSE-listed stocks.
+   - Reason: Catching "Dark Horse" small-cap breakouts.
+
+--------------------------------------------------------------------------------
+[III] SCANNER ARCHITECTURE & FLOW DIAGRAM
+--------------------------------------------------------------------------------
+Following the requested character-based plotting:
+
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @        PULSE INTELLIGENCE ENGINE       @
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                         |
+      /------------------*------------------\
+      |                  |                  |
+[FnO RADAR]        [NIFTY 500]        [GLOBAL 2.1K]
+ (Priority 1)       (Priority 2)       (Priority 3)
+      |                  |                  |
+      \------------------*------------------/
+                         |
+                         V
+             !------------------------!
+             !    DATA EXTRACTION     !
+             ! (yFinance/Kotak API)   !
+             !    Gap: 5-10 Sec.      !
+             !------------------------!
+                         |
+                         V
+             *------------------------*
+             *    TRIGGER ENGINE      *
+             *------------------------*
+             /           |            \
+      .----------.  .----------.   .----------.
+      |  Candle  |  |Day High/ |   | 52W High/|
+      | Patterns |  |Low Break |   | Low Break|
+      '----------'  '----------'   '----------'
+            \            |             /
+             &-----------@------------&
+                         |
+                         V
+             ##########################
+             #   FRONTEND DASHBOARD   #
+             # (High-Density UI/HUD)  #
+             ##########################
+
+--------------------------------------------------------------------------------
+[IV] BACKEND ARCHITECTURE (PYTHON/FASTAPI)
+--------------------------------------------------------------------------------
+1. SERVICE LAYER (pulse_service.py):
+   - Multi-threaded Batching: Chunking tickers into groups of 50.
+   - Segregation Logic: Maintaining lists for FnO, Nifty500, and Others.
+   - State Machine: Storing "Previous LTP" to detect instant breakouts.
+
+2. ROUTER LAYER (pulse_router.py):
+   - Endpoint: `GET /api/v1/pulse/active`
+   - Real-time updates delivered via polling or WebSocket proxy.
+
+--------------------------------------------------------------------------------
+[V] TRIGGER ENGINE LOGIC (PRICE ACTION)
+--------------------------------------------------------------------------------
+* TRIGGER 1: CANDLESTICK FORMATIONS
+  - Detecting Marubozu, Hammer, and Engulfing patterns on 5-min intervals.
+
+* TRIGGER 2: INTRADAY EXTREMES (HOD/LOD)
+  - Alert when Price > DayHigh or Price < DayLow with Volume confirmation.
+
+* TRIGGER 3: SEASONAL BREAKOUTS (52W H/L)
+  - Tracking multi-month milestones to detect long-term momentum shifts.
+
+--------------------------------------------------------------------------------
+[VI] FRONTEND DESIGN (REACT/TS/VANILLA CSS)
+--------------------------------------------------------------------------------
+1. PULSE HUB (HUD):
+   - Neon-accented "Alert Stream" showing triggers as they happen.
+   - Color Coding: Emerald (#10b981) for Bullish, Rose (#ef4444) for Bearish.
+
+2. PULSE CARD:
+   - High-contrast typography for % Change.
+   - "Mini-Sparkline" showing the last 15 minutes of price action.
+
+--------------------------------------------------------------------------------
+[VII] DATA PIPELINE EXPLAINER (Beginner to Advanced)
+--------------------------------------------------------------------------------
+
+1. LEVEL: BEGINNER (THE RADAR SELECTION)
+   * Concept: Think of the scanner as a "Filter". Out of 2100+ stocks, we only 
+     want to see those doing something "Exciting". 
+   * How it works: We create lists of tickers (RELIANCE.NS, TCS.NS, etc.). 
+     The scanner takes these names and asks Yahoo Finance: "What is their
+     current price (LTP)?".
+
+2. LEVEL: INTERMEDIATE (CHUNKING & BATCHING)
+   * Problem: Asking for 2132 prices one-by-one attracts "IP Bans".
+   * Solution: We "Chunk" the list. Instead of 2132 emails, we send 43 boxes, 
+     each containing 50 tickers. 
+   * Speed Management: We add a 250ms "Rest" between each box. This keeps the 
+     connection "Cool" and reliable.
+
+3. LEVEL: ADVANCED (THE TRIGGER ENGINE MATH)
+   * Calculation 1: DAY HIGH BREAK (HOD)
+     - Logic: IF (LTP > CurrentDayHigh) AND (Volume > 20-Day-Avg-Volume/75)
+     - Action: Bullish Alert Triggered.
+   * Calculation 2: CANDLESTICK PATTERNS (PIXEL-PERFECT)
+     - Logic: For a "Marubozu" (Strong Trend), we check:
+       (Close - Open) / (High - Low) > 0.95.
+     - This means 95% of the candle is the "Body" with almost no "Wick".
+   * Calculation 3: 52-WEEK RADAR
+     - Logic: IF (LTP >= 0.98 * 52W_High) -> Stock is in "Breakout Zone".
+
+4. LEVEL: EXPERT (DATA HANDSHAKE & RENDERING)
+   * Backend: FastAPI receives the raw JSON -> Parses into Pydantic Models -> 
+     Stores in Redis/Cache -> Exposes via REST Endpoint.
+   * Frontend: React-Hook (usePulse) polls the endpoint -> Compares new data 
+     with previous state (Diffing) -> Animates ONLY the changed cards.
+
+--------------------------------------------------------------------------------
+[VIII] EXECUTION PHASES
+--------------------------------------------------------------------------------
+* Phase 1: Establish FnO-only radar with 10s gap.
+* Phase 2: Implement Triggers (HOD/LOD and 52W).
+* Phase 3: Add Candlestick Pattern Recognition.
+* Phase 4: Expand to Nifty 500 and Global Universe with staggered scanning.
+
+================================================================================
+            DOCUMENT GENERATED BY ANTIGRAVITY ENGINE | 2026-04-06
+================================================================================

@@ -1,0 +1,304 @@
+===========================================================
+      QUANFIN CAPITAL TERMINAL - PROJECT HISTORY LOG         
+===========================================================
+Total Conversation Sessions: 90
+Major Feature Requests Extracted: 89
+-----------------------------------------------------------
+
+DATE: ﻿2026-01-31 09:44
+GOAL: Plan to integrate Kotak Securities API for real-time trading and data.
+-----------------------------------------------------------
+
+DATE: 2026-01-31 19:52
+GOAL: Plan to debug the Kotak login error by improving backend exception reporting and frontend error display.
+-----------------------------------------------------------
+
+DATE: 2026-02-01 16:18
+GOAL: Plan to debug and fix backend error related to Kotak integration. Will involve investigation of call sites and error handling enhancement.
+-----------------------------------------------------------
+
+DATE: 2026-02-01 20:11
+GOAL: Updated plan to include fixing import order and path setup.
+-----------------------------------------------------------
+
+DATE: 2026-02-01 20:22
+GOAL: Upgrade Kotak Authentication to match the provided blueprint using direct HTTP requests.
+-----------------------------------------------------------
+
+DATE: 2026-02-02 07:02
+GOAL: Enforce Broker API (Kotak) for all live data. Remove Yahoo Finance fallbacks.
+-----------------------------------------------------------
+
+DATE: 2026-02-02 10:34
+GOAL: Comprehensive plan to align QuanFin Terminal with strict backend/broker rules. Includes removing runtime git deps, implementing persistent backend WebSocket for Kotak data, creating a Candle Builder system, and refactoring the frontend chart to consume this live stream.
+-----------------------------------------------------------
+
+DATE: 2026-02-03 15:45
+GOAL: Detailed plan to fix chart error by ensuring 'time' property exists, remove partition UI, and implement live watchlist data with fallback.
+-----------------------------------------------------------
+
+DATE: 2026-02-04 14:39
+GOAL: Refining History Fetch Plan
+-----------------------------------------------------------
+
+DATE: 2026-02-05 06:24
+GOAL: Plan to enable real-time chart and watchlist updates using WebSockets, replacing the slow polling mechanism. This aims to match broker terminal performance.
+-----------------------------------------------------------
+
+DATE: 2026-02-05 13:05
+GOAL: I will modify `ChartComponent.tsx` to add a unique ID to the chart container. Then, I will update `index.css` to hide any anchor tags (links) within that container, effectively hiding the TradingView attribution link. I will also verify the removal of the link.
+-----------------------------------------------------------
+
+DATE: 2026-02-06 09:59
+GOAL: Implementation plan for the Commodities Dashboard, covering backend API enhancements for contract details and news, and frontend component development for the dashboard layout and individual modules.
+-----------------------------------------------------------
+
+DATE: 2026-02-07 12:28
+GOAL: Fix blank screen in Commodities section by configuring Vite proxy.
+-----------------------------------------------------------
+
+DATE: 2026-02-07 14:13
+GOAL: Implementation plan for Instrument Master Service and Symbol Resolver. Defines database schema, service logic, and integration points.
+-----------------------------------------------------------
+
+DATE: 2026-02-08 07:26
+GOAL: Updated implementation plan for PostgreSQL integration.
+-----------------------------------------------------------
+
+DATE: 2026-02-10 10:16
+GOAL: Detailed plan for Instrument Master with enhanced validation and caching.
+-----------------------------------------------------------
+
+DATE: 2026-02-11 13:33
+GOAL: Plan to restore the missing frontend source code using `FRONTEND_IMPLEMENTATION.md` and inferred structure.
+-----------------------------------------------------------
+
+DATE: 2026-02-12 07:25
+GOAL: Detailed plan for implementing the backend system: Instrument Master, Market Data, and Option Chain.
+-----------------------------------------------------------
+
+DATE: 2026-02-15 07:09
+GOAL: Plan to fix 3 backend issues: heartbeat monitor spam (guard until WS connected), sync engine bug in instrument_master.py (use sync_engine), and partial cache load (load all 80k+ instruments). Also activates MarketDataService WebSocket after login.
+-----------------------------------------------------------
+
+DATE: 2026-02-15 12:33
+GOAL: Complete implementation plan for the Quantitative Market Intelligence Engine. Covers all 8 features (lead-lag, regime detection, sector rotation, correlation breakdown, breadth strength, shock propagation, event detection, volatility halo), 4 view modes, sidebar detail panel, and integration into App routing and Header navigation. Frontend-first approach with sample data, backend services deferred to future phase.
+-----------------------------------------------------------
+
+DATE: 2026-02-16 11:16
+GOAL: Replacing Force Graph with Plotly Sunburst.
+-----------------------------------------------------------
+
+DATE: 2026-02-17 08:15
+GOAL: Implementation plan for 3 new IndexMap features: Heatmap Color Mode (gradient colors by change%), Comparative Overlay (2-3 stock chart comparison), and Breadcrumb Navigation (clickable path showing Market â†’ Sector â†’ Index â†’ Stock).
+-----------------------------------------------------------
+
+DATE: 2026-02-17 12:03
+GOAL: Add TickerSearch to CompareModal panels to allow changing stocks.
+-----------------------------------------------------------
+
+DATE: 2026-02-18 12:51
+GOAL: Detailed plan for implementing the Sankey Diagram in IndexMap section.
+-----------------------------------------------------------
+
+DATE: 2026-02-18 13:59
+GOAL: - **Refactor Market Constants**: Move `SECTOR_DATA` and mappings to `backend/app/data/constants.py` to share between `main.py` and services.
+-----------------------------------------------------------
+
+DATE: 2026-02-19 06:24
+GOAL: Implementation plan to fix the missing SENSEX constituents in the Network Map.
+-----------------------------------------------------------
+
+DATE: 2026-02-19 10:37
+GOAL: Refactoring Sankey Diagram to uses circular nodes.
+-----------------------------------------------------------
+
+DATE: 2026-02-20 06:22
+GOAL: Added Sankey Upgrade proposals.
+-----------------------------------------------------------
+
+DATE: 2026-02-21 11:21
+GOAL: Implementation plan for Phase 7: Live Data Pricing. Focuses on robust WebSocket connectivity, real-time tick streaming, and integrating live prices into the Sunburst/Heatmap views.
+-----------------------------------------------------------
+
+DATE: 2026-02-22 11:37
+GOAL: Implementation plan to integrate real-time price fluctuations into the ChartComponent using WebSockets. This will allow the charts to update dynamically as mock or live ticks arrive.
+-----------------------------------------------------------
+
+DATE: 2026-02-23 11:30
+GOAL: Refinement plan for the "Life at QuanFin" section to improve its appearance and accessibility in light mode.
+-----------------------------------------------------------
+
+DATE: 2026-02-24 11:47
+GOAL: Implementation plan for adding commodities support to the Options Terminal.
+-----------------------------------------------------------
+
+DATE: 2026-02-25 10:54
+GOAL: Implementation plan to fix instrument data sync and verify commodity options integration.
+-----------------------------------------------------------
+
+DATE: 2026-02-26 10:07
+GOAL: Implementation plan for Option Chain Quick Access Feature
+-----------------------------------------------------------
+
+DATE: 2026-02-28 11:01
+GOAL: Outlines the approach to swap the grid for react-grid-layout and manage the new modular structure.
+-----------------------------------------------------------
+
+DATE: 2026-03-01 08:09
+GOAL: Implementation plan for professional-level upgrade of the Stability Analyzer.
+-----------------------------------------------------------
+
+DATE: 2026-03-01 11:36
+GOAL: Implementation plan for integrating Real Data, Advanced Dashboard Charting, and polished UI header mechanics into the Premium Terminal Dashboard.
+-----------------------------------------------------------
+
+DATE: 2026-03-01 13:34
+GOAL: Implementation plan for Stability Dashboard Enhancements.
+-----------------------------------------------------------
+
+DATE: 2026-03-03 11:53
+GOAL: Phase 16: Professional Multi-Pane UI. Adds support for vertically stacked synchronized chart panes, Buy/Sell buttons, and a unified TradingView-style header for each pane.
+-----------------------------------------------------------
+
+DATE: 2026-03-03 16:32
+GOAL: Detailed implementation plan for 9 UI/UX improvements to the Stability Analyzer: buy/sell overlay fix, session break line context menu, fullscreen toggle for chart, stats inline with ticker search, fundamentals collapse toggle, MajorIndicesPanel moved to right sidebar, new 10-day volume+delivery panel in left sidebar, no full-page re-render on ticker change (stale-while-revalidate pattern), and two donut charts (shareholding + index changes) replacing the technicals strip in BottomAnalyticsPanel.
+-----------------------------------------------------------
+
+DATE: 2026-03-04 06:17
+GOAL: Implementation plan for wiring Kotak broker WebSocket live price feed to the frontend. Identifies root causes: broker client not injected into MarketDataService after login, no auto-subscribe to default symbols, Redis dependency causing failures. Plan adds a Redis-free in-memory TickBroadcaster, wires broker client on login, enriches tick payload with symbol names, and fixes frontend consumers to match new tick format.
+-----------------------------------------------------------
+
+DATE: 2026-03-04 19:28
+GOAL: Full audit of toolbar feature breakages across ChartToolbar â†’ ChartComponent â†’ ChartPane, with root cause analysis and fixes for: chartType switching (race condition), crosshair mode, onChartReady callback clobbering primarySeries, indicators not added to chart, settings panel, and crosshairMode not wired to chart API.
+-----------------------------------------------------------
+
+DATE: 2026-03-05 06:29
+GOAL: Comprehensive plan to fix all non-working chart toolbar tools. Identifies 7 issues: missing indicator computation for 10 of 15 indicators, wrong timezone in Jump to Date, grid not syncing on initial mount, and others. Plan covers modifying ChartComponent.tsx and indicators.ts with specific fixes.
+-----------------------------------------------------------
+
+DATE: 2026-03-06 05:23
+GOAL: Implementation plan to enable real-time candle updates on the chart.
+-----------------------------------------------------------
+
+DATE: 2026-03-06 10:45
+GOAL: Implementation plan for the QuantFin professional terminal redesign, covering the 3-layer architecture, enhanced sidebar controls, vertical drawing tools, and keyboard commands.
+-----------------------------------------------------------
+
+DATE: 2026-03-08 11:59
+GOAL: Refined plan to fix axis interaction issues and ensure scroll persistence during live data updates.
+-----------------------------------------------------------
+
+DATE: 2026-03-09 12:04
+GOAL: Refine chart UI overlays and interactions based on user feedback and an uploaded image.
+-----------------------------------------------------------
+
+DATE: 2026-03-10 09:25
+GOAL: Implementation plan to fix unused declaration warnings in `ChartToolbar.tsx` by implementing the intended features (Data Source Badge, Snapshot button, Maximize toggle, Tool label) and removing dead code (`QUICK_TF`).
+-----------------------------------------------------------
+
+DATE: 2026-03-10 17:46
+GOAL: Plan to fix light mode color overlap in the major indices panel and replace the 10-day volume bar chart with a 3D price-volume visualization using Plotly.
+-----------------------------------------------------------
+
+DATE: 2026-03-11 07:42
+GOAL: Plan to add BSE/NSE toggle buttons with separate interactive pie charts showing their indices, and make every index clickable to navigate to the chart screen with live chart.
+-----------------------------------------------------------
+
+DATE: 2026-03-12 11:44
+GOAL: Implementation plan for adding indices logos to the dashboard panel.
+-----------------------------------------------------------
+
+DATE: 2026-03-14 12:13
+GOAL: I'm removing the pattern detection engine from the `BottomAnalyticsPanel` to maximize the vertical space available for 3D charting. This involves deleting the `detectPatterns` logic and the corresponding UI components in the fullscreen dashboard view.
+-----------------------------------------------------------
+
+DATE: 2026-03-15 07:33
+GOAL: Implementation plan for the BottomAnalyticalPanel redesign.
+-----------------------------------------------------------
+
+DATE: 2026-03-20 12:12
+GOAL: Implementation plan for fixing backend parse errors and type-safety warnings in `main.py`. This involves wrapping a missing `try:` block in `get_news`, resolving `round()` type-checker errors, and hardening the mock data and quote fetching codes.
+-----------------------------------------------------------
+
+DATE: 2026-03-23 11:37
+GOAL: Implementation plan to resolve the indices chart view bug and backend code errors.
+-----------------------------------------------------------
+
+DATE: 2026-03-24 14:21
+GOAL: Plan to stabilize the BottomAnalyticsPanel and StabilityAnalyzer by fixing crash risks, adding null safety, memoizing computed values, and wrapping with an error boundary.
+-----------------------------------------------------------
+
+DATE: 2026-03-25 06:17
+GOAL: Implementation plan for Dual-Mode BottomAnalyticsPanel including UI changes and mocked correlation data for dual-axis chart.
+-----------------------------------------------------------
+
+DATE: 2026-03-25 11:52
+GOAL: Implementation plan to fix broken logos and chart data drops in the Analytics Panel. Includes transitioning to Google Favicon service and implementing data sanitization logic.
+-----------------------------------------------------------
+
+DATE: 2026-03-26 06:59
+GOAL: Institutional-grade Market Sentiment Hub plan using Power 10 proxies and live breadth gauges.
+-----------------------------------------------------------
+
+DATE: 2026-03-26 10:05
+GOAL: Plan to enhance Market Breadth UI with more sectors, list format, live ticks, and default Nifty IT filter.
+-----------------------------------------------------------
+
+DATE: 2026-03-26 13:46
+GOAL: Implementation plan for integrating real market data into BreadthStockListModal.
+-----------------------------------------------------------
+
+DATE: 2026-03-27 12:05
+GOAL: Scaling the QuanMap HQ intelligence to 500+ NSE/BSE companies with logo support, caching, and expanded geographic coverage across 40+ Indian industrial hubs. High-performance design to ensure responsive UI while handling complex corporate data.
+-----------------------------------------------------------
+
+DATE: 2026-03-27 13:53
+GOAL: Upgrade FlowMap (IndicesExchangeView) with single exchange view, side-by-side layout, and new 3D-inspired view modes (Helix, Sphere).
+-----------------------------------------------------------
+
+DATE: 2026-03-28 06:02
+GOAL: Detailed technical plan for migrating the institutional-grade QuanMap from static SVG rendering (react-simple-maps) to dynamic tile-based rendering (Leaflet + CartoDB Dark Matter) without requiring a credit card or API key.
+-----------------------------------------------------------
+
+DATE: 2026-03-28 10:54
+GOAL: Implementation plan to resolve the '0 Cr' issue in the Institutional Pulse by fetching the last available trading session data when the market is closed or real-time data is unavailable.
+-----------------------------------------------------------
+
+DATE: 2026-03-30 14:31
+GOAL: Redesigning the Indice Info Pane (HUD) with a dedicated tabbed interface. This separates Market Indices from the Energy Trade Matrix (Oil Dependency data) for better focus and less scrolling.
+-----------------------------------------------------------
+
+DATE: 2026-03-31 08:06
+GOAL: QuanRadar Asset intelligence & UI Density Plan: Hardcoding precise plant locations and building a high-density intelligence sidebar.
+-----------------------------------------------------------
+
+DATE: 2026-03-31 12:54
+GOAL: Implementation plan to secure the AIS API key by moving it to the backend and implementing a WebSocket proxy. This ensures the key is hidden from the browser and follows institutional security best practices.
+-----------------------------------------------------------
+
+DATE: 2026-04-01 10:59
+GOAL: Implementation plan to replace synthetic movers data with real-time top 5 gainers and losers in the QuanMap Intelligence Hub. The plan includes fetching live constituent data from the backend, sorting by performance, and updating the UI to display two distinct gainer/loser sections for institutional-grade market analysis.
+-----------------------------------------------------------
+
+DATE: 2026-04-02 09:24
+GOAL: Plan to modernize the Fleet Navigator UI into an institutional-grade, high-density terminal interface with rich AIS data points and dual-theme optimization.
+-----------------------------------------------------------
+
+DATE: 2026-04-03 13:48
+GOAL: Comprehensive debugging and resolution plan for the Maritime Satellite Intelligence terminal. This plan addresses the issue of vessels not appearing on the map by enhancing backend logging, fixing a Python AttributeError in the data enrichment logic, and refining the frontend parsing of AISStream metadata.
+-----------------------------------------------------------
+
+DATE: 2026-04-04 15:01
+GOAL: Implementation plan to add a dual-view toggle to the Institutional Explorer, allowing users to switch between the existing Card View and a new professional List View (Table).
+-----------------------------------------------------------
+
+DATE: 2026-04-05 11:01
+GOAL: Refactor the codebase to rename 'nifty500' to 'stockUniverse' across frontend and backend. This reflects the expanded data range (2132+ stocks) and removes the perception that the terminal is limited to the top 500 stocks.
+-----------------------------------------------------------
+
+DATE: 2026-04-05 13:34
+GOAL: Implementation plan for the PULSE (Market Sentiment Hub) section, connecting real-time breadth and institutional data to the frontend.
+-----------------------------------------------------------
+
+=== END OF LOG ===

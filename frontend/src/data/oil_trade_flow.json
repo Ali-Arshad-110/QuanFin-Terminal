@@ -1,0 +1,85 @@
+{
+  "producers": [
+    {
+      "code": "US",
+      "name": "United States",
+      "coords": [37.0902, -95.7129],
+      "exports": [
+        { "code": "CA", "name": "Canada", "coords": [56.1304, -106.3468] },
+        { "code": "MX", "name": "Mexico", "coords": [23.6345, -102.5528] },
+        { "code": "KR", "name": "South Korea", "coords": [35.9078, 127.7669] },
+        { "code": "GB", "name": "United Kingdom", "coords": [55.3781, -3.436] },
+        { "code": "NL", "name": "Netherlands", "coords": [52.1326, 5.2913] }
+      ]
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "coords": [23.8859, 45.0792],
+      "exports": [
+        { "code": "CN", "name": "China", "coords": [35.8617, 104.1954] },
+        { "code": "JP", "name": "Japan", "coords": [36.2048, 138.2529] },
+        { "code": "IN", "name": "India", "coords": [20.5937, 78.9629] },
+        { "code": "KR", "name": "South Korea", "coords": [35.9078, 127.7669] },
+        { "code": "US", "name": "United States", "coords": [37.0902, -95.7129] }
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "coords": [61.524, 105.3188],
+      "exports": [
+        { "code": "CN", "name": "China", "coords": [35.8617, 104.1954] },
+        { "code": "IN", "name": "India", "coords": [20.5937, 78.9629] },
+        { "code": "TR", "name": "Turkey", "coords": [38.9637, 35.2433] }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "coords": [56.1304, -106.3468],
+      "exports": [
+        { "code": "US", "name": "United States", "coords": [37.0902, -95.7129] }
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "coords": [23.4241, 53.8478],
+      "exports": [
+        { "code": "JP", "name": "Japan", "coords": [36.2048, 138.2529] },
+        { "code": "IN", "name": "India", "coords": [20.5937, 78.9629] },
+        { "code": "TH", "name": "Thailand", "coords": [15.87, 100.9925] }
+      ]
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "coords": [-14.235, -51.9253],
+      "exports": [
+        { "code": "CN", "name": "China", "coords": [35.8617, 104.1954] },
+        { "code": "US", "name": "United States", "coords": [37.0902, -95.7129] },
+        { "code": "ES", "name": "Spain", "coords": [40.4637, -3.7492] }
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "coords": [33.2232, 43.6793],
+      "exports": [
+        { "code": "CN", "name": "China", "coords": [35.8617, 104.1954] },
+        { "code": "IN", "name": "India", "coords": [20.5937, 78.9629] },
+        { "code": "GR", "name": "Greece", "coords": [39.0742, 21.8243] }
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "coords": [32.4279, 53.688],
+      "exports": [
+        { "code": "CN", "name": "China", "coords": [35.8617, 104.1954] },
+        { "code": "IN", "name": "India", "coords": [20.5937, 78.9629] }
+      ]
+    }
+  ]
+}

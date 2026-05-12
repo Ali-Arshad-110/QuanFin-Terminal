@@ -1,0 +1,55 @@
+# Project Ignore
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+Include/
+Lib/
+Scripts/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
+backend_log.txt
+uvicorn.err
+uvicorn.log
+sim.err
+sim.log
+simulate_mcx.err
+simulate_mcx.log
+sync_final_error.txt
+sync_output.txt
+debug_output.txt
+
+# OS
+.DS_Store
+Thumbs.db

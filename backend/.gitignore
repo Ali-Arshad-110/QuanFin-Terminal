@@ -1,0 +1,18 @@
+# Python Backend Ignore
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+Include/
+Lib/
+Scripts/
+*.log
+*.err
+sync_final_error.txt
+sync_output.txt
+verify_result.txt
+debug_output.txt
+app/__pycache__/

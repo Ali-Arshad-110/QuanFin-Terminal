@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Render Debug</title>
+    <script src="https://unpkg.com/lightweight-charts@4/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+    <h1>QuanFin Terminal - Chart Debug Test</h1>
+    
+    <h2>1. Test lightweight-charts library</h2>
+    <div id="test-chart" style="width:100%; height:400px;"></div>
+    
+    <h2>2. Test API response</h2>
+    <pre id="api-test"></pre>
+    
+    <h2>3. Test chart rendering</h2>
+    <div id="render-test"></div>
+    
+    <script>
+    async function runTests() {
+        try {
+            // Test 1: Check if lightweight-charts is available
+            console.log("📊 Testing lightweight-charts library...");
+            if (typeof LightweightCharts !== 'undefined') {
+                console.log("✓ lightweight-charts available");
+                document.getElementById('api-test').innerHTML += "✓ lightweight-charts library loaded\n";
+            } else {
+                console.error("✗ lightweight-charts NOT available");
+                document.getElementById('api-test').innerHTML += "✗ lightweight-charts library NOT loaded\n";
+            }
+            
+            // Test 2: Fetch chart data from API
+            console.log("📡 Testing API /api/v1/analyze/RELIANCE...");
+            const response = await fetch('http://localhost:8000/api/v1/analyze/RELIANCE?interval=5m');
+            const data = await response.json();
+            console.log("✓ API Response:", data);
+            document.getElementById('api-test').innerHTML += `✓ API Status: ${response.status}\n`;
+            document.getElementById('api-test').innerHTML += `✓ Data source: ${data.source}\n`;
+            document.getElementById('api-test').innerHTML += `✓ Data points: ${data.data.length}\n`;
+            
+            // Test 3: Create a test chart
+            console.log("📈 Creating test chart...");
+            const chartContainer = document.getElementById('test-chart');
+            const chart = LightweightCharts.createChart(chartContainer, {
+                width: chartContainer.clientWidth,
+                height: 400,
+                timeScale: { timeVisible: true, secondsVisible: false }
+            });
+            
+            const candlestickSeries = chart.addCandlestickSeries();
+            
+            // Format data for chart
+            const chartData = data.data.slice(-100).map(d => ({
+                time: Math.floor(new Date(d.date).getTime() / 1000),
+                open: parseFloat(d.open),
+                high: parseFloat(d.high),
+                low: parseFloat(d.low),
+                close: parseFloat(d.close)
+            }));
+            
+            candlestickSeries.setData(chartData);
+            chart.timeScale().fitContent();
+            
+            console.log("✓ Test chart created successfully");
+            document.getElementById('api-test').innerHTML += "✓ Test chart created successfully\n";
+            document.getElementById('api-test').innerHTML += "✓ Chart is rendering properly!";
+            
+        } catch (error) {
+            console.error("✗ Error:", error);
+            document.getElementById('api-test').innerHTML += `✗ Error: ${error.message}\n`;
+        }
+    }
+    
+    // Run tests when page loads
+    window.addEventListener('load', runTests);
+    </script>
+</body>
+</html>

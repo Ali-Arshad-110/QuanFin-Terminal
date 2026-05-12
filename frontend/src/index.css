@@ -1,0 +1,204 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset Leaflet z-indexes to prevent collision with Tailwind panels */
+.leaflet-pane { z-index: 10 !important; }
+.leaflet-top, .leaflet-bottom { z-index: 20 !important; }
+.leaflet-control { z-index: 20 !important; }
+
+:root {
+  /* Theme colors - will be overridden by ThemeProvider */
+  --color-background: #05070a;
+  --color-surface: #0a0f1e;
+  --color-card: #111827;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e2e8f0;
+  --color-text-muted: #cbd5e1;
+
+  --color-border-primary: #1e293b;
+  --color-border-secondary: #0f172a;
+
+  --color-success: #10b981;
+  --color-danger: #f43f5e;
+  --color-warning: #f59e0b;
+  --color-info: #0ea5e9;
+  --color-accent: #6366f1; /* Indigo-500 */
+  --accent-rgb: 99, 102, 241;
+  --color-surface-light: #1e293b; /* Slate-800 */
+
+  --color-chart-background: transparent;
+  --color-chart-grid: rgba(255, 255, 255, 0.12);
+  --color-chart-candle-up: #10b981;
+  --color-chart-candle-down: #f43f5e;
+  --color-chart-volume-up: rgba(16, 185, 129, 0.5);
+  --color-chart-volume-down: rgba(244, 63, 94, 0.5);
+  --color-chart-crosshair: rgba(255, 255, 255, 0.5);
+  --color-chart-text: #cbd5e1;
+
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* Smooth theme transitions */
+.theme-transitioning,
+.theme-transitioning * {
+  transition: background-color 150ms ease-in-out,
+    color 150ms ease-in-out,
+    border-color 150ms ease-in-out !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  height: 100%;
+  overflow: hidden;
+}
+
+html,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glass-panel {
+  background: rgba(4, 7, 13, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-text {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Hide TradingView attribution links globally */
+#quanfin-chart-container a,
+.tv-lightweight-charts a,
+canvas+a,
+[class*="chart"] a[href*="tradingview"],
+[class*="chart"] a[href*="lightweight-charts"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Light mode adjustments */
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.light .glass-panel {
+  background: rgba(248, 250, 252, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode: hardcoded dark slate overrides */
+.light .bg-\[#0B0F14\] {
+  background-color: #ffffff !important;
+}
+
+.light .bg-\[#14181F\] {
+  background-color: #f8fafc !important;
+}
+
+.light .bg-\[#1a1f2e\] {
+  background-color: #f1f5f9 !important;
+}
+
+.light .border-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+
+.light .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+.light .text-slate-400 {
+  color: #64748b !important;
+}
+
+.light .text-slate-300 {
+  color: #475569 !important;
+}
+
+.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.light .bg-slate-800\/60 {
+  background-color: rgba(241, 245, 249, 0.7) !important;
+}
+
+.light .bg-slate-800\/70 {
+  background-color: rgba(241, 245, 249, 0.9) !important;
+}
+
+/* Global Light Mode Overrides for Theme Variables */
+.light :root {
+  --color-accent: #4f46e5; /* Indigo-600 */
+  --accent-rgb: 79, 70, 229;
+  --color-surface-light: #f1f5f9; /* Slate-100 */
+}
+
+/* Price Flash Animations */
+@keyframes flash-green {
+  0% {
+    background-color: rgba(16, 185, 129, 0.2);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes flash-red {
+  0% {
+    background-color: rgba(244, 63, 94, 0.2);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.animate-flash-green {
+  animation: flash-green 1s ease-out;
+}
+
+.animate-flash-red {
+  animation: flash-red 1s ease-out;
+}

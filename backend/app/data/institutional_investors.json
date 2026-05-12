@@ -1,0 +1,882 @@
+{
+  "metadata": {
+    "source": "Public SEBI/NSE annual report disclosures & exchange filings (LODR Regulations)",
+    "last_updated": "2024-Q4",
+    "description": "Curated list of major institutional investors (FII/FPI/DII) active in Indian equity markets. Data sourced from publicly available company shareholding disclosures filed with BSE/NSE as mandated by SEBI LODR Regulations. All information is in the public domain.",
+    "categories": [
+      "FPI",
+      "FII",
+      "DII",
+      "MF",
+      "Insurance",
+      "Sovereign"
+    ]
+  },
+  "institutional_investors": [
+    {
+      "id": "GIC_SI",
+      "name": "GIC Private Limited",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "Singapore",
+      "aum_usd_bn": 770,
+      "domicile": "Singapore",
+      "known_holdings_india": [
+        "KOTAK MAHINDRA BANK",
+        "HDFC BANK",
+        "ZOMATO",
+        "FLIPKART"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.gic.com.sg"
+    },
+    {
+      "id": "TEMASEK",
+      "name": "Temasek Holdings",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "Singapore",
+      "aum_usd_bn": 287,
+      "domicile": "Singapore",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "TATA TECHNOLOGIES",
+        "MANIPAL HEALTH"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.temasek.com.sg"
+    },
+    {
+      "id": "GOVT_NORWAY",
+      "name": "Government Pension Fund Global (Norway)",
+      "short_name": "Norges Bank Investment Management",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "Norway",
+      "aum_usd_bn": 1600,
+      "domicile": "Norway",
+      "known_holdings_india": [
+        "RELIANCE",
+        "INFOSYS",
+        "TCS",
+        "HDFC BANK",
+        "ICICI BANK",
+        "MARUTI SUZUKI",
+        "L&T",
+        "HUL"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.nbim.no"
+    },
+    {
+      "id": "BLACKROCK",
+      "name": "BlackRock Inc.",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 10000,
+      "domicile": "USA",
+      "entities_in_india": [
+        "Blackrock Advisors (UK) Limited",
+        "Ishares Core Ftse 100 Ucits ETF",
+        "Ishares MSCI India ETF"
+      ],
+      "known_holdings_india": [
+        "RELIANCE",
+        "INFOSYS",
+        "TCS",
+        "HDFC BANK",
+        "ICICI BANK",
+        "BHARTIARTL"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.blackrock.com"
+    },
+    {
+      "id": "VANGUARD",
+      "name": "The Vanguard Group",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 8100,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "INFOSYS",
+        "TCS",
+        "RELIANCE",
+        "HDFC BANK",
+        "ICICI BANK",
+        "WIPRO",
+        "HCLTECH"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.vanguard.com"
+    },
+    {
+      "id": "JPM_AM",
+      "name": "JPMorgan Asset Management",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 3000,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE",
+        "ICICI BANK",
+        "AXIS BANK",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.jpmorgan.com"
+    },
+    {
+      "id": "FIDELITY",
+      "name": "Fidelity International",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "UK",
+      "aum_usd_bn": 700,
+      "domicile": "UK",
+      "known_holdings_india": [
+        "KOTAK MAHINDRA BANK",
+        "SBI LIFE",
+        "HDFC BANK",
+        "TITAN",
+        "ASIAN PAINTS"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.fidelityinternational.com"
+    },
+    {
+      "id": "ABERDEEN",
+      "name": "abrdn (Aberdeen Standard)",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "UK",
+      "aum_usd_bn": 500,
+      "domicile": "UK",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "KOTAK MAHINDRA BANK",
+        "TCS"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.abrdn.com"
+    },
+    {
+      "id": "FRANKLIN_TEMP",
+      "name": "Franklin Templeton",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 1500,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "ICICI BANK",
+        "HDFC BANK",
+        "INFOSYS",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.franklintempleton.com"
+    },
+    {
+      "id": "CAPITAL_GROUP",
+      "name": "Capital Group",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 2200,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "ICICI BANK",
+        "RELIANCE",
+        "TCS",
+        "AXIS BANK"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.capitalgroup.com"
+    },
+    {
+      "id": "SCHRODERS",
+      "name": "Schroders plc",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "UK",
+      "aum_usd_bn": 900,
+      "domicile": "UK",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "KOTAK MAHINDRA BANK"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.schroders.com"
+    },
+    {
+      "id": "STATE_STREET",
+      "name": "State Street Global Advisors",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 4100,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "RELIANCE",
+        "HDFC BANK",
+        "TCS",
+        "INFOSYS"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.ssga.com"
+    },
+    {
+      "id": "INVESCO",
+      "name": "Invesco Asset Management",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 1600,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.invesco.com"
+    },
+    {
+      "id": "CLSA",
+      "name": "CLSA Investments Pvt Ltd",
+      "type": "Brokerage / FPI",
+      "category": "FPI",
+      "country": "Hong Kong",
+      "aum_usd_bn": null,
+      "domicile": "Hong Kong",
+      "known_holdings_india": [],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "CPIB_GIC",
+      "name": "Canada Pension Plan Investment Board (CPPIB)",
+      "short_name": "CPP Investments",
+      "type": "Pension Fund",
+      "category": "FPI",
+      "country": "Canada",
+      "aum_usd_bn": 590,
+      "domicile": "Canada",
+      "known_holdings_india": [
+        "L&T",
+        "KOTAK MAHINDRA BANK",
+        "BAJAJ FINANCE",
+        "EDELWEISS"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "ONTARIO_TEACHERS",
+      "name": "Ontario Teachers' Pension Plan",
+      "type": "Pension Fund",
+      "category": "FPI",
+      "country": "Canada",
+      "aum_usd_bn": 247,
+      "domicile": "Canada",
+      "known_holdings_india": [
+        "ZOMATO",
+        "HDFC BANK"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.otpp.com"
+    },
+    {
+      "id": "APG",
+      "name": "APG Asset Management",
+      "type": "Pension Fund",
+      "category": "FPI",
+      "country": "Netherlands",
+      "aum_usd_bn": 620,
+      "domicile": "Netherlands",
+      "known_holdings_india": [
+        "RELIANCE",
+        "HDFC BANK",
+        "INFOSYS",
+        "TATA CONSULTANCY"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.apg.nl"
+    },
+    {
+      "id": "KUWAIT_IA",
+      "name": "Kuwait Investment Authority",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "Kuwait",
+      "aum_usd_bn": 750,
+      "domicile": "Kuwait",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.kia.gov.kw"
+    },
+    {
+      "id": "ADIA",
+      "name": "Abu Dhabi Investment Authority",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "UAE",
+      "aum_usd_bn": 830,
+      "domicile": "UAE",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "KOTAK MAHINDRA",
+        "JIOMART",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.adia.ae"
+    },
+    {
+      "id": "MUBADALA",
+      "name": "Mubadala Investment Company",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "UAE",
+      "aum_usd_bn": 284,
+      "domicile": "UAE",
+      "known_holdings_india": [
+        "RELIANCE",
+        "OLA",
+        "BYJU'S",
+        "VEDANTA"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.mubadala.com"
+    },
+    {
+      "id": "YALE_ENDOW",
+      "name": "Yale Endowment",
+      "type": "Endowment Fund",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 41,
+      "domicile": "USA",
+      "known_holdings_india": [],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "SOCIETE_GEN",
+      "name": "Societe Generale",
+      "type": "Investment Bank",
+      "category": "FPI",
+      "country": "France",
+      "aum_usd_bn": null,
+      "domicile": "France",
+      "known_holdings_india": [
+        "NSE DERIVATIVES"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "DEUTSCHE_BANK",
+      "name": "Deutsche Bank AG",
+      "type": "Investment Bank",
+      "category": "FPI",
+      "country": "Germany",
+      "aum_usd_bn": null,
+      "domicile": "Germany",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "GOLDMAN_SACHS",
+      "name": "Goldman Sachs Asset Management",
+      "type": "Investment Bank / Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 2700,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE",
+        "ICICI BANK",
+        "INFOSYS"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "MORGAN_STANLEY",
+      "name": "Morgan Stanley Investment Management",
+      "type": "Investment Bank / Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 1400,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "INFOSYS",
+        "HDFC BANK",
+        "BHARTIARTL",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "MERRILL_LYNCH",
+      "name": "Merrill Lynch / Bank of America Securities",
+      "type": "Investment Bank",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": null,
+      "domicile": "USA",
+      "known_holdings_india": [],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "MIRAE",
+      "name": "Mirae Asset Global Investments",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "South Korea",
+      "aum_usd_bn": 180,
+      "domicile": "South Korea",
+      "known_holdings_india": [
+        "INFOSYS",
+        "TCS",
+        "HDFC BANK",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "LIC",
+      "name": "Life Insurance Corporation of India",
+      "type": "Insurance / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 550,
+      "domicile": "India",
+      "known_holdings_india": [
+        "RELIANCE",
+        "ITC",
+        "ONGC",
+        "INFOSYS",
+        "NTPC",
+        "SBIN",
+        "COALINDIA",
+        "BPCL",
+        "GAIL",
+        "L&T"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.licindia.in"
+    },
+    {
+      "id": "SBI_MF",
+      "name": "SBI Mutual Fund",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 100,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE",
+        "ICICI BANK",
+        "INFOSYS",
+        "TCS",
+        "LARSEN"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.sbimf.com"
+    },
+    {
+      "id": "HDFC_MF",
+      "name": "HDFC Asset Management Company",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 70,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "ICICI BANK",
+        "INFOSYS",
+        "KOTAK MAHINDRA",
+        "RELIANCE"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.hdfcfund.com"
+    },
+    {
+      "id": "NIPPON_MF",
+      "name": "Nippon India Mutual Fund",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 35,
+      "domicile": "India",
+      "known_holdings_india": [
+        "RELIANCE",
+        "HDFC BANK",
+        "INFOSYS",
+        "ICICI BANK"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.nipponindiamf.com"
+    },
+    {
+      "id": "ICICI_PRU_MF",
+      "name": "ICICI Prudential Asset Management",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 65,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "ICICI BANK",
+        "RELIANCE",
+        "INFOSYS",
+        "BHARTIARTL"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.icicipruamc.com"
+    },
+    {
+      "id": "AXIS_MF",
+      "name": "Axis Mutual Fund",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 28,
+      "domicile": "India",
+      "known_holdings_india": [
+        "TCS",
+        "INFOSYS",
+        "Avenue SUPERMARTS",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.axismf.com"
+    },
+    {
+      "id": "KOTAK_MF",
+      "name": "Kotak Mahindra Asset Management",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 38,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "RELIANCE",
+        "INFOSYS",
+        "ICICI BANK"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.kotakmf.com"
+    },
+    {
+      "id": "DSP_MF",
+      "name": "DSP Investment Managers",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 15,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.dspim.com"
+    },
+    {
+      "id": "MOTILAL_MF",
+      "name": "Motilal Oswal Asset Management",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 8,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.motilaloswalmf.com"
+    },
+    {
+      "id": "EDELWEISS_MF",
+      "name": "Edelweiss Asset Management",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 5,
+      "domicile": "India",
+      "known_holdings_india": [],
+      "sebi_category": "Domestic Institutional Investor (DII)"
+    },
+    {
+      "id": "MIRAE_INDIA",
+      "name": "Mirae Asset Investment Managers (India)",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 22,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "RELIANCE",
+        "ICICI BANK"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)"
+    },
+    {
+      "id": "TATA_MF",
+      "name": "Tata Asset Management",
+      "type": "Mutual Fund / DII",
+      "category": "DII",
+      "country": "India",
+      "aum_usd_bn": 12,
+      "domicile": "India",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "TCS"
+      ],
+      "sebi_category": "Domestic Institutional Investor (DII)",
+      "website": "www.tatamutualfund.com"
+    },
+    {
+      "id": "ADIA_INDIA",
+      "name": "ADIA Subsidiary (via Platinum Jubilee Investments)",
+      "type": "Sovereign Wealth Fund",
+      "category": "FPI",
+      "country": "UAE",
+      "aum_usd_bn": null,
+      "domicile": "UAE",
+      "known_holdings_india": [
+        "JIOMART",
+        "ONE97 COMMUNICATIONS",
+        "KOTAK MAHINDRA"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "BAILLIE_GIFFORD",
+      "name": "Baillie Gifford & Co",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "UK",
+      "aum_usd_bn": 180,
+      "domicile": "Scotland, UK",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "KPIT TECHNOLOGIES",
+        "BAJAJ FINANCE"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "MATTHIS_ASIAN",
+      "name": "Matthews Asia Funds",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 20,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "KOTAK MAHINDRA",
+        "AXIS BANK"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "PRUSIK",
+      "name": "Prusik Investment Management",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "UK",
+      "aum_usd_bn": 3,
+      "domicile": "UK",
+      "known_holdings_india": [],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "AMERICAN_FUNDS",
+      "name": "American Funds (Capital Research)",
+      "type": "Asset Manager",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 2200,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "HDFC BANK",
+        "INFOSYS",
+        "ICICI BANK",
+        "RELIANCE"
+      ],
+      "sebi_category": "Category I FPI"
+    },
+    {
+      "id": "TIGER_GLOBAL",
+      "name": "Tiger Global Management",
+      "type": "Hedge Fund / PE",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 50,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "FLIPKART",
+        "OLA",
+        "BYJU'S",
+        "UNACADEMY"
+      ],
+      "sebi_category": "Category II FPI"
+    },
+    {
+      "id": "SEQUOIA_CAP",
+      "name": "Sequoia Capital India (Peak XV Partners)",
+      "type": "Venture Capital / PE",
+      "category": "FPI",
+      "country": "USA / India",
+      "aum_usd_bn": 20,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "ZOMATO",
+        "OLA",
+        "BYJU'S",
+        "UNACADEMY",
+        "FRESHWORKS"
+      ],
+      "sebi_category": "Category II FPI"
+    },
+    {
+      "id": "SOFTBANK_VISION",
+      "name": "SoftBank Vision Fund",
+      "type": "VC / PE",
+      "category": "FPI",
+      "country": "Japan",
+      "aum_usd_bn": 100,
+      "domicile": "Japan",
+      "known_holdings_india": [
+        "OLA ELECTRIC",
+        "PAYTM",
+        "DELHIVERY",
+        "POLICYBAZAAR"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.softbank.jp"
+    },
+    {
+      "id": "WARBURG_PINCUS",
+      "name": "Warburg Pincus",
+      "type": "Private Equity",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 73,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "MANIPAL HEALTH",
+        "NUVOCO",
+        "BHARTI AIRTEL"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.warburgpincus.com"
+    },
+    {
+      "id": "KKR",
+      "name": "KKR & Co. Inc.",
+      "type": "Private Equity",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 553,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "JIO PLATFORMS",
+        "RELIANCE RETAIL",
+        "Max HEALTHCARE",
+        "COCHIN SHIPYARD"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.kkr.com"
+    },
+    {
+      "id": "CARLYLE",
+      "name": "The Carlyle Group",
+      "type": "Private Equity",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 425,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "SBI LIFE",
+        "HDFC LIFE",
+        "NUVAMA WEALTH",
+        "HEXAWARE"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.carlyle.com"
+    },
+    {
+      "id": "BLACKSTONE",
+      "name": "Blackstone Inc.",
+      "type": "Private Equity / Real Estate",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 1000,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "NEXUS SELECT TRUST REIT",
+        "EMBASSY REIT",
+        "MPHASIS",
+        "AADHAR HOUSING"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.blackstone.com"
+    },
+    {
+      "id": "GENERAL_ATLANTIC",
+      "name": "General Atlantic",
+      "type": "Growth Equity",
+      "category": "FPI",
+      "country": "USA",
+      "aum_usd_bn": 77,
+      "domicile": "USA",
+      "known_holdings_india": [
+        "BYJU'S",
+        "DELHIVERY",
+        "FRESHWORKS",
+        "CG POWER",
+        "INDIGO PAINTS"
+      ],
+      "sebi_category": "Category I FPI",
+      "website": "www.generalatlantic.com"
+    }
+  ],
+  "fpi_category_mapping": {
+    "Category I": "Regulated entities like banks, asset managers, sovereign wealth funds, and pension funds with low risk profile",
+    "Category II": "Funds managed by regulated entities, family offices, endowments with moderate risk profile",
+    "Category III": "All other FPIs not eligible for Category I or II, including hedge funds"
+  },
+  "dii_types": {
+    "Mutual Fund": "SEBI-registered open/closed-ended fund vehicles",
+    "Insurance": "IRDAI-registered insurance companies investing policyholder premiums",
+    "Pension Fund": "PFRDA-registered pension vehicles",
+    "Banks": "Scheduled commercial banks and cooperative banks"
+  }
+}

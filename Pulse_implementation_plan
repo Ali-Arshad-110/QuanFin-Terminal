@@ -1,0 +1,87 @@
+# Implementation Plan: Pulse Momentum Scanner
+
+The **Pulse** section is designed as a mission-control HUD for the QuanFin Terminal. It will monitor the expanded Stock Universe (2,132+ stocks) in real-time to detect significant market movements before they trend globally.
+
+## User Review Required
+
+> [!IMPORTANT]
+> **Performance Overhead**: Scanning all 2,000+ stocks in real-time via individual API calls is expensive. My plan uses a **Batch Multi-Threading** approach in the backend to minimize latency.
+> **Refresh Frequency**: What is the preferred refresh rate? (e.g., Every 30 seconds or 1 minute). 
+
+## Proposed Changes
+
+### Backend (Python/FastAPI)
+
+---
+
+#### [NEW] [pulse_service.py](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/backend/app/services/pulse_service.py)
+A service to handle the heavy lifting of scanning 2,132 stocks.
+- **In-Memory Cache**: Stores the latest "Pulsing" stocks to avoid redundant calculations.
+- **Momentum Logic**: Detects RSI breakouts, Volume shockers, and Day High/Low breaches.
+- **Batching**: Uses multi-threaded requests to Yahoo Finance/Kotak for 50-stock chunks.
+
+#### [NEW] [pulse.py](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/backend/app/routers/pulse.py)
+Router to expose the Pulse Data:
+- `GET /api/v1/pulse/active`: Returns the top 20-50 stocks currently showing abnormal activity.
+- `GET /api/v1/pulse/volume`: Specifically filters for Volume Shockers.
+
+#### [MODIFY] [main.py](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/backend/app/main.py)
+Include the new `pulse` router in the FastAPI application.
+
+---
+
+### Frontend (React/TypeScript)
+
+#### [MODIFY] [App.tsx](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/frontend/src/App.tsx)
+Add the `pulse` view to the terminal's routing system.
+
+#### [NEW] [PulseDashboard.tsx](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/frontend/src/components/PulseDashboard.tsx)
+A new high-density visualization component:
+- **Alert Cards**: Neon-accented cards for bearish/bullish triggers.
+- **Real-time Stream**: A vertical feed of "Pulse Alerts" as they happen.
+- **Interactive Links**: Clicking a Pulse Card immediately switches the main Chart view to that stock.
+
+#### [NEW] [PulseCard.tsx](file:///c:/Users/MOHD%20FAIZAM/OneDrive/Desktop/QuanFin_Terminal/frontend/src/components/pulse/PulseCard.tsx)
+The individual UI component for a pulsing stock, featuring:
+- Price % Change (Large font).
+- Trigger Type (e.g., "52W High Test").
+- Micro-Sparkline (5-day trend).
+
+---
+
+## Architecture Diagram (Mermaid)
+
+```mermaid
+graph TD
+    subgraph "Frontend (React Hub)"
+        A[App.tsx] --> B[PulseDashboard]
+        B --> C[PulseCard & Sparklines]
+    end
+
+    subgraph "Backend (FastAPI Engine)"
+        D[PulseRouter] --> E[PulseScanner Service]
+        E --> F[Trigger Engine]
+        F --> G[Anomaly Detector]
+    end
+
+    subgraph "Data Sources (2,132 Stocks)"
+        H[STOCK_UNIVERSE Registry] --> E
+        I[Yahoo/Kotak APIs] <--> E
+    end
+
+    B <--> D
+```
+
+## Open Questions
+
+> [!CAUTION]
+> Should we limit the "Pulse" to the top 1000 stocks initially to ensure dashboard performance, or go full 2132 immediately?
+> Do you want "Sound Notifications" for specific high-priority pulses (e.g., Breaking 52-week High)?
+
+## Verification Plan
+
+- **Fetch Script**: Run `python fetch_stock_universe.py` to ensure it still correctly updates the renamed files.
+
+### Manual Verification
+- Test the search bar in the terminal to ensure autocomplete still works with the new variable name.
+- Verify that the terminal UI doesn't mention "Nifty 500" in places where it should say "Stock Universe".

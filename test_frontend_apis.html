@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuanFin API Test</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0F172A;
+            color: #F8FAFC;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #10B981;
+            border-bottom: 2px solid #10B981;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .test-title {
+            color: #10B981;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status.success {
+            background: #10B981;
+            color: #000;
+        }
+        .status.error {
+            background: #EF4444;
+            color: #FFF;
+        }
+        .status.loading {
+            background: #F59E0B;
+            color: #000;
+        }
+        pre {
+            background: #0F172A;
+            border: 1px solid #334155;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            background: #10B981;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 QuanFin Terminal API Test Suite</h1>
+    <p>Testing backend APIs to verify chart and info button functionality</p>
+
+    <div class="test-section">
+        <div class="test-title">
+            1. Chart Data API (analyze endpoint)
+            <span id="chart-status" class="status loading">TESTING...</span>
+        </div>
+        <button onclick="testChartAPI()">Re-test Chart API</button>
+        <pre id="chart-result">Loading...</pre>
+    </div>
+
+    <div class="test-section">
+        <div class="test-title">
+            2. Stock Info API (quote endpoint)
+            <span id="info-status" class="status loading">TESTING...</span>
+        </div>
+        <button onclick="testInfoAPI()">Re-test Info API</button>
+        <pre id="info-result">Loading...</pre>
+    </div>
+
+    <div class="test-section">
+        <div class="test-title">
+            3. Indices API
+            <span id="indices-status" class="status loading">TESTING...</span>
+        </div>
+        <button onclick="testIndicesAPI()">Re-test Indices API</button>
+        <pre id="indices-result">Loading...</pre>
+    </div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+
+        async function testChartAPI() {
+            const statusEl = document.getElementById('chart-status');
+            const resultEl = document.getElementById('chart-result');
+            
+            statusEl.className = 'status loading';
+            statusEl.textContent = 'TESTING...';
+            resultEl.textContent = 'Fetching chart data for RELIANCE.NS (5m interval)...';
+
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/analyze/RELIANCE.NS?interval=5m`);
+                const data = await response.json();
+                
+                if (response.ok && data.data && data.data.length > 0) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ SUCCESS';
+                    resultEl.textContent = `✅ Chart API Working!\n\nReceived ${data.data.length} candles\nTicker: ${data.ticker}\nInterval: ${data.interval}\n\nSample Data (first 3 candles):\n${JSON.stringify(data.data.slice(0, 3), null, 2)}`;
+                } else {
+                    throw new Error('No data received');
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ FAILED';
+                resultEl.textContent = `❌ Chart API Failed!\n\nError: ${error.message}`;
+            }
+        }
+
+        async function testInfoAPI() {
+            const statusEl = document.getElementById('info-status');
+            const resultEl = document.getElementById('info-result');
+            
+            statusEl.className = 'status loading';
+            statusEl.textContent = 'TESTING...';
+            resultEl.textContent = 'Fetching stock info for RELIANCE.NS...';
+
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/quote/RELIANCE.NS`);
+                const data = await response.json();
+                
+                if (response.ok && data) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ SUCCESS';
+                    resultEl.textContent = `✅ Info API Working!\n\nStock: ${data.name || 'N/A'}\nSector: ${data.sector || 'N/A'}\nIndustry: ${data.industry || 'N/A'}\nMarket Cap: ${data.marketCap || 'N/A'}\nP/E Ratio: ${data.peButton || 'N/A'}\n52W High: ${data.fiftyTwoWeekHigh || 'N/A'}\n52W Low: ${data.fiftyTwoWeekLow || 'N/A'}\n\nFull Response:\n${JSON.stringify(data, null, 2)}`;
+                } else {
+                    throw new Error('No data received');
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ FAILED';
+                resultEl.textContent = `❌ Info API Failed!\n\nError: ${error.message}`;
+            }
+        }
+
+        async function testIndicesAPI() {
+            const statusEl = document.getElementById('indices-status');
+            const resultEl = document.getElementById('indices-result');
+            
+            statusEl.className = 'status loading';
+            statusEl.textContent = 'TESTING...';
+            resultEl.textContent = 'Fetching indices data...';
+
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/indices`);
+                const data = await response.json();
+                
+                if (response.ok && Array.isArray(data) && data.length > 0) {
+                    statusEl.className = 'status success';
+                    statusEl.textContent = '✓ SUCCESS';
+                    resultEl.textContent = `✅ Indices API Working!\n\nReceived ${data.length} indices\n\n${JSON.stringify(data, null, 2)}`;
+                } else {
+                    throw new Error('No data received');
+                }
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = '✗ FAILED';
+                resultEl.textContent = `❌ Indices API Failed!\n\nError: ${error.message}`;
+            }
+        }
+
+        // Auto-run tests on page load
+        window.addEventListener('load', () => {
+            testChartAPI();
+            setTimeout(testInfoAPI, 1000);
+            setTimeout(testIndicesAPI, 2000);
+        });
+    </script>
+</body>
+</html>

@@ -195,8 +195,11 @@ async def startup_event():
         logger.info(f"✓ Active Instrument Table: {active_table}")
         
         if active_table == "instruments":
-             logger.warning("⚠️ No Active Table Pointer found. Attempting Background Sync...")
-             threading.Thread(target=InstrumentMasterService.start_sync_job, daemon=True).start()
+             if os.getenv("KOTAK_CONSUMER_KEY"):
+                 logger.warning("⚠️ No Active Table Pointer found. Attempting Background Sync...")
+                 threading.Thread(target=InstrumentMasterService.start_sync_job, daemon=True).start()
+             else:
+                 logger.warning("⚠️ No Active Table Pointer found, but skipping Background Sync because Kotak credentials (KOTAK_CONSUMER_KEY) are missing.")
              
     except Exception as e:
         logger.error(f"Critical Database Startup Error: {e}")

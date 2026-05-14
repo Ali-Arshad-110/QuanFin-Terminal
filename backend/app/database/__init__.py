@@ -11,9 +11,11 @@ load_dotenv()
 DB_URL_RAW = os.getenv("DB_URL", "postgresql://postgres:Ali%40110@localhost/quanfin_db")
 
 # 1. Async URL (for FastAPI)
-# Ensure driver is asyncpg
+# Ensure driver is asyncpg for Postgres or aiosqlite for SQLite
 if "postgresql://" in DB_URL_RAW and "+asyncpg" not in DB_URL_RAW:
     ASYNC_DB_URL = DB_URL_RAW.replace("postgresql://", "postgresql+asyncpg://")
+elif "sqlite://" in DB_URL_RAW and "+aiosqlite" not in DB_URL_RAW:
+    ASYNC_DB_URL = DB_URL_RAW.replace("sqlite://", "sqlite+aiosqlite://")
 else:
     ASYNC_DB_URL = DB_URL_RAW
 

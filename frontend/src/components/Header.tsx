@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
 
     return (
         <header className="h-14 bg-surface/80 backdrop-blur-md border-b border-white/5 flex items-center justify-between px-4 shrink-0 z-[1000] relative shadow-lg">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-41">
                 <div className="flex items-center gap-3 cursor-pointer group" onClick={() => onNavigate('dashboard')}>
                     <div className="flex flex-col items-start">
                         <img

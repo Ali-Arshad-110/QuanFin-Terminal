@@ -111,6 +111,11 @@ class InstrumentMasterService:
         """
         Main Entry Point for Background Sync.
         """
+        if not os.getenv("KOTAK_CONSUMER_KEY"):
+             logger.warning("Sync aborted: No Kotak credentials found.")
+             InstrumentMasterService._log_audit("SYNC_ABORT", "FAILED", "Missing credentials")
+             return False
+             
         InstrumentMasterService._log_audit("SYNC_START", "INIT", "Starting daily sync job")
         
         # 1. Check Hard Lock

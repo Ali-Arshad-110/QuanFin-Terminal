@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Plot from 'react-plotly.js';
 import axios from 'axios';
-import { 
-    Loader2, 
-    GitCompare, 
-    ChevronRight, 
-    ArrowUpDown, 
-    RotateCcw, 
+import {
+    Loader2,
+    GitCompare,
+    ChevronRight,
+    ArrowUpDown,
+    RotateCcw,
     Activity,
     Zap,
     PieChart as PieIcon
@@ -38,7 +38,7 @@ interface MarketSunburstProps {
 const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
     const { themeMode, currentTheme } = useTheme();
     const { setTicker } = useMarketStore();
-    
+
     // UI State
     const [loading, setLoading] = useState(true);
     const [graphData, setGraphData] = useState<MarketNode | null>(null);
@@ -47,12 +47,12 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
     const [currentLevel, setCurrentLevel] = useState<string>('');
     const [sortMode, setSortMode] = useState<'value' | 'performance'>('value');
     const [isSortOpen, setIsSortOpen] = useState(false);
-    
+
     // Comparison & Selection
     const [compareStocks, setCompareStocks] = useState<string[]>([]);
     const [showCompare, setShowCompare] = useState(false);
     const [selectedStock, setSelectedStock] = useState<string | null>(null);
-    
+
     // Breadcrumbs
     const [breadcrumbs, setBreadcrumbs] = useState<{ id: string; label: string }[]>([
         { id: '', label: 'Market' }
@@ -73,7 +73,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
     const getHeatmapColor = (changePercent: number | undefined): string => {
         if (changePercent === undefined || changePercent === null) return themeMode === 'dark' ? '#334155' : '#e2e8f0';
         const clamped = Math.max(-5, Math.min(5, changePercent));
-        const t = (clamped + 5) / 10; 
+        const t = (clamped + 5) / 10;
 
         // Deep rich colors
         const r = Math.round(t < 0.5 ? 127 + (1 - t * 2) * 128 : 16 + (1 - (t - 0.5) * 2) * 20);
@@ -90,7 +90,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
             const res = await axios.get('http://127.0.0.1:8000/api/v1/network-map');
             const root = res.data.graph;
             setGraphData(root);
-            
+
             // Auto-fetch major indices constituents
             const indices: MarketNode[] = [];
             const findIndices = (n: MarketNode) => {
@@ -99,10 +99,8 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
             };
             findIndices(root);
 
-            // Fetch the first 5 major indices to populate the map
-            for (const indexNode of indices.slice(0, 8)) {
-                await fetchAndMergeConstituents(indexNode);
-            }
+            // OPTIMIZATION: Fetch in parallel
+            await Promise.allSettled(indices.slice(0, 8).map(node => fetchAndMergeConstituents(node)));
         } catch (err) {
             console.error("Market Sunburst: Failed to fetch data", err);
         } finally {
@@ -119,12 +117,12 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
         try {
             const sym = node.id === 'INDIA_MARKET' ? '^NSEI' : node.id;
             const res = await axios.get(`http://127.0.0.1:8000/api/v1/network-map/constituents/${encodeURIComponent(sym)}`);
-            
+
             if (res.data && res.data.constituents) {
                 const stocks = res.data.constituents;
                 setGraphData(prevRoot => {
                     if (!prevRoot) return null;
-                    const newRoot = JSON.parse(JSON.stringify(prevRoot));
+                    const newRoot = structuredClone(prevRoot);
                     const updateNode = (n: MarketNode) => {
                         if (n.id === node.id) {
                             n.children = stocks.map((s: any) => ({
@@ -166,7 +164,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
 
             // Label Formatting: Not needed anymore but kept for structure
             // if (node.type === 'stock') label = node.id;
-            
+
             // Color & Hover Info
             let color = COLORS.neutral;
             let hoverDetail = "";
@@ -247,7 +245,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
 
         if (node.type === 'stock') {
             const ticker = node.originalId || node.id.split('_')[0];
-            
+
             // Compare logic: Ctrl/Meta + Click
             const event = data.event as MouseEvent;
             if (event.ctrlKey || event.metaKey) {
@@ -299,6 +297,19 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
         setPlotRevision(r => r + 1);
     };
 
+    const plotLayout = React.useMemo(() => ({
+        margin: { l: 0, r: 0, b: 0, t: 0 },
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        autosize: true,
+        transition: { duration: 0 },
+        font: { family: 'JetBrains Mono, Inter, sans-serif', color: COLORS.textMuted },
+        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96", "#ab63fa", "#19d3f3"],
+        extendsunburstcolors: true
+    }), [COLORS.textMuted]);
+
+    const plotConfig = React.useMemo(() => ({ displayModeBar: false, responsive: true }), []);
+
     return (
         <div className="flex flex-col h-full w-full bg-background animate-in fade-in duration-500 overflow-hidden">
             {/* --- Control Bar --- */}
@@ -314,7 +325,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                         {breadcrumbs.map((crumb, i) => (
                             <React.Fragment key={crumb.id}>
                                 {i > 0 && <ChevronRight size={12} className="text-text-muted" />}
-                                <button 
+                                <button
                                     onClick={() => handleBreadcrumbClick(crumb.id, i)}
                                     className={`text-[10px] font-black uppercase tracking-widest transition-colors ${i === breadcrumbs.length - 1 ? 'text-indigo-400' : 'text-text-muted hover:text-text-primary'}`}
                                 >
@@ -335,7 +346,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
 
                     {/* Sort Dropdown */}
                     <div className="relative">
-                        <button 
+                        <button
                             onClick={() => setIsSortOpen(!isSortOpen)}
                             className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border text-[10px] font-black uppercase tracking-widest transition-all ${isSortOpen ? 'bg-indigo-500/10 border-indigo-500 text-indigo-400' : 'bg-surface border-border-primary text-text-muted hover:text-text-primary'}`}
                         >
@@ -344,13 +355,13 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                         </button>
                         {isSortOpen && (
                             <div className="absolute top-full right-0 mt-2 w-48 bg-surface/95 backdrop-blur-2xl border border-border-primary rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-[100] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
-                                <button 
+                                <button
                                     onClick={() => { setSortMode('value'); setIsSortOpen(false); }}
                                     className={`w-full text-left px-4 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-indigo-500/10 transition-colors ${sortMode === 'value' ? 'text-indigo-400' : 'text-text-muted'}`}
                                 >
                                     Size (Mkt Cap)
                                 </button>
-                                <button 
+                                <button
                                     onClick={() => { setSortMode('performance'); setIsSortOpen(false); }}
                                     className={`w-full text-left px-4 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-indigo-500/10 transition-colors ${sortMode === 'performance' ? 'text-indigo-400' : 'text-text-muted'}`}
                                 >
@@ -360,7 +371,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                         )}
                     </div>
 
-                    <button 
+                    <button
                         onClick={handleReset}
                         className="flex items-center gap-2 px-3 py-1.5 bg-surface border border-border-primary rounded-lg text-[10px] font-black uppercase tracking-widest text-text-muted hover:text-text-primary transition-all"
                     >
@@ -382,20 +393,12 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                     {chartData.length > 0 ? (
                         <Plot
                             data={chartData}
-                            layout={{
-                                margin: { l: 0, r: 0, b: 0, t: 0 },
-                                paper_bgcolor: 'transparent',
-                                plot_bgcolor: 'transparent',
-                                autosize: true,
-                                font: { family: 'JetBrains Mono, Inter, sans-serif', color: COLORS.textMuted },
-                                sunburstcolorway: ["#636efa", "#ef553b", "#00cc96", "#ab63fa", "#19d3f3"],
-                                extendsunburstcolors: true
-                            }}
+                            layout={plotLayout}
                             style={{ width: "100%", height: "100%" }}
                             useResizeHandler={true}
                             onClick={handleClick}
                             revision={plotRevision}
-                            config={{ displayModeBar: false, responsive: true }}
+                            config={plotConfig}
                         />
                     ) : !loading && (
                         <div className="flex flex-col items-center justify-center gap-6 opacity-30">
@@ -409,15 +412,15 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                 <div className="absolute bottom-6 left-6 flex flex-col gap-3 pointer-events-none">
                     <div className="bg-surface/80 backdrop-blur-md p-3 rounded-2xl border border-border-primary/30 shadow-2xl flex items-center gap-4">
                         <div className="flex items-center gap-2">
-                             <div className="w-2 h-2 rounded-full bg-emerald-500" />
-                             <span className="text-[9px] font-black uppercase tracking-widest text-text-muted">Bullish Intensity</span>
+                            <div className="w-2 h-2 rounded-full bg-emerald-500" />
+                            <span className="text-[9px] font-black uppercase tracking-widest text-text-muted">Bullish Intensity</span>
                         </div>
                         <div className="flex items-center gap-2">
-                             <div className="w-2 h-2 rounded-full bg-rose-500" />
-                             <span className="text-[9px] font-black uppercase tracking-widest text-text-muted">Bearish Intensity</span>
+                            <div className="w-2 h-2 rounded-full bg-rose-500" />
+                            <span className="text-[9px] font-black uppercase tracking-widest text-text-muted">Bearish Intensity</span>
                         </div>
                     </div>
-                    
+
                     <div className="bg-indigo-600 p-3 rounded-2xl shadow-2xl shadow-indigo-600/20 border border-white/10 flex items-center gap-3">
                         <Zap size={14} className="text-white" />
                         <span className="text-[10px] font-black uppercase tracking-widest text-white">Ctrl + Click to Compare Multiple Stocks</span>
@@ -427,13 +430,13 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
                 {/* Compare Floating Button */}
                 {compareStocks.length > 0 && (
                     <div className="absolute bottom-6 right-6 z-50 flex gap-2 animate-in slide-in-from-bottom-6">
-                        <button 
+                        <button
                             onClick={() => setShowCompare(true)}
                             className="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-2xl shadow-2xl shadow-indigo-600/40 flex items-center gap-3 text-sm font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95"
                         >
                             <GitCompare size={18} /> Compare ({compareStocks.length})
                         </button>
-                        <button 
+                        <button
                             onClick={() => setCompareStocks([])}
                             className="bg-surface/80 hover:bg-card text-text-muted px-4 py-3 rounded-2xl border border-border-primary text-[10px] font-black uppercase tracking-widest transition-all backdrop-blur-xl"
                         >
@@ -446,11 +449,11 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
             {/* Modals */}
             {selectedStock && <StockInfoModal symbol={selectedStock} onClose={() => setSelectedStock(null)} />}
             {showCompare && compareStocks.length > 0 && (
-                <CompareModal 
-                    stocks={compareStocks} 
-                    onRemove={(s) => setCompareStocks(prev => prev.filter(x => x !== s))} 
+                <CompareModal
+                    stocks={compareStocks}
+                    onRemove={(s) => setCompareStocks(prev => prev.filter(x => x !== s))}
                     onUpdateStock={(oldT, newT) => setCompareStocks(prev => prev.map(s => s === oldT ? newT : s))}
-                    onClose={() => setShowCompare(false)} 
+                    onClose={() => setShowCompare(false)}
                 />
             )}
         </div>

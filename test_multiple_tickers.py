@@ -3,7 +3,7 @@ import urllib.request
 import json
 import sys
 
-tickers = ['NIFTY 50', 'RELIANCE', 'TCS', 'INFY']
+tickers = ['NIFTY 50', 'RELIANCE', 'TCS', 'INFY', 'SBIN', 'HDFCBANK', 'ITC', 'BAJFINANCE']
 
 for ticker in tickers:
     try:

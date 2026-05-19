@@ -5,13 +5,12 @@ import json
 import urllib.request
 import urllib.error
 import urllib.parse
-import traceback
 
 try:
     from neo_api_client import NeoAPI
+    logging.info("✓ NeoAPI loaded successfully")
 except ImportError as e:
-    logging.error(f"NeoAPI Import Failed: {e}")
-    logging.error(traceback.format_exc())
+    logging.warning(f"NeoAPI not available (optional): {e}. Broker streaming will degrade gracefully.")
     NeoAPI = None
 
 logger = logging.getLogger(__name__)
@@ -364,12 +363,15 @@ class KotakService:
             
     def get_funds(self):
         if not self.is_logged_in:
-             return None
+            return None
+        if not self.client:
+            logger.warning("get_funds: NeoAPI client not available (optional dependency missing)")
+            return {"error": "NeoAPI client not initialized", "data": {"net": 0, "available": 0}}
         try:
-             return self.client.limits()
+            return self.client.limits()
         except Exception as e:
-             logger.error(f"Error fetching funds: {e}")
-             return {"error": str(e)}
+            logger.error(f"Error fetching funds: {e}")
+            return {"error": str(e)}
              
     def get_instrument_token(self, symbol):
         """

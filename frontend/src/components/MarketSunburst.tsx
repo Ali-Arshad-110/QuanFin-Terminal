@@ -15,6 +15,7 @@ import { useMarketStore } from '../store';
 import { useTheme } from '../theme/ThemeProvider';
 import StockInfoModal from './StockInfoModal';
 import CompareModal from './CompareModal';
+import { API_BASE } from '../config/api';
 
 // --- Types ---
 interface MarketNode {
@@ -87,7 +88,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const res = await axios.get('http://127.0.0.1:8000/api/v1/network-map');
+            const res = await axios.get(`${API_BASE}/api/v1/network-map`);
             const root = res.data.graph;
             setGraphData(root);
 
@@ -116,7 +117,7 @@ const MarketSunburst: React.FC<MarketSunburstProps> = ({ onNavigate }) => {
     const fetchAndMergeConstituents = async (node: MarketNode) => {
         try {
             const sym = node.id === 'INDIA_MARKET' ? '^NSEI' : node.id;
-            const res = await axios.get(`http://127.0.0.1:8000/api/v1/network-map/constituents/${encodeURIComponent(sym)}`);
+            const res = await axios.get(`${API_BASE}/api/v1/network-map/constituents/${encodeURIComponent(sym)}`);
 
             if (res.data && res.data.constituents) {
                 const stocks = res.data.constituents;

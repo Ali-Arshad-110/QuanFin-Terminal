@@ -14,6 +14,7 @@ import type { PanelConfig } from '../store/workspaceStore';
 import { useTheme } from '../theme/ThemeProvider';
 import { extractErrorMessage } from '../utils/errorUtils';
 import { getSessionLines } from '../utils/sessionTiming';
+import { API_BASE } from '../config/api';
 
 interface AnalyticalPanelProps {
     id: string;
@@ -306,7 +307,7 @@ const AnalyticalPanel: React.FC<AnalyticalPanelProps> = ({ id, config, syncSetti
             try {
                 // Normalize interval for API
                 const apiInterval = config.timeframe === '1h' ? '1h' : config.timeframe;
-                const url = `http://localhost:8000/api/v1/analyze/${config.ticker}?interval=${apiInterval}`;
+                const url = `${API_BASE}/api/v1/analyze/${config.ticker}?interval=${apiInterval}`;
                 const res = await axios.get(url, { timeout: 10000 });
                 if (cancelled) return;
 

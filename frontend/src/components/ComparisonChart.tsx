@@ -7,6 +7,7 @@ import type { IChartApi, ISeriesApi } from 'lightweight-charts';
 import { BarChart2, TrendingUp, Activity, ChevronDown, ChevronUp, Loader2, ArrowLeftRight, Maximize2, Minimize2 } from 'lucide-react';
 import axios from 'axios';
 import StockLogo from './StockLogo';
+import { API_BASE } from '../config/api';
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
 type ChartType = 'line' | 'area' | 'candle';
@@ -64,7 +65,7 @@ function resolveCandles(raw: any[], type: ChartType) {
 
 async function fetchCandles(symbol: string): Promise<any[]> {
     const res = await axios.get(
-        `http://127.0.0.1:8000/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`
+        `${API_BASE}/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`
     );
     return res.data?.data ?? [];
 }
@@ -92,7 +93,7 @@ const InlineSearch: React.FC<InlineSearchProps> = ({ value, color, onSelect, loa
             setFetching(true);
             try {
                 const res = await axios.get(
-                    `http://localhost:8000/api/v1/search?q=${encodeURIComponent(q)}&limit=6`
+                    `${API_BASE}/api/v1/search?q=${encodeURIComponent(q)}&limit=6`
                 );
                 if (res.data?.status === 'success') {
                     setSug(res.data.data);

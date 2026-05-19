@@ -7,6 +7,7 @@ import { useTheme } from '../../../theme/ThemeProvider';
 import { extractErrorMessage } from '../../../utils/errorUtils';
 import { useWebSocket } from '../../../contexts/WebSocketContext';
 import { useMarketStore } from '../../../store';
+import { API_BASE } from '../../../config/api';
 
 interface ExpandedViewProps {
     isOpen: boolean;
@@ -106,12 +107,12 @@ const WatchlistExpandedView: React.FC<ExpandedViewProps> = ({
             try {
                 // Fetch everything in parallel
                 const [dRes, hRes, vRes, rRes, relRes, iRes] = await Promise.all([
-                    fetch(`http://localhost:8000/api/v1/stock/${selectedSymbol}/details`).catch(() => null),
-                    fetch(`http://localhost:8000/api/v1/stock/${selectedSymbol}/analysis?category=holders`).catch(() => null),
-                    fetch(`http://localhost:8000/api/v1/volume/${selectedSymbol}`).catch(() => null),
-                    fetch(`http://localhost:8000/api/v1/stock/${selectedSymbol}/analysis?category=returns`).catch(() => null),
-                    fetch(`http://localhost:8000/api/v1/stock/${selectedSymbol}/analysis?category=relative`).catch(() => null),
-                    fetch(`http://localhost:8000/api/v1/analyze/${selectedSymbol}?interval=5m`).catch(() => null)
+                    fetch(`${API_BASE}/api/v1/stock/${selectedSymbol}/details`).catch(() => null),
+                    fetch(`${API_BASE}/api/v1/stock/${selectedSymbol}/analysis?category=holders`).catch(() => null),
+                    fetch(`${API_BASE}/api/v1/volume/${selectedSymbol}`).catch(() => null),
+                    fetch(`${API_BASE}/api/v1/stock/${selectedSymbol}/analysis?category=returns`).catch(() => null),
+                    fetch(`${API_BASE}/api/v1/stock/${selectedSymbol}/analysis?category=relative`).catch(() => null),
+                    fetch(`${API_BASE}/api/v1/analyze/${selectedSymbol}?interval=5m`).catch(() => null)
                 ]);
 
                 const dJson = dRes && dRes.ok ? await dRes.json().catch(() => null) : null;

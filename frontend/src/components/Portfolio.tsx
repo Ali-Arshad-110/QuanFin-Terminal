@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useMarketStore } from '../store';
 import { AlertCircle, RefreshCw, Lock } from 'lucide-react';
 import BrokerLoginModal from './BrokerLoginModal';
+import { API_BASE } from '../config/api';
 
 interface Holding {
     tradingsymbol: string;
@@ -37,11 +38,11 @@ const Portfolio: React.FC = () => {
         setError(null);
         try {
             // Fetch Holdings
-            const hRes = await fetch('http://localhost:8000/api/v1/broker/holdings');
+            const hRes = await fetch(`${API_BASE}/api/v1/broker/holdings`);
             const hData = await hRes.json();
 
             // Fetch Positions
-            const pRes = await fetch('http://localhost:8000/api/v1/broker/positions');
+            const pRes = await fetch(`${API_BASE}/api/v1/broker/positions`);
             const pData = await pRes.json();
 
             if (hData && Array.isArray(hData.data)) {

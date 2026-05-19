@@ -6,6 +6,7 @@ import StockInfoModal from './StockInfoModal';
 import CompareModal from './CompareModal';
 import { useMarketStore } from '../store';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 // ─── Component ───
 
@@ -110,7 +111,7 @@ const MarketMap: React.FC<MarketMapProps> = ({ onNavigate }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://127.0.0.1:8000/api/v1/network-map');
+                const res = await axios.get(`${API_BASE}/api/v1/network-map`);
                 const root = res.data.graph;
                 setGraphData(root); // Store Tree
                 setLoading(false);
@@ -258,7 +259,7 @@ const MarketMap: React.FC<MarketMapProps> = ({ onNavigate }) => {
         if (node.type !== 'index') return;
         try {
             const symbol = node.id === 'INDIA_MARKET' ? '^NSEI' : node.id;
-            const res = await axios.get(`http://127.0.0.1:8000/api/v1/network-map/constituents/${encodeURIComponent(symbol)}`);
+            const res = await axios.get(`${API_BASE}/api/v1/network-map/constituents/${encodeURIComponent(symbol)}`);
 
             if (res.data && res.data.constituents) {
                 const stocks = res.data.constituents;

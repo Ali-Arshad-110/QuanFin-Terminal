@@ -9,6 +9,7 @@ import PieChart from './PieChart';
 import SunburstChart from './analyzer/SunburstChart';
 import PeersList from './analyzer/PeersList';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 interface Peer {
     symbol: string;
@@ -85,13 +86,13 @@ const Analyzer: React.FC = () => {
 
         const fetchDetails = async () => {
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/stock/${encodeURIComponent(ticker)}/details`);
+                const res = await fetch(`${API_BASE}/api/v1/stock/${encodeURIComponent(ticker)}/details`);
                 if (res.ok) {
                     const data = await res.json();
                     setDetails(data);
                 }
 
-                const quoteRes = await fetch(`http://localhost:8000/api/v1/quote/${encodeURIComponent(ticker)}`);
+                const quoteRes = await fetch(`${API_BASE}/api/v1/quote/${encodeURIComponent(ticker)}`);
                 if (quoteRes.ok) {
                     const quoteData = await quoteRes.json();
                     setMarketStats({
@@ -117,7 +118,7 @@ const Analyzer: React.FC = () => {
         const fetchHolders = async () => {
             setHoldersLoading(true);
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/stock/${encodeURIComponent(ticker)}/analysis?category=holders`);
+                const res = await fetch(`${API_BASE}/api/v1/stock/${encodeURIComponent(ticker)}/analysis?category=holders`);
                 if (res.ok) {
                     const data = await res.json();
                     if (data?.data) setHoldersData(data.data as HoldersData);

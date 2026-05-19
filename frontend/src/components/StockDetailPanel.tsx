@@ -4,6 +4,7 @@ import { X, Minimize2, Maximize2, ExternalLink, Globe, Award, TrendingUp, Trendi
 import ChartComponent from './ChartComponent';
 import OptionChain from './OptionChain';
 import { stockUniverse } from '../data/stockUniverse';
+import { API_BASE } from '../config/api';
 
 interface StockDetails {
     symbol: string;
@@ -82,7 +83,7 @@ const StockDetailPanel: React.FC = () => {
             setLoading(true);
             setError(null);
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/stock/${encodeURIComponent(selectedStock)}/details`);
+                const res = await fetch(`${API_BASE}/api/v1/stock/${encodeURIComponent(selectedStock)}/details`);
                 if (res.ok) {
                     const result = await res.json();
                     setData(result);

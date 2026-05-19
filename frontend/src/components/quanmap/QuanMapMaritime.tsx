@@ -5,6 +5,7 @@ import { Anchor, Ship, Activity, Navigation, ArrowUpRight, Database, Radio, Zap,
 import { useTheme } from '../../theme/ThemeProvider';
 import { MAJOR_PORTS, GLOBAL_FLOWS } from '../../data/maritimeData';
 import 'flag-icons/css/flag-icons.min.css';
+import { WS_BASE } from '../../config/api';
 
 // Component to handle map movements
 const MapController = ({ vessel, zoom }: { vessel: Vessel | null, zoom: number }) => {
@@ -125,7 +126,7 @@ const QuanMapMaritime: React.FC<QuanMapMaritimeProps> = ({ onNavigate }) => {
     useEffect(() => {
         if (!isLiveStreamActive) return;
 
-        const socket = new WebSocket("ws://localhost:8000/api/v1/maritime/ws");
+        const socket = new WebSocket(`${WS_BASE}/api/v1/maritime/ws`);
         
         socket.onmessage = (event) => {
             try {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowUp, ArrowDown } from 'lucide-react';
 import axios from 'axios';
 import { useWebSocket } from '../../../contexts/WebSocketContext';
+import { API_BASE } from '../../../config/api';
 
 const INDICES = ['^NSEI', '^BSESN', '^NSEBANK', '^CNXFIN', '^CNXMID'];
 const INDEX_NAMES: Record<string, string> = {
@@ -65,7 +66,7 @@ const MajorIndicesPanel: React.FC = () => {
             const newData: Record<string, any> = {};
             for (const idx of INDICES) {
                 try {
-                    const res = await axios.get(`http://localhost:8000/api/v1/quote/${idx}`);
+                    const res = await axios.get(`${API_BASE}/api/v1/quote/${idx}`);
                     if (res.data) {
                         newData[idx] = {
                             price: res.data.ltp || 0,

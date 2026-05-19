@@ -1,6 +1,7 @@
 import { useState, useCallback, useRef } from 'react';
 import axios from 'axios';
 import type { Time } from 'lightweight-charts';
+import { API_BASE } from '../config/api';
 
 export interface ComparisonSymbol {
     symbol: string;
@@ -31,7 +32,7 @@ export function useComparativeEngine() {
         try {
             let stockData = dataCache.current.get(symbol);
             if (!stockData) {
-                const res = await axios.get(`http://localhost:8000/api/v1/analyze/${symbol}?interval=1d`);
+                const res = await axios.get(`${API_BASE}/api/v1/analyze/${symbol}?interval=1d`);
                 stockData = res.data.data;
                 dataCache.current.set(symbol, stockData);
             }

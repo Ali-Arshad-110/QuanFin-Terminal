@@ -3,6 +3,7 @@ import { useTheme } from '../theme/ThemeProvider';
 import { useMarketStore } from '../store';
 import { TrendingUp, TrendingDown, RefreshCw, ExternalLink, Activity, ChevronUp, ChevronDown, ChevronsUpDown, ChevronLeft, ChevronRight, BarChart2, ShieldCheck, Star, CheckCircle2, Download } from 'lucide-react';
 import StockLogo from './StockLogo';
+import { API_BASE } from '../config/api';
 
 /* ─── Mini Sparkline Trend ──────────────────────────────────────────────── */
 const MiniSparkline: React.FC<{ data: number[]; isUp: boolean }> = ({ data, isUp }) => {
@@ -495,7 +496,7 @@ const IndicesExchangeView: React.FC<IndicesExchangeViewProps> = ({ onNavigate })
         const results: Record<string, IndexPrice> = {};
         await Promise.allSettled(allIndices.map(async (idx) => {
             try {
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+                const API_URL = import.meta.env.VITE_API_URL || `${API_BASE}`;
                 const res = await fetch(`${API_URL}/api/v1/analyze/${encodeURIComponent(idx.symbol)}?interval=1d`);
                 if (!res.ok) return;
                 const json = await res.json();
@@ -517,7 +518,7 @@ const IndicesExchangeView: React.FC<IndicesExchangeViewProps> = ({ onNavigate })
     const fetchConstituents = useCallback(async (indexLabel: string) => {
         setIsFetchingConstituents(true);
         try {
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+            const API_URL = import.meta.env.VITE_API_URL || `${API_BASE}`;
             const res = await fetch(`${API_URL}/api/v1/market/breadth/${encodeURIComponent(indexLabel)}`);
             const json = await res.json();
             if (json.status === 'success') setConstituents(json.data || []);

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, TrendingUp, ArrowRight } from 'lucide-react';
 import { useMarketStore } from '../store';
 import axios from 'axios';
+import { API_BASE } from '../config/api';
 
 interface Rule {
     indicator: string;
@@ -64,7 +65,7 @@ const StrategyBuilder: React.FC<Props> = ({ onResults, className }) => {
                 exit_rules: exitRules
             };
 
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+            const API_URL = import.meta.env.VITE_API_URL || `${API_BASE}`;
             const res = await axios.post(`${API_URL}/api/v1/strategy/backtest`, payload);
 
             if (res.data.status === 'success') {

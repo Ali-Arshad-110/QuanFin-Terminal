@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { TrendingUp, TrendingDown, RefreshCw, ChevronDown, ChevronRight, Layers } from 'lucide-react';
 import { useMarketStore } from '../store';
 import { useWebSocket } from '../contexts/WebSocketContext';
+import { API_BASE } from '../config/api';
 
 // Categorized Commodities List (MCX Futures)
 const COMMODITY_CATEGORIES = {
@@ -54,7 +55,7 @@ const CommodityWatchlist: React.FC = () => {
             setLoading(true);
             try {
                 // Backend now supports mcx_fo|SYMBOL automatically via get_quotes
-                const res = await fetch('http://localhost:8000/api/v1/quotes', {
+                const res = await fetch(`${API_BASE}/api/v1/quotes`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ symbols: allCommodities })

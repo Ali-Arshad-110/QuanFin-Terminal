@@ -23,6 +23,7 @@ import {
   Eye, EyeOff, Settings
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { API_BASE } from '../config/api';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface Signal {
@@ -445,7 +446,7 @@ const ChartComponent: React.FC<ChartComponentProps> = ({
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch(`http://localhost:8000/api/v1/analyze/${encodeURIComponent(ticker)}?interval=${currentInterval}`);
+        const res = await fetch(`${API_BASE}/api/v1/analyze/${encodeURIComponent(ticker)}?interval=${currentInterval}`);
         if (!isActive) return;
 
         const json = await res.json();

@@ -4,6 +4,7 @@ import { ResponsivePie } from '@nivo/pie';
 import { Activity, List as ListIcon, PieChart } from 'lucide-react';
 import { useWebSocket } from '../../../contexts/WebSocketContext';
 import { useMarketStore } from '../../../store';
+import { API_BASE } from '../../../config/api';
 
 const NSE_INDICES = [
     { symbol: '^NSEI',    name: 'NIFTY 50'   },
@@ -112,7 +113,7 @@ const WatchlistIndicesPanel: React.FC<WatchlistIndicesPanelProps> = ({ onNavigat
         const fetchAllIndices = async () => {
             try {
                 const symbols = ALL_INDICES.map(item => item.symbol);
-                const res = await axios.post(`http://localhost:8000/api/v1/quotes`, { symbols });
+                const res = await axios.post(`${API_BASE}/api/v1/quotes`, { symbols });
                 if (res.data) {
                     const newData: Record<string, any> = {};
                     for (const item of ALL_INDICES) {

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Newspaper, TrendingUp, TrendingDown } from 'lucide-react';
+import { API_BASE } from '../config/api';
 
 interface NewsItem {
     id: number;
@@ -20,7 +21,7 @@ const CommodityNewsPanel: React.FC = () => {
         const fetchNews = async () => {
             setLoading(true);
             try {
-                const res = await axios.get('http://localhost:8000/api/v1/commodities/news');
+                const res = await axios.get(`${API_BASE}/api/v1/commodities/news`);
                 if (res.data.status === 'success') {
                     setNews(res.data.data);
                 }

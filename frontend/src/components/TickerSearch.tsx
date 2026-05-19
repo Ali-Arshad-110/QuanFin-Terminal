@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search } from 'lucide-react';
 import axios from 'axios';
+import { API_BASE } from '../config/api';
 
 interface TickerSearchProps {
     onSelect: (symbol: string) => void;
@@ -58,7 +59,7 @@ const TickerSearch: React.FC<TickerSearchProps> = ({
             setLoading(true);
             try {
                 // Use the backend search API
-                const res = await axios.get(`http://localhost:8000/api/v1/search?q=${encodeURIComponent(query)}&limit=5`);
+                const res = await axios.get(`${API_BASE}/api/v1/search?q=${encodeURIComponent(query)}&limit=5`);
                 if (res.data && res.data.status === 'success') {
                     setSuggestions(res.data.data);
                     if (res.data.data.length > 0) setIsOpen(true);

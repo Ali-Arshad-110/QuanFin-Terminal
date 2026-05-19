@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { AlertCircle, Box, Calendar, DollarSign, Layers, ShieldAlert, Activity, TrendingUp } from 'lucide-react';
+import { API_BASE } from '../config/api';
 
 interface ContractDetailsProps {
     symbol: string;
@@ -43,8 +44,8 @@ const ContractDetailsPanel: React.FC<ContractDetailsProps> = ({ symbol }) => {
             try {
                 // Parallel fetch
                 const [detailsRes, riskRes] = await Promise.all([
-                    axios.get(`http://localhost:8000/api/v1/commodities/contract/${symbol}`),
-                    axios.get(`http://localhost:8000/api/v1/commodities/risk/${symbol}`)
+                    axios.get(`${API_BASE}/api/v1/commodities/contract/${symbol}`),
+                    axios.get(`${API_BASE}/api/v1/commodities/risk/${symbol}`)
                 ]);
 
                 if (detailsRes.data.status === 'success') {

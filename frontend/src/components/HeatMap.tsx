@@ -9,6 +9,7 @@ import {
 import { useMarketStore } from '../store';
 import { useTheme } from '../theme/ThemeProvider';
 import AdvanceHeatMap, { type ColorMode } from './AdvanceHeatMap';
+import { API_BASE } from '../config/api';
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
 interface Sector {
@@ -160,7 +161,7 @@ const HeatMap: React.FC<HeatMapProps> = ({ onNavigate }) => {
     const fetchSectors = useCallback(async (isInitial = false) => {
         if (isInitial || sectors.length === 0) setLoadingSectors(true);
         try {
-            const res = await fetch('http://localhost:8000/api/v1/sectors');
+            const res = await fetch(`${API_BASE}/api/v1/sectors`);
             if (res.ok) {
                 const data: Sector[] = await res.json();
                 setSectors(data);
@@ -175,7 +176,7 @@ const HeatMap: React.FC<HeatMapProps> = ({ onNavigate }) => {
         if (isInitial || details?.index !== sectorName) setLoadingDetails(true);
         try {
             const res = await fetch(
-                `http://localhost:8000/api/v1/network-map/constituents/${encodeURIComponent(sectorName)}`
+                `${API_BASE}/api/v1/network-map/constituents/${encodeURIComponent(sectorName)}`
             );
             if (res.ok) {
                 const data = await res.json();

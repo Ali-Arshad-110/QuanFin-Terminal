@@ -3,6 +3,7 @@ import { LIVE_DATA_CONFIG, getAdaptiveRefreshInterval } from '../config/liveData
 import { useMarketStore } from '../store';
 import { ChevronDown, AlertTriangle } from 'lucide-react';
 import IndexDetailPanel from './IndexDetailPanel';
+import { API_BASE } from '../config/api';
 
 interface IndexData {
     symbol: string;
@@ -43,7 +44,7 @@ const IndicesBar: React.FC<IndicesBarProps> = ({ onNavigate }) => {
     useEffect(() => {
         const fetchIndices = async () => {
             try {
-                const res = await fetch('http://localhost:8000/api/v1/indices');
+                const res = await fetch(`${API_BASE}/api/v1/indices`);
                 if (res.ok) {
                     const data: ExchangesResponse = await res.json();
                     if (data.exchanges) {

@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { TrendingUp, TrendingDown, X, RefreshCw, ArrowUpRight, ArrowDownRight, LayoutGrid } from 'lucide-react';
 import axios from 'axios';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 interface IndexData {
     symbol: string;
@@ -220,7 +221,7 @@ const IndexDetailPanel: React.FC<PanelProps> = ({ indexDef, data, onClose, onNav
         let dc = false;
         const sym = encodeURIComponent(indexDef.symbol);
 
-        axios.get(`http://127.0.0.1:8000/api/v1/analyze/${sym}?interval=1d`)
+        axios.get(`${API_BASE}/api/v1/analyze/${sym}?interval=1d`)
             .then(res => !dc && setDailyCandles((res.data?.data ?? []).map((c: any) => ({
                 time: c.time ?? c.timestamp ?? 0,
                 open: c.open ?? c.Open ?? 0,
@@ -229,7 +230,7 @@ const IndexDetailPanel: React.FC<PanelProps> = ({ indexDef, data, onClose, onNav
                 close: c.close ?? c.Close ?? 0,
             }))));
 
-        axios.get(`http://127.0.0.1:8000/api/v1/network-map/constituents/${sym}`)
+        axios.get(`${API_BASE}/api/v1/network-map/constituents/${sym}`)
             .then(res => !dc && setConstituents(res.data?.constituents ?? []));
 
         return () => { dc = true; };
@@ -248,7 +249,7 @@ const IndexDetailPanel: React.FC<PanelProps> = ({ indexDef, data, onClose, onNav
             '1Y': { interval: '1d' }
         };
 
-        axios.get(`http://127.0.0.1:8000/api/v1/analyze/${sym}?interval=${params[timeframe].interval}`)
+        axios.get(`${API_BASE}/api/v1/analyze/${sym}?interval=${params[timeframe].interval}`)
             .then(res => {
                 if (dc) return;
                 const mapped = (res.data?.data ?? []).map((c: any) => ({

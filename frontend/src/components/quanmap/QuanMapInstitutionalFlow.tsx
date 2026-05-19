@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Polyline, CircleMarker, Tooltip, ZoomControl }
 import { Loader2, Activity, Zap, ArrowUpRight, ArrowDownRight, ShieldCheck, History, Maximize2, X, Search } from 'lucide-react';
 import { useTheme } from '../../theme/ThemeProvider';
 import QuanMapAIInsights from './QuanMapAIInsights';
+import { API_BASE } from '../../config/api';
 
 interface FlowData {
   id: string;
@@ -63,7 +64,7 @@ const QuanMapInstitutionalFlow: React.FC = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await fetch('http://127.0.0.1:8000/api/v1/quanmap/institutional-flows');
+        const res = await fetch(`${API_BASE}/api/v1/quanmap/institutional-flows`);
         if (!res.ok) throw new Error('Failed to fetch institutional flows');
         const json = await res.json();
         setFlows(json.data.flows || []);

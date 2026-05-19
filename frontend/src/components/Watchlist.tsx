@@ -4,6 +4,7 @@ import { useMarketStore } from '../store';
 import { useWebSocket } from '../contexts/WebSocketContext';
 import { stockUniverse } from '../data/stockUniverse';
 import StockLogo from './StockLogo';
+import { API_BASE } from '../config/api';
 
 interface Watchlist {
     id: string;
@@ -51,7 +52,7 @@ const WatchlistComponent: React.FC = () => {
         const fetchQuotes = async () => {
             // 1. Initial Snapshot via REST (for open/high/low etc)
             try {
-                const res = await fetch('http://localhost:8000/api/v1/quotes', {
+                const res = await fetch(`${API_BASE}/api/v1/quotes`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ symbols: activeList.symbols })
@@ -196,7 +197,7 @@ const WatchlistComponent: React.FC = () => {
             }
 
             try {
-                const res = await fetch(`http://localhost:8000/api/v1/search?q=${searchQuery}&limit=5`);
+                const res = await fetch(`${API_BASE}/api/v1/search?q=${searchQuery}&limit=5`);
                 if (res.ok) {
                     const data = await res.json();
                     if (data.status === 'success') {

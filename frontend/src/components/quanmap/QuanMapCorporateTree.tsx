@@ -5,6 +5,7 @@ import ReactFlow, {
 import type { Node, Edge } from 'react-flow-renderer';
 import { Loader2, Search, AlertCircle, TrendingUp, Scaling } from 'lucide-react';
 import { useTheme } from '../../theme/ThemeProvider';
+import { API_BASE } from '../../config/api';
 
 interface SubData {
   symbol: string;
@@ -85,7 +86,7 @@ const QuanMapCorporateTree: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const res = await fetch(`http://127.0.0.1:8000/api/v1/quanmap/corporate-tree?parent=${symbol}`);
+      const res = await fetch(`${API_BASE}/api/v1/quanmap/corporate-tree?parent=${symbol}`);
       if (!res.ok) {
         if (res.status === 404) throw new Error(`No corporate tree mapping found for '${symbol}'`);
         throw new Error('Failed to fetch corporate tree');

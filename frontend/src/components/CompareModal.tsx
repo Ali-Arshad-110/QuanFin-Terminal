@@ -3,6 +3,7 @@ import { X, TrendingUp, TrendingDown, Activity, BarChart3, ChevronLeft, Globe, C
 import ComparisonChart from './ComparisonChart';
 import TickerSearch from './TickerSearch';
 import axios from 'axios';
+import { API_BASE } from '../config/api';
 
 interface CompareModalProps {
     stocks: string[];
@@ -76,10 +77,10 @@ const CompareModal: React.FC<CompareModalProps> = ({ stocks, onRemove, onUpdateS
             setData(prev => ({ ...prev, [symbol]: { symbol, loading: true } }));
             try {
                 const [quoteRes, analyzeRes] = await Promise.all([
-                    axios.get(`http://127.0.0.1:8000/api/v1/analyze/${encodeURIComponent(symbol)}/quote`).catch(() =>
-                        axios.get(`http://127.0.0.1:8000/api/v1/quote/${encodeURIComponent(symbol)}`).catch(() => null)
+                    axios.get(`${API_BASE}/api/v1/analyze/${encodeURIComponent(symbol)}/quote`).catch(() =>
+                        axios.get(`${API_BASE}/api/v1/quote/${encodeURIComponent(symbol)}`).catch(() => null)
                     ),
-                    axios.get(`http://127.0.0.1:8000/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`).catch(() => null),
+                    axios.get(`${API_BASE}/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`).catch(() => null),
                 ]);
                 setData(prev => ({
                     ...prev,

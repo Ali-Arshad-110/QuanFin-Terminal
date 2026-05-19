@@ -4,6 +4,7 @@ import { Loader2, Activity } from 'lucide-react';
 import { useTheme } from '../../theme/ThemeProvider';
 
 import { cityCoordinates } from '../../data/cityCoordinates';
+import { API_BASE } from '../../config/api';
 
 const capitalMapping: Record<string, string> = {
   'US': 'New York', 'CN': 'Beijing', 'JP': 'Tokyo', 'IN': 'Mumbai', 'GB': 'London',
@@ -35,7 +36,7 @@ const QuanMapMarketCap: React.FC = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await fetch('http://127.0.0.1:8000/api/v1/quanmap/market-cap');
+        const res = await fetch(`${API_BASE}/api/v1/quanmap/market-cap`);
         if (!res.ok) throw new Error('Failed to fetch market cap data');
         const json = await res.json();
         

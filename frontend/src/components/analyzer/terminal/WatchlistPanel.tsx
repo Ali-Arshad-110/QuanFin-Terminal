@@ -8,6 +8,7 @@ import { useWebSocket } from '../../../contexts/WebSocketContext';
 import Plot from 'react-plotly.js';
 import WatchlistExpandedView from './WatchlistExpandedView';
 import { type WatchlistItem as StoreWatchlistItem } from '../../../store';
+import { API_BASE } from '../../../config/api';
 
 const WatchlistPanel = () => {
     const {
@@ -137,7 +138,7 @@ const WatchlistPanel = () => {
             sector: 'Other'
         });
         setTicker(symbol); // FIX: Update chart when searching/adding symbol
-        axios.get(`http://localhost:8000/api/v1/quote/${symbol}`)
+        axios.get(`${API_BASE}/api/v1/quote/${symbol}`)
             .then(res => {
                 const quote = res.data;
                 updateWatchlistPrice(

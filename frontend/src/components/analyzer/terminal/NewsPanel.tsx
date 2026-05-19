@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useMarketStore } from '../../../store';
 import { Loader2 } from 'lucide-react';
+import { API_BASE } from '../../../config/api';
 
 const NewsPanel = () => {
     const { ticker } = useMarketStore();
@@ -13,7 +14,7 @@ const NewsPanel = () => {
             if (!ticker) return;
             setLoading(true);
             try {
-                const res = await axios.get(`http://localhost:8000/api/v1/news/${ticker}`);
+                const res = await axios.get(`${API_BASE}/api/v1/news/${ticker}`);
                 setNews(res.data);
             } catch (err) {
                 console.error("Failed to fetch news", err);

@@ -3,6 +3,7 @@ import { X, Search, ChevronRight, LayoutGrid, List, ArrowUp, ArrowDown, Chevrons
 import AdvanceHeatMap from './AdvanceHeatMap';
 import { useMarketStore } from '../store';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 interface Props {
     onClose: () => void;
@@ -71,7 +72,7 @@ const IndicesScanner: React.FC<Props> = ({ onClose }) => {
     const fetchConstituents = async (symbol: string) => {
         setLoading(true);
         try {
-            const res = await fetch(`http://localhost:8000/api/v1/network-map/constituents/${encodeURIComponent(symbol)}`);
+            const res = await fetch(`${API_BASE}/api/v1/network-map/constituents/${encodeURIComponent(symbol)}`);
             if (res.ok) {
                 const data = await res.json();
                 setConstituents(data.constituents || []);

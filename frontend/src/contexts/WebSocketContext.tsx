@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { WS_BASE } from '../config/api';
 
 type WebSocketContextType = {
     isConnected: boolean;
@@ -19,7 +20,7 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         if (ws.current?.readyState === WebSocket.OPEN) return;
 
         // Connect to new Real-Time Endpoint
-        const socket = new WebSocket('ws://127.0.0.1:8000/api/v1/market/ws/ticks');
+        const socket = new WebSocket(`${WS_BASE}/api/v1/market/ws/ticks`);
 
         socket.onopen = () => {
             console.log('WS: Connected to Market Data Stream');

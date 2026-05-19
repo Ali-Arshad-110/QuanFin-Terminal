@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, CircleMarker, Tooltip as LeafletTooltip, ZoomC
 import { Loader2, Activity, ChevronLeft, ChevronRight, Info, Clock, X, Navigation, TrendingUp, TrendingDown } from 'lucide-react';
 import { useTheme } from '../../theme/ThemeProvider';
 import OIL_TRADE_FLOW from '../../data/oil_trade_flow.json';
+import { API_BASE } from '../../config/api';
 
 // API maps this internally
 const nameMapping: Record<string, string> = {
@@ -204,7 +205,7 @@ export const QuanMapPerformance: React.FC = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await fetch('http://127.0.0.1:8000/api/v1/quanmap/performance');
+        const res = await fetch(`${API_BASE}/api/v1/quanmap/performance`);
         if (!res.ok) throw new Error('Failed to fetch performance data');
         const json = await res.json();
         const dataMap: Record<string, CountryPerformanceData> = {};
@@ -262,7 +263,7 @@ export const QuanMapPerformance: React.FC = () => {
     try {
       setLoadingMovers(true);
       setMoversError(null);
-      const res = await fetch(`http://127.0.0.1:8000/api/v1/market/breadth/${encodeURIComponent(indexLabel)}`);
+      const res = await fetch(`${API_BASE}/api/v1/market/breadth/${encodeURIComponent(indexLabel)}`);
       if (!res.ok) throw new Error('Failed to fetch movers');
       const json = await res.json();
       if (json.status === 'success' && json.data) {

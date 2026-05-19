@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { ExternalLink, TrendingUp, TrendingDown, Filter, X, BarChart3, Search, RefreshCw, AlertCircle, Minimize2 } from 'lucide-react';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 interface VolumeData {
     period: string;
@@ -51,7 +52,7 @@ const VolumeAnalysis: React.FC<VolumeAnalysisProps> = ({ ticker = "NIFTY", stock
 
             try {
                 // Using backend API which uses yfinance for real data
-                const response = await fetch(`http://localhost:8000/api/v1/volume/${encodeURIComponent(ticker)}`);
+                const response = await fetch(`${API_BASE}/api/v1/volume/${encodeURIComponent(ticker)}`);
 
                 if (!response.ok) {
                     throw new Error("Failed to fetch volume data");

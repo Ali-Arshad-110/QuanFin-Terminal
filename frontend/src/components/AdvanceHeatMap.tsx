@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { useTheme } from '../theme/ThemeProvider';
+import { API_BASE } from '../config/api';
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
 interface Constituent {
@@ -118,7 +119,7 @@ const Sparkline: React.FC<{ symbol: string; color: string }> = ({ symbol, color 
     useEffect(() => {
         let cancelled = false;
         setLoading(true);
-        axios.get(`http://127.0.0.1:8000/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`)
+        axios.get(`${API_BASE}/api/v1/analyze/${encodeURIComponent(symbol)}?interval=1d`)
             .then(r => {
                 if (cancelled) return;
                 const candles = (r.data?.data ?? []).slice(-10);

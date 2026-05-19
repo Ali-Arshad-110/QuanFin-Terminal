@@ -4,6 +4,7 @@ import ChartComponent from './ChartComponent';
 import { X, TrendingUp, TrendingDown, Activity, Users, BarChart3, GitCompare, Loader2, ExternalLink } from 'lucide-react';
 import { useTheme } from '../theme/ThemeProvider';
 import { stockDomains } from '../data/stockDomains';
+import { API_BASE } from '../config/api';
 
 interface StockInfoModalProps {
     symbol: string;
@@ -27,7 +28,7 @@ const StockInfoModal: React.FC<StockInfoModalProps> = ({ symbol, onClose }) => {
         const fetchStockData = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`http://localhost:8000/api/v1/quote/${symbol}`);
+                const response = await axios.get(`${API_BASE}/api/v1/quote/${symbol}`);
                 setData(response.data);
             } catch (error) {
                 console.error("Error fetching stock quote", error);
@@ -44,7 +45,7 @@ const StockInfoModal: React.FC<StockInfoModalProps> = ({ symbol, onClose }) => {
         const fetchAnalysis = async () => {
             setAnalysisLoading(true);
             try {
-                const res = await axios.get(`http://localhost:8000/api/v1/stock/${symbol}/analysis?category=${activeTab}`);
+                const res = await axios.get(`${API_BASE}/api/v1/stock/${symbol}/analysis?category=${activeTab}`);
                 setAnalysisData(res.data?.data || null);
             } catch (e) {
                 console.error("Analysis fetch error", e);

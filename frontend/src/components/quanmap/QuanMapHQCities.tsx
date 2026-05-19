@@ -4,6 +4,7 @@ import { Loader2, Info, Activity } from 'lucide-react';
 import { useTheme } from '../../theme/ThemeProvider';
 import { cityCoordinates } from '../../data/cityCoordinates';
 import QuanMapAIInsights from './QuanMapAIInsights';
+import { API_BASE } from '../../config/api';
 
 export interface CompanyData {
   symbol: string;
@@ -52,7 +53,7 @@ const QuanMapHQCities: React.FC = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await fetch('http://127.0.0.1:8000/api/v1/quanmap/hq-cities');
+        const res = await fetch(`${API_BASE}/api/v1/quanmap/hq-cities`);
         if (!res.ok) throw new Error('Failed to fetch city data');
         const json = await res.json();
         setData(json.data || []);

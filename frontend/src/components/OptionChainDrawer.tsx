@@ -3,6 +3,7 @@ import { X, RefreshCw, AlertCircle } from 'lucide-react';
 import axios from 'axios';
 import { OIVisualBar } from './OIVisualBar';
 import { SentimentMeter } from './SentimentMeter';
+import { API_BASE } from '../config/api';
 
 interface OptionChainDrawerProps {
     isOpen: boolean;
@@ -51,7 +52,7 @@ export const OptionChainDrawer: React.FC<OptionChainDrawerProps> = ({ isOpen, on
         setError(null);
         try {
             // Updated endpoint to exactly match backend routing: /api/v1 + /market + /option-chain/{symbol}
-            const resp = await axios.get<OptionChainData>(`http://localhost:8000/api/v1/market/option-chain/${symbol}`);
+            const resp = await axios.get<OptionChainData>(`${API_BASE}/api/v1/market/option-chain/${symbol}`);
             if (resp.data.error) {
                 setError(resp.data.error);
             } else {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Lock, Smartphone, Key, ShieldCheck, Eye, EyeOff, Loader2, AlertTriangle, User, Hash } from 'lucide-react';
 import { useMarketStore } from '../store';
+import { API_BASE } from '../config/api';
 
 interface BrokerLoginModalProps {
     isOpen: boolean;
@@ -127,7 +128,7 @@ const BrokerLoginModal: React.FC<BrokerLoginModalProps> = ({ isOpen, onClose, on
             if (err.name === 'AbortError') {
                 msg = '⏱️ Request timed out. Backend might be slow or not responding.';
             } else if (err.message === 'Failed to fetch' || err.message.includes('fetch')) {
-                msg = '🔌 Cannot connect to backend. Make sure:\n1. Backend is running (python run_server.py)\n2. Running on http://localhost:8000\n3. Check browser console for network errors';
+                msg = `🔌 Cannot connect to backend. Make sure:\n1. Backend is running (python run_server.py)\n2. Running on ${API_BASE}\n3. Check browser console for network errors`;
             } else if (err?.message) {
                 if (typeof err.message === 'object') {
                     msg = JSON.stringify(err.message);

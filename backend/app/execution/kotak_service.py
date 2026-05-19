@@ -7,7 +7,7 @@ import urllib.error
 import urllib.parse
 
 try:
-    from neo_api_client import NeoAPI
+    from neo_api_client import NeoAPI  # type: ignore[import]
     logging.info("✓ NeoAPI loaded successfully")
 except ImportError as e:
     logging.warning(f"NeoAPI not available (optional): {e}. Broker streaming will degrade gracefully.")

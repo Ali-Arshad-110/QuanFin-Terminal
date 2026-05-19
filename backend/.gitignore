@@ -16,3 +16,11 @@ sync_output.txt
 verify_result.txt
 debug_output.txt
 app/__pycache__/
+    
+# Virtual Environment
+.venv/
+venv/
+env/
+Lib/
+Scripts/
+pyvenv.cfg

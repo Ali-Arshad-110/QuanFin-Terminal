@@ -1,6 +1,7 @@
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy.pool import StaticPool, NullPool
 import os
 from dotenv import load_dotenv
 
@@ -8,32 +9,42 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # URL Handling
-DB_URL_RAW = os.getenv("DB_URL", "postgresql://postgres:Ali%40110@localhost/quanfin_db")
+DB_URL_RAW = os.getenv("DB_URL", "sqlite:///./quanfin.db")
+
+IS_SQLITE = "sqlite" in DB_URL_RAW
+IS_POSTGRES = "postgresql" in DB_URL_RAW
 
 # 1. Async URL (for FastAPI)
-# Ensure driver is asyncpg for Postgres or aiosqlite for SQLite
-if "postgresql://" in DB_URL_RAW and "+asyncpg" not in DB_URL_RAW:
+if IS_POSTGRES and "+asyncpg" not in DB_URL_RAW:
     ASYNC_DB_URL = DB_URL_RAW.replace("postgresql://", "postgresql+asyncpg://")
-elif "sqlite://" in DB_URL_RAW and "+aiosqlite" not in DB_URL_RAW:
+elif IS_SQLITE and "+aiosqlite" not in DB_URL_RAW:
     ASYNC_DB_URL = DB_URL_RAW.replace("sqlite://", "sqlite+aiosqlite://")
 else:
     ASYNC_DB_URL = DB_URL_RAW
 
 # 2. Sync URL (for Legacy / Scheduler)
-# Ensure driver is NOT asyncpg (default psycopg2 or similar)
 if "+asyncpg" in DB_URL_RAW:
     SYNC_DB_URL = DB_URL_RAW.replace("+asyncpg", "")
 else:
     SYNC_DB_URL = DB_URL_RAW
 
 # --- ASYNC ENGINE ---
-engine = create_async_engine(
-    ASYNC_DB_URL,
-    echo=False,
-    pool_pre_ping=True,
-    pool_size=20,
-    max_overflow=10
-)
+# SQLite does NOT support connection pooling params (pool_size, max_overflow)
+if IS_SQLITE:
+    engine = create_async_engine(
+        ASYNC_DB_URL,
+        echo=False,
+        connect_args={"check_same_thread": False},
+        poolclass=StaticPool,
+    )
+else:
+    engine = create_async_engine(
+        ASYNC_DB_URL,
+        echo=False,
+        pool_pre_ping=True,
+        pool_size=20,
+        max_overflow=10,
+    )
 
 AsyncSessionLocal = sessionmaker(
     bind=engine,
@@ -43,12 +54,19 @@ AsyncSessionLocal = sessionmaker(
 )
 
 # --- SYNC ENGINE (Legacy Support) ---
-sync_engine = create_engine(
-    SYNC_DB_URL,
-    pool_pre_ping=True,
-    pool_size=10,
-    max_overflow=5
-)
+if IS_SQLITE:
+    sync_engine = create_engine(
+        SYNC_DB_URL,
+        connect_args={"check_same_thread": False},
+        poolclass=StaticPool,
+    )
+else:
+    sync_engine = create_engine(
+        SYNC_DB_URL,
+        pool_pre_ping=True,
+        pool_size=10,
+        max_overflow=5,
+    )
 
 SessionLocal = sessionmaker(
     autocommit=False,

@@ -1,23 +1,25 @@
 /**
  * Central API configuration.
  *
- * In development:  VITE_API_URL is not set → falls back to '' (empty string).
- *                  Vite's dev-server proxy in vite.config.ts forwards /api → localhost:8000.
+ * In development:  Uses empty string for API_BASE (Vite proxy)
+ *                  and direct ws://127.0.0.1:8000 for WS_BASE.
  *
- * In production:   VITE_API_URL = https://quanfin-terminal-backend.onrender.com
- *                  (set in Vercel project settings or .env.production)
+ * In production:   Falls back automatically to Render production URLs
+ *                  if VITE_API_URL is not set.
  */
 
-const rawUrl = import.meta.env.VITE_API_URL ?? '';
+const isLocal = typeof window !== 'undefined' && 
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+const rawUrl = import.meta.env.VITE_API_URL || 
+  (isLocal ? '' : 'https://quanfin-terminal-backend.onrender.com');
 
 // Strip trailing slash so callers can always do `${API_BASE}/api/v1/...`
 export const API_BASE = rawUrl.replace(/\/$/, '');
 
 /**
  * WebSocket base URL — replaces http(s) with ws(s).
- * Dev:  '' → uses relative /ws path through Vite proxy.
- * Prod: wss://quanfin-terminal-backend.onrender.com
  */
 export const WS_BASE = API_BASE
   ? API_BASE.replace(/^https/, 'wss').replace(/^http/, 'ws')
-  : '';
+  : (isLocal ? 'ws://127.0.0.1:8000' : 'wss://quanfin-terminal-backend.onrender.com');

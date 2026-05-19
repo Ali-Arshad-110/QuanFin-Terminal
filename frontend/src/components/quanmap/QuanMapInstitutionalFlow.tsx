@@ -43,7 +43,7 @@ const QuanMapInstitutionalFlow: React.FC = () => {
   const [bigDeals, setBigDeals] = useState<BigDeal[]>([]);
   const [summary, setSummary] = useState<FlowSummary | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [_error, setError] = useState<string | null>(null);
   const [pulsePhase, setPulsePhase] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');

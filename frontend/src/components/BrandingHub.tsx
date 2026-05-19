@@ -6,7 +6,6 @@ import {
   Instagram,
   Twitter,
   Linkedin,
-  ExternalLink,
   Download,
   Image as ImageIcon,
   Type,

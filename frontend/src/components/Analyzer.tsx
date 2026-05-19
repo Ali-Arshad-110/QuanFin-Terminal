@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import {
-    Search, Briefcase, ShieldAlert, Award, Globe, ChevronLeft, ChevronRight, Filter, Check, List, LayoutGrid, ExternalLink
+    Search, Briefcase, ShieldAlert, Award, Globe, ChevronLeft, ChevronRight, Filter, List, LayoutGrid, ExternalLink
 } from 'lucide-react';
 import { useMarketStore } from '../store';
 import { stockUniverse } from '../data/stockUniverse';

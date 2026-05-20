@@ -29,7 +29,7 @@ export interface DevToolsDetectorOptions {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const DEFAULT_BLOCKED_KEYS: string[] = [
-  'F12',
+  // 'F12',
   'Ctrl+Shift+I',
   'Ctrl+Shift+J',
   'Ctrl+Shift+C',
@@ -38,11 +38,14 @@ const DEFAULT_BLOCKED_KEYS: string[] = [
 ];
 
 const CONSOLE_STYLES = {
+  owner:
+    'color:rgba(89, 255, 0, 1);font-size:28px;font-weight:900;font-family:monospace;' +
+    'text-shadow:0 0 10px rgba(89, 255, 0, 1);padding:5px 0;',
   warning:
-    'color:#ff3366;font-size:22px;font-weight:800;font-family:monospace;' +
-    'text-shadow:0 0 10px rgba(255,51,102,0.5);padding:5px 0;',
+    'color:#FF8C00;font-size:22px;font-weight:800;font-family:monospace;' +
+    'text-shadow:0 0 10px rgba(255, 189, 0, 1);padding:5px 0;',
   message:
-    'color:#cbd5e1;font-size:14px;font-family:monospace;font-weight:bold;margin-bottom:8px;',
+    'color:red;font-size:14px;font-family:monospace;font-weight:bold;margin-bottom:8px;',
   labelGreen:
     'color:#10b981;font-size:13px;font-family:monospace;font-weight:bold;',
   linkPurple:
@@ -122,13 +125,14 @@ export function useDevToolsDetector(options: DevToolsDetectorOptions = {}): bool
    */
   const printConsoleBranding = useCallback(() => {
     console.clear();
-    console.log('%c⚠ UNAUTHORIZED REVERSE ENGINEERING DETECTED.', CONSOLE_STYLES.warning);
+    console.log('%c Built with ❤️ by Ali Arshad', CONSOLE_STYLES.owner);
+    console.log('%c ⚠ UNAUTHORIZED REVERSE ENGINEERING DETECTED.', CONSOLE_STYLES.warning);
     console.log(
-      '%cStealing code harms innovation. Let\'s build together instead!',
+      '%c ⚠ Stealing code harms innovation. Let\'s build together instead!',
       CONSOLE_STYLES.message,
     );
     console.log(
-      '%cGitHub Profile: %chttps://github.com/Ali-Arshad-110',
+      '%c ⚠ Portfolio: %chttps://ali-arshad-110.github.io',
       CONSOLE_STYLES.labelGreen,
       CONSOLE_STYLES.linkPurple,
     );

@@ -18,6 +18,7 @@
     "axios": "^1.6.0",
     "clsx": "^2.1.1",
     "d3-hierarchy": "^3.1.2",
+    "devtools-guardian": "^3.0.0",
     "flag-icons": "^7.5.0",
     "framer-motion": "^12.36.0",
     "leaflet": "^1.9.4",
